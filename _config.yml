@@ -29,7 +29,11 @@ description:           >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:               Table of Contents
+tagline:
+  Machine Learning Engineer <br/>
+  Centre Of Heart Lung Innovation
+  St. Paul's Hospital <br/>
+
 
 # A list of keywords for your blog
 keywords:              []
@@ -361,11 +365,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-social:
-   name:                Tony Liang
-   links:
-     - https://www.instagram.com/tonyliang19/
-     - https://github.com/tonyliang19
+# social:
+#   name:                Tony Liang
+#   links:
+#     - https://www.instagram.com/tonyliang19/
+#     - https://github.com/tonyliang19
 
 
 # Plugin Configs
