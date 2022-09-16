@@ -4,8 +4,7 @@ _site
 _drafts
 .ruby-version
 
-# Ignore yml 
-_config.yml
+
 # Numerous always-ignore extensions
 *.diff
 *.err
