@@ -17,6 +17,4 @@ Columbia. Bringing forth a motivated and optimistic attitude, offering mathemati
 programming skills to a challenging position. My passions include data science, machine
 learning, mathematical modelling, and statistics.
 
-Test:
 
-This a test message
