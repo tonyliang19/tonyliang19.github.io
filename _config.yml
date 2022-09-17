@@ -77,7 +77,7 @@ copyright:             Tony Liang © 2022. All rights reserved.
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 # remote_theme: hydecorp/hydejack@v9
 
 
