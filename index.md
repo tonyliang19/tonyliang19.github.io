@@ -1,15 +1,10 @@
----
-layout: page
-cover: false
-position: |-
- Machine Learning Developer<br>
- [Centre for Heart Lung Innovation at St Paul's Hospital](http://www.hli.ubc.ca)<br>
- [Univeristy of British Columbia](http://www.ubc.ca/)<br>
- <br>
 
-bio-photo: /assets/img/PR.jpeg
+Machine Learning Developer<br>
+[Centre for Heart Lung Innovation at St Paul's Hospital](http://www.hli.ubc.ca)<br>
+[Univeristy of British Columbia](http://www.ubc.ca/)<br>
+<br>
 
----
+
 ## About Myself
 
 Hello, I'm Tony, a fourth-year Math student with a minor in Data Science at the University of British
