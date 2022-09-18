@@ -12,4 +12,11 @@ Columbia. Bringing forth a motivated and optimistic attitude, offering mathemati
 programming skills to a challenging position. My passions include data science, machine
 learning, mathematical modelling, and statistics.
 
+## Code links
+You could find several personal/academic projects that I have done:
+ - [FIFA22 Recommender Systerm](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender)
+ - [Pollen Class Detection](https://github.com/tonyliang19/pollen_id)
+ - [University Class Enrollment Web App](https://github.com/tonyliang19/flask-web-app)
+ - [Sticky Pi Android Harvester](https://github.com/sticky-pi/sticky-pi-android-harvester)
 
+Note: This section would be moved to other page later.
