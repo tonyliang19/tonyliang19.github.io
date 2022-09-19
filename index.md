@@ -12,6 +12,8 @@ Columbia. Bringing forth a motivated and optimistic attitude, offering mathemati
 programming skills to a challenging position. My passions include data science, machine
 learning, mathematical modelling, and statistics.
 
+I'm currently working as a Machine Learning Developer in the Centre for Heart Lung Innovation at St Paul's Hospital. Also as an Undergraduate Teaching Assistant for DSCI 100 at The University of British Columbia.
+
 ## Code links
 You could find several personal/academic projects that I have done:
  - [FIFA22 Recommender Systerm](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender)
