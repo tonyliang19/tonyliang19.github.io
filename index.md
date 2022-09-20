@@ -14,6 +14,7 @@ learning, mathematical modelling, and statistics.
 
 I'm currently working as a Machine Learning Developer in the Centre for Heart Lung Innovation at St Paul's Hospital. Also as an Undergraduate Teaching Assistant for DSCI 100 at The University of British Columbia.
 
+Outside of school and work, I enjoy playing futbol both indoor and outdoor! My favorite team is FC Barcelona, always stay with the tiki-taka. Forca Barca! 
 ## Code links
 You could find several personal/academic projects that I have done:
  - [FIFA22 Recommender Systerm](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender)
