@@ -17,7 +17,8 @@ I'm currently working as a Machine Learning Developer in the Centre for Heart Lu
 Outside of school and work, I enjoy playing futbol both indoor and outdoor! My favorite team is FC Barcelona, always stay with the tiki-taka. Forca Barca! 
 
 ![Fc Barcelona](/assets/img/fcb.jpg)
-## Code links
+
+### Code links
 You could find several personal/academic projects that I have done:
  - [FIFA22 Recommender Systerm](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender)
  - [Pollen Class Detection](https://github.com/tonyliang19/pollen_id)
@@ -25,3 +26,7 @@ You could find several personal/academic projects that I have done:
  - [Sticky Pi Android Harvester](https://github.com/sticky-pi/sticky-pi-android-harvester)
 
 Note: This section would be moved to other page later.
+
+
+### Placeholder for subsection
+This is placeholder to test subsection of landing page
