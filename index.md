@@ -1,6 +1,8 @@
 
 Machine Learning Developer<br>
 [Centre for Heart Lung Innovation at St Paul's Hospital](http://www.hli.ubc.ca)<br>
+
+Undergraduate Teaching Assistant
 [Univeristy of British Columbia](http://www.ubc.ca/)<br>
 <br>
 
