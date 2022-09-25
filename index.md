@@ -22,7 +22,7 @@ Outside of school and work, I enjoy playing futbol both indoor and outdoor! My f
 
 ### Ongoing Projects
 Currently working under supervision of Dr. Amrit Singh at the Centre of Heart Lung Innovation, with the project of spatial classifiers.
-
+This is consist of a deep learning project that studies biomarkers to identify potential disease of a patient.
 ### Code links
 You could find several personal/academic projects that I have done:
  - [FIFA22 Recommender Systerm](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender)
