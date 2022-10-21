@@ -29,7 +29,7 @@ You could find several personal/academic projects that I have done:
  - [Pollen Class Detection](https://github.com/tonyliang19/pollen_id)
  - [University Class Enrollment Web App](https://github.com/tonyliang19/flask-web-app)
  - [Sticky Pi Android Harvester](https://github.com/sticky-pi/sticky-pi-android-harvester)
-
+ - [Spatial Classifer](https://github.com/tonyliang19/spatial_classifier)
 Note: This section would be moved to other page later.
 
 
