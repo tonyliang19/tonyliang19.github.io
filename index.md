@@ -18,6 +18,9 @@ I'm currently working as a Machine Learning Developer in the Centre for Heart Lu
 
 Outside of school and work, I enjoy playing futbol both indoor and outdoor! My favorite team is FC Barcelona, always stay with the tiki-taka. Forca Barca! 
 
+-----
+
+Im was originally from Southern China, Guangdong Kaiping, but I grew up in Santo Domingo, Dominican Republic!.
 ![Fc Barcelona](/assets/img/fcb.jpg)
 
 ### Ongoing Projects
