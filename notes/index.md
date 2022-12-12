@@ -1,5 +1,6 @@
 # STAT301
 
+<script src="/assets/button.js"></script>
 <button style="float:right">Button</button>
 This is the course notes for STAT 301 Statistical Modelling for Data Science, there are many contents covered including hypothesis testing, A/B testing, simple linear regression, multiple linear regression, diagnostics and confounding factors, model assessment and selection, predictive modelling, cross-validation, post selection inference, modelling discrete count/categorical variables, and lastly classifiers.
 
