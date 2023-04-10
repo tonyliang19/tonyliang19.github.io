@@ -9,8 +9,8 @@ website:
     left:
       - href: index.qmd
         text: "Home"
-      - href: about.qmd
-        text: "About"
+      - href: r_demo.qmd
+        text: "R Demo"
 
 format:
   html:

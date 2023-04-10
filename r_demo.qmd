@@ -1,0 +1,14 @@
+---
+title: "R Code Demo"
+---
+
+Here are some examples of R codes:
+
+```{r}
+n <- 10
+x <- rnorm(n=n)
+print(mean(x))
+
+
+```
+
