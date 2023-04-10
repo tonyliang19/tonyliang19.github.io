@@ -13,6 +13,8 @@ website:
         text: "Home"
       - href: r_demo.qmd
         text: "R Demo"
+      - href: python_demo.qmd
+        text: "Python Demo"
 
   page-footer:
     border: false
