@@ -1,5 +1,5 @@
 ---
-title: "tonyliang19.github.io"
+title: "Tony Liang"
 ---
 
 Hello, this is a quarto website that is still under progress.
@@ -7,3 +7,6 @@ Hello, this is a quarto website that is still under progress.
 My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia
 
 See my GitHub [here](https://github.com/tonyliang19)
+
+
+I made this website following this [resource](https://ucsb-meds.github.io/creating-quarto-websites/)
