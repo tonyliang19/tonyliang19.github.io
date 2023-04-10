@@ -5,15 +5,17 @@ project:
 website:
   title: "Tony Liang"
   navbar:
+    background: primary
     left:
       - href: index.qmd
         text: Home
-        files: index.qmd
       - about.qmd
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: journal
+      datk:  cyborg
     css: styles.css
     toc: true
 
