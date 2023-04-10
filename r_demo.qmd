@@ -1,19 +1,37 @@
 ---
 title: "R Code Demo"
+format:
+  html:
+    code-fold: true
 ---
 
 Here are some examples of R codes:
 
+```{r}
+#| label: setup
+#| echo: true
+#| warning: false
+#| message: false
+# load library
+library(tidyverse)
+```
+
+---
+
 Calculating mean of a vector of length `n`
-```{r calculating-mean}
+```{r}
+#| label: calculating-mean
 n <- 10
 x <- rnorm(n=n)
 print(mean(x))
 ```
 
+---
+
 Fitting a simple linear regression model
-```{r fitting-lm}
-library(tidyverse)
+
+```{r}
+#| label: fit-model
 
 # create dummy data
 n <- 25
@@ -26,3 +44,28 @@ data <- data.frame(x1 = x1, x2 = x2, y = y)
 reg <- lm(y ~ . , data=data)
 print(reg$coefficients)
 ```
+
+---
+
+Plot the model
+
+```{r}
+#| label: fig-model
+#| message: false
+#| warning: false
+#| fig-cap: "Simple Linear Regression on dummy data"
+
+fit <- reg
+p <- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + 
+  geom_point() +
+  stat_smooth(method = "lm", col = "red") +
+  labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5),
+                     "Intercept =",signif(fit$coef[[1]],5 ),
+                     " Slope =",signif(fit$coef[[2]], 5),
+                     " P =",signif(summary(fit)$coef[2,4], 5)))
+
+p
+```
+
+The @fig-model shows the fitted regression line on the dummy data
+
