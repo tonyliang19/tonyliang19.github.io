@@ -13,9 +13,9 @@ website:
 
 format:
   html:
-    theme:
-      light: journal
-      dark:  cyborg
+    theme: cosmo
+#      light: journal
+#      dark:  cyborg
     css: styles.css
     toc: true
 
