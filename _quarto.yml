@@ -15,7 +15,7 @@ format:
   html:
     theme:
       light: journal
-      datk:  cyborg
+      dark:  cyborg
     css: styles.css
     toc: true
 
