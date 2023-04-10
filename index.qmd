@@ -1,10 +1,12 @@
 ---
 title: "Tony Liang"
 image: bio_pic.jpg
+format:
+  html:
+    page-layout: full
 about:
-  id: test-heading
-  template: trestles
-  image-shape: rounded
+  template: solana
+  image-shape: rectangle
   image-width: 15em
   links:
     - text: LinkedIn
@@ -35,5 +37,6 @@ University of British Columbia | Undergraduate Teaching Assistant | Sep 2022 - P
 
 :::
 
+---
 
 I made this website following this [resource](https://ucsb-meds.github.io/creating-quarto-websites/)
