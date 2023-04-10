@@ -8,8 +8,9 @@ website:
     background: primary
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: "Home"
+      - href: about.qmd
+        text: "About"
 
 format:
   html:
@@ -19,6 +20,6 @@ format:
     css: styles.css
     toc: true
 
-execute:
-  freeze: auto
+#execute:
+#  freeze: auto
 
