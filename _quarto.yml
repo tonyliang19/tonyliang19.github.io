@@ -11,6 +11,8 @@ website:
     #right:
       - href: index.qmd
         text: "Home"
+      - href: project.qmd
+        text: "Projects"
       - href: r_demo.qmd
         text: "R Demo"
       - href: python_demo.qmd
