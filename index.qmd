@@ -2,6 +2,8 @@
 title: "tonyliang19.github.io"
 ---
 
-This is a Quarto website from Tony Liang
+Hello, this is a quarto website that is still under progress.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia
+
+See my GitHub [here](https://github.com/tonyliang19)
