@@ -7,4 +7,4 @@ render:
 	quarto render
 
 publish:
-	quarto publish gh-pages
+	quarto publish gh-pages --no-prompt
