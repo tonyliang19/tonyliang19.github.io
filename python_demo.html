@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tony Liang</title>
+<title>Tony Liang - Python Code Demo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -71,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -79,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">R Demo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./python_demo.html">
+    <a class="nav-link active" href="./python_demo.html" aria-current="page">
  <span class="menu-text">Python Demo</span></a>
   </li>  
 </ul>
@@ -91,57 +92,37 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<div class="quarto-about-solana column-page">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tony Liang</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://www.linkedin.com/in/tonyliang19" class="about-link">
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/tonyliang19" class="about-link">
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:tliang19@student.ubc.ca" class="about-link">
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content column-page" id="quarto-document-content">
-<div id="test-heading">
-<p>My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia</p>
-<p>See my GitHub <a href="https://github.com/tonyliang19">here</a></p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>University of British Columbia, Vancouver | British Columbia, CA</p>
-<p>BSc in Mathematics and Statistics and Minor in Data Science | Sep 2020 - Nov 2023</p>
-</section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p>Centre of Heart Lung Innovation | Machine Learning Developer | Sep 2022 - Present</p>
-<p>University of British Columbia | Undergraduate Teaching Assistant | Sep 2022 - Present</p>
-</section>
-</div>
-<hr>
-<p>I made this website following this <a href="https://ucsb-meds.github.io/creating-quarto-websites/">resource</a></p>
-
-
-</main></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
     </div>
-    <img src="bio_pic.jpg" class="about-image
-  rectangle " style="width: 15em;">
-  </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Python Code Demo</h1>
 </div>
- <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Placeholder file to test out python functionality with Quarto</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -277,6 +258,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
