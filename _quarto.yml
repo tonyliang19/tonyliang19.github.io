@@ -4,9 +4,11 @@ project:
 
 website:
   title: "Tony Liang"
+  search: false
   navbar:
     background: primary
     left:
+    #right:
       - href: index.qmd
         text: "Home"
       - href: r_demo.qmd
@@ -14,9 +16,9 @@ website:
 
 format:
   html:
-    theme: cosmo
-#      light: journal
-#      dark:  cyborg
+    theme:
+      light: minty
+      dark:  superhero
     css: styles.css
     toc: true
 
