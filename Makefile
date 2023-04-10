@@ -1,4 +1,4 @@
-.PHONY: pre render
+.PHONY: pre render publish
 
 pre:
 	quarto preview ./
@@ -6,3 +6,5 @@ pre:
 render:
 	quarto render
 
+publish:
+	quarto publish gh-pages
