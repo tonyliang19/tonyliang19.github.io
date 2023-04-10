@@ -1,1 +1,14 @@
+---
+title: "Projects"
 
+
+---
+
+Hello, this a is a page to host a list of projects that I have done work/academic/personal. Feel free to open their source repos.
+
+
+## FIFA22 Ultimate Team Recommender
+
+
+
+## Multi-Omics Nextflow Pipeline
