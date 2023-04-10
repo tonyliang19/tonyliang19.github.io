@@ -2,6 +2,7 @@
 title: "Tony Liang"
 image: bio_pic.jpg
 about:
+  id: test-heading
   template: trestles
   image-shape: rounded
   image-width: 15em
@@ -14,11 +15,24 @@ about:
       href: mailto:tliang19@student.ubc.ca
 ---
 
-Hello, this is a quarto website that is still under progress.
+:::{#test-heading}
 
 My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia
 
 See my GitHub [here](https://github.com/tonyliang19)
+
+## Education
+
+University of British Columbia, Vancouver | British Columbia, CA
+BSc in Mathematics and Statistics and Minor in Data Science | Sep 2020 - Nov 2023
+
+## Experience
+
+Centre of Heart Lung Innovation | Machine Learning Developer | Sep 2022 - Present
+
+University of British Columbia | Undergraduate Teaching Assistant | Sep 2022 - Present
+
+:::
 
 
 I made this website following this [resource](https://ucsb-meds.github.io/creating-quarto-websites/)
