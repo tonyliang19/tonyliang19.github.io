@@ -4,11 +4,25 @@ title: "R Code Demo"
 
 Here are some examples of R codes:
 
-```{r}
+Calculating mean of a vector of length `n`
+```{r calculating-mean}
 n <- 10
 x <- rnorm(n=n)
 print(mean(x))
-
-
 ```
 
+Fitting a simple linear regression model
+```{r fitting-lm}
+library(tidyverse)
+
+# create dummy data
+n <- 25
+x1 <- rnorm(n=n, mean=2, sd=3)
+x2 <- rnorm(n=n, mean=3, sd=2)
+y <- 2*x1 + 3*x2
+data <- data.frame(x1 = x1, x2 = x2, y = y)
+
+# fit model and print fitted coefficients
+reg <- lm(y ~ . , data=data)
+print(reg$coefficients)
+```
