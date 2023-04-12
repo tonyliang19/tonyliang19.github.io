@@ -6,6 +6,9 @@ website:
   #open-graph: true
   title: "Tony Liang"
   search: false
+  #site-url: https:/tonyliang19.com/  
+  repo-url: https://github.com/tonyliang19/tonyliang19.github.io/
+  repo-actions: [edit, issue] 
   navbar:
     background: primary
     left:
@@ -18,6 +21,7 @@ website:
         text: "R Demo"
       - href: python_demo.qmd
         text: "Python Demo"
+        
 
   page-footer:
     border: false
