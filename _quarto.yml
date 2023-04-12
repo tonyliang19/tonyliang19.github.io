@@ -26,6 +26,8 @@ website:
         text: "{{< iconify fa6-brands linkedin >}}"
       - href: 'https://github.com/tonyliang19'
         text: "{{< iconify fa6-brands github >}}"
+      - href: https://www.instagram.com/tonyliang19/
+        text: "{{< iconify fa6-brands instagram >}}"
 
   page-footer:
     border: true
