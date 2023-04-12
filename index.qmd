@@ -17,26 +17,47 @@ about:
       href: mailto:tliang19@student.ubc.ca
 ---
 
-:::{#test-heading}
-
 My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia
 
 See my GitHub [here](https://github.com/tonyliang19)
 
-## Education
 
-University of British Columbia, Vancouver | British Columbia, CA
+:::: {.grid}
 
-BSc in Mathematics and Statistics and Minor in Data Science | Sep 2020 - Nov 2023
-
+::: {.g-col-12 .g-col-md-12 style="grid-row: 1 / 3; text-align: left; "}
 ## Experience
 
-Centre of Heart Lung Innovation | Machine Learning Developer | Sep 2022 - Present
+- **Machine Learning Developer**,   **Sep 2022 - Present**
 
-University of British Columbia | Undergraduate Teaching Assistant | Sep 2022 - Present
+  *Centre of Heart Lung Innovation, St Paul's Hospital, Vancouver, CA*
+
+- **Undergraduate Teaching Assistant**,   **Sep 2022 - Present**
+
+  *Department of Statistics, University of British Columbia, Vancouver, CA*
+
+- **Computational Entomology Research Assistant**, **May 2022 - Sep 2022**
+
+  *Department of Land Food and Systems, University of British Columbia, Vancouver, CA*
+:::
+
+::: {.g-col-12 .g-col-md-4 style="text-align: left; padding-bottom: 5px;"}
+## Interests
+
+- Bioinformatics
+- Multi-omics
+- Reproducibile Workflows
+- Data Analysis
+- Machine Learning
+- Mathematical Science
 
 :::
 
----
+::: {.g-col-12 .g-col-md-6 style="grid-row: 3 / 3; text-align: left;"}
+## Education
 
-I made this website following this [resource](https://ucsb-meds.github.io/creating-quarto-websites/)
+- **_B.Sc._ in Mathematics and Statistics and Minor in Data Science**, **Sep 2020 - Nov 2023**
+    
+    *University of British Columbia, Vancouver, CA*
+:::
+
+::::
