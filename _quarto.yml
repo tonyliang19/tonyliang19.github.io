@@ -20,6 +20,8 @@ website:
         text: "R Demo"
       - href: python_demo.qmd
         text: "Python Demo"
+      - href: resources/chunqing_tony_liang_resume.pdf
+        text: Resume
     
     right:
       - href: 'https://www.linkedin.com/in/tonyliang19'
