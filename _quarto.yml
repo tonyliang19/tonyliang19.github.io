@@ -8,11 +8,10 @@ website:
   search: false
   #site-url: https:/tonyliang19.com/  
   repo-url: https://github.com/tonyliang19/tonyliang19.github.io/
-  repo-actions: [edit, issue] 
+  repo-actions: [edit, issue]   
   navbar:
     background: primary
     left:
-    #right:
       - href: index.qmd
         text: "Home"
       - href: project.qmd
@@ -21,10 +20,15 @@ website:
         text: "R Demo"
       - href: python_demo.qmd
         text: "Python Demo"
-        
+    
+    right:
+      - href: 'https://www.linkedin.com/in/tonyliang19'
+        text: "{{< iconify fa6-brands linkedin >}}"
+      - href: 'https://github.com/tonyliang19'
+        text: "{{< iconify fa6-brands github >}}"
 
   page-footer:
-    border: false
+    border: true
     right: "© 2023, Tony Liang"
 
 format:
