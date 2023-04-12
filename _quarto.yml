@@ -37,8 +37,11 @@ format:
       light: minty
       dark:  superhero
     code-copy: true
+    code-link: true
     css: styles.css
-    toc: true
+    toc: true 
+    link-external-newwindow: true
+    
 
 #execute:
 #  freeze: auto
