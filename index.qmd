@@ -10,11 +10,14 @@ about:
   image-shape: rectangle
   image-width: 15em
   links:
-    - text: LinkedIn
+    - icon: linkedin
+      text: LinkedIn
       href: https://www.linkedin.com/in/tonyliang19
-    - text: GitHub
+    - icon: github
+      text: GitHub
       href: https://github.com/tonyliang19
-    - text: Email
+    - icon: envelope
+      text: Email
       href: mailto:tliang19@student.ubc.ca
 ---
 
@@ -67,7 +70,7 @@ Please dont't hesitate to contact me or just to chat, you could open any of my l
 ::: {.g-col-12 .g-col-md-6 style="grid-row: 3 / 3; text-align: left;"}
 ## Education
 
-- **_B.Sc._ in Mathematics and Statistics and Minor in Data Science**, **Sep 2020 - Nov 2023**
+- {{< fa graduation-cap >}} **_B.Sc._ in Mathematics and Statistics and Minor in Data Science**, **Sep 2020 - Nov 2023**
     
     *University of British Columbia, Vancouver, CA*
 :::
