@@ -17,9 +17,9 @@ about:
       href: mailto:tliang19@student.ubc.ca
 ---
 
-My name is Tony Liang, undergraduate Math and Statistics Student at University of British Columbia
+My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. 
+I am originally originally from Kaiping, China ([here](https://www.google.com/maps/place/Jinjizhen,+Kaiping,+Jiangmen,+Guangdong+Province,+China,+529386/@22.1581094,112.4805352,15z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3401fc24882c4c1b:0x6a1305be97b802a9!2sKaiping,+Jiangmen,+Guangdong+Province,+China!3b1!8m2!3d22.3770199!4d112.69828!16zL20vMDY3eWN5!3m5!1s0x36aa0cc1c74074ab:0xa667fe9eb814f477!8m2!3d22.15811!4d112.48929!16s%2Fg%2F1hb_fvwxk)).  But, I have spent most times of live in Santo Domingo, Dominican Republic. 
 
-See my GitHub [here](https://github.com/tonyliang19)
 
 
 :::: {.grid}
