@@ -33,12 +33,7 @@ So I know how to hablar en español, pero un poquito machucado.
 
 当然中文也会一点点(这已经是我所有的水平了)。
 
-Last updated at 
-```{r}
-
-format(Sys.time(), tz = "America/Los_Angeles")
-
-```
+Last updated at `r format(Sys.time(), tz = "America/Los_Angeles")`
 
 Please dont't hesitate to contact me or just to chat, you could open any of my links above
 
