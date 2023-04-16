@@ -1,8 +1,0 @@
----
-title: "Demo"
-format:
-  html:
-    code-fold: true
----
-
-This is a page to contain all code demos
