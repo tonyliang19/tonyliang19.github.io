@@ -82,17 +82,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./r_demo.html">
- <span class="menu-text">R Demo</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./python_demo.html">
- <span class="menu-text">Python Demo</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./resources/chunqing_tony_liang_resume.pdf">
  <span class="menu-text">Resume</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-demos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Demos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-demos">    
+        <li>
+    <a class="dropdown-item" href="./demos/python_demo.html">
+ <span class="dropdown-text">Python Code Demo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./demos/r_demo.html">
+ <span class="dropdown-text">R Code Demo</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -149,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 <p>My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (<a href="https://www.google.com/maps/place/Jinjizhen,+Kaiping,+Jiangmen,+Guangdong+Province,+China,+529386/@22.1581094,112.4805352,15z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3401fc24882c4c1b:0x6a1305be97b802a9!2sKaiping,+Jiangmen,+Guangdong+Province,+China!3b1!8m2!3d22.3770199!4d112.69828!16zL20vMDY3eWN5!3m5!1s0x36aa0cc1c74074ab:0xa667fe9eb814f477!8m2!3d22.15811!4d112.48929!16s%2Fg%2F1hb_fvwxk">here</a>). But, I have spent most times of live in Santo Domingo, Dominican Republic. And now residing at Vancouver, Canada.</p>
 <p>So I know how to hablar en español, pero un poquito machucado.</p>
 <p>当然中文也会一点点(这已经是我所有的水平了)。</p>
-<p>Last updated at 2023-04-13 10:50:59</p>
+<p>Last updated at 2023-04-15 23:27:08</p>
 <p>Please dont’t hesitate to contact me or just to chat, you could open any of my links above</p>
 </div>
 <div class="grid">
@@ -443,6 +450,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (!isInternal(link.href)) {
           // target, if specified
           link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
       }
     }
 });
