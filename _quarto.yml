@@ -9,7 +9,7 @@ website:
   #site-url: https:/tonyliang19.com/  
   repo-url: https://github.com/tonyliang19/tonyliang19.github.io/
   repo-actions: [edit, issue] 
-  back-to-top-navigation: true
+  #back-to-top-navigation: true
 
   # focus to read mode
   navbar:
