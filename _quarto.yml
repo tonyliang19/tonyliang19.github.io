@@ -15,17 +15,14 @@ website:
   navbar:
     background: primary
     left:
-      - href: index.qmd
-        text: "Home"
+      - text: "Home"
+        file: index.qmd
       - href: project.qmd
         text: "Projects"
-      - href: r_demo.qmd
-        text: "R Demo"
-      - href: python_demo.qmd
-        text: "Python Demo"
       - href: resources/chunqing_tony_liang_resume.pdf
         text: Resume
-    
+      - sidebar:demos
+
     right:
       - href: 'https://www.linkedin.com/in/tonyliang19'
         text: "{{< iconify fa6-brands linkedin >}}"
@@ -33,6 +30,13 @@ website:
         text: "{{< iconify fa6-brands github >}}"
       - href: https://www.instagram.com/tonyliang19/
         text: "{{< iconify fa6-brands instagram >}}"
+  sidebar:
+  - id: demos
+    title:  "Demos"
+    style:  "docked"
+    background: light
+    collapse-level: 2
+    contents: demos/*
 
   page-footer:
     border: true

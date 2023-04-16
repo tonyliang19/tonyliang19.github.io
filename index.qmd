@@ -6,6 +6,7 @@ execute:
 format:
   html:
     page-layout: full
+sidebar:  false
 about:
   id: bio
   template: solana
