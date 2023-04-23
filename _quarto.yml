@@ -55,7 +55,7 @@ format:
   html:
     theme:
       light: minty
-      dark:  superhero
+      dark:  darkly #solar #darkly 
     code-copy: true
     code-fold: true
     code-link: true
