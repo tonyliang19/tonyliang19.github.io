@@ -1,0 +1,63 @@
+---
+title: "SSH"
+---
+
+This is cheasheet/quicknote to connect and access remote servers through ssh.
+
+## Check your existing key
+
+Enter this command in your temrinal:
+
+```bash
+ls -al ~/.ssh
+```
+
+This checks if you have any existing ssh key-pairs, with something like:
+
+- id_rsa.pub
+- id_ecdsa.pub
+- id_ed25519.pub
+
+Note: If you receive an error that ~/.ssh doesn't exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step.
+
+
+## Add your key to other hosts
+
+To authenticate with a remote-host using your public SSH key you will use the `ssh-copy-id` command. Use the `-i` flag to specify the public key to copy to the remote-host.
+
+Enter this command in you terminal, replacing `<username@host>`:
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub <username@host>
+```
+
+This command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:
+
+```bash
+$(username@host) Enter your password:
+```
+
+And you only need to enter this for the "last" time, after that you could just do `ssh username@host` without typing password anymore.  Moreover, you could also, use the shorthand by replacing to a host alias in a `config` file under `~/.ssh` (See below section) **Note**: 2 Factor-Authentication (2FA) is not avoidable. 
+
+## Making alias for your known host servers
+
+If you want to avoid typing out whole host and ip address of your servers, try the following:
+
+1. create a file (if not extists yet) with `touch ~.ssh/config`
+2. Use the template below to add the server you like to connect to:
+
+```bash
+
+# Indentation is required
+
+# Host is the alias shorthand you want to be ugin later like:
+
+# ssc <Host> , i.e. ssh foo
+Host <the-alias-you-want-to-use>
+    # The HostName is some domain like abc.cd.ef.gh, usually like a email link?
+	HostName <this.should.be.domain>
+    # User is the allocated user with permission alonsgside with the HostName
+	User tliang19
+
+# ideally like ssh User@HostName to ssh Host
+``` 
