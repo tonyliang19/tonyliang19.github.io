@@ -1,0 +1,39 @@
+---
+title: "Makefile"
+format:
+    html:
+        code-fold: true
+        code-copy: true
+---
+
+This is quite note for `Makefile`, explaining how to make a sample `Makefile` that could automate some of the repetitive actions that you carry throught your codes and projects.
+
+```bash
+
+# A sample Makefile look like this
+
+target_name: <any optional dependencies that this target depends on>
+	
+	action_a
+	action_b
+	action_n
+
+# This means that the <target_name> is to be carried and do not rely on other stuffs
+.PHONY: target_name
+target_name:
+	action_a
+	action_b
+	action_n
+```
+
+**NOTE**: special notation requires when you need to access other variables through `$` or evaluating bash expression like `$()`
+
+And that is you need a second `$` like or use the make's built-in `shell`:
+- `docker container rm $$(docker ps -aq) -f` and **NOT** `docker container rm $(docker ps -aq) -f`
+	+ So you likely see this when you believe your command is correct but you see an error like: `requires at least 1 argument.`
+
+- `docker container rm $(shell docker ps -aq) -f`
+The reason why this happens is because the single `$` is expanded as `Makefile` variable when the `Makefile` is parsed. It expands to blank. And the second `$` sign causes make to expand `$$` to `$` which is then the correct usage.
+
+And the second usage is to prepend the command at stake with Make's `shell` builtin
+

@@ -45,6 +45,7 @@ website:
     title: "Quick Notes"
     style: "docked"
     background: light
+    collapse-level: 2
     contents: notes/*
   page-footer:
     border: true
