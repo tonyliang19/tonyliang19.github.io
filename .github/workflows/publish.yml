@@ -1,7 +1,15 @@
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches: 
+      - main
+    paths-ignore:
+      - "README.md"
+      - "Makefile"
+  pull_request:
+    branches: 
+      - main
+    
 
 name: Quarto Publish
 
