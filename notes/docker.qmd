@@ -1,0 +1,14 @@
+---
+title: "Docker"
+---
+
+This page stores some useful commands (with explanation) and things that you might not know about Docker!
+
+## Push Local Build Image
+
+If you want to push your locally built docker image, use the following steps:
+
+1. `Docker build . -t <name_local_image>`
+2. `Docker login # This is required to authenticate first`
+3. `Docker tag <name_local_image> <docker_username/repo_name>`
+4. `Docker push <docker_username/repo_name>` 
