@@ -22,6 +22,8 @@ website:
       - href: resources/chunqing_tony_liang_resume.pdf
         text: Resume
       - sidebar:demos
+      - sidebar:notes
+    
 
     right:
       - href: 'https://www.linkedin.com/in/tonyliang19'
@@ -31,13 +33,19 @@ website:
       - href: https://www.instagram.com/tonyliang19/
         text: "{{< iconify fa6-brands instagram >}}"
   sidebar:
+  # dropdown for demos
   - id: demos
     title:  "Demos"
     style:  "docked"
     background: light
     collapse-level: 2
     contents: demos/*
-
+  # dropdiwn for coding notes
+  - id: notes
+    title: "Quick Notes"
+    style: "docked"
+    background: light
+    contents: notes/*
   page-footer:
     border: true
     right: "© 2023, Tony Liang"

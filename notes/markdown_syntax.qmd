@@ -1,0 +1,52 @@
+---
+title: "Markdown Syntax Guide"
+---
+
+This is a guide that's also written in **Markdown**, a *guide* that has some important and useful syntax for markdown if you can't remember it all:
+
+- Referencing to other [link](../index.qmd)
+- Creating sub list like this:
+    + **Sub level**
+- And many more
+
+Before starting, I will use md to denote `markdown`
+
+## Making tables
+
+If you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:
+
+| Header for column 1 | Header for column 2 | .... | Header for column n |
+| :-------------------| :------------------:| ---- | -------------------:|
+| This text is left-aligned | This text is center-aligned| This one nothing | This one is right-aligned |
+| 1 | 2 | 3| 4|
+
+Notice above, creating table is easy, simply use:
+```markdown
+
+### First row is always header or column name, and it should be spanned like
+
+| <col_name here> | , use two bars to separate
+
+### Then the next row is to determine how that column's content is to be aligned
+### By Default it is left-aligned
+
+| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered
+
+This above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter
+
+Center-aligned:
+
+| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`
+
+Right-aligned:
+
+| -----: |, you need `-` with `:` to the right of the `-`.
+
+Then you can just fill up the table as you like.
+
+```
+
+In summary, the **"|-|"** is used for indicate the table and **":"** is used for indicate the text alignment. If **|:-|** entered that is a left aligned text column. If **|-:|** entered that is a right aligned text and if **|:-:|** entered that is a centre aligned.
+
+
+
