@@ -1,9 +1,5 @@
 ---
 title: "Makefile"
-format:
-    html:
-        code-fold: true
-        code-copy: true
 ---
 
 This is quite note for `Makefile`, explaining how to make a sample `Makefile` that could automate some of the repetitive actions that you carry throught your codes and projects.

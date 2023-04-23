@@ -57,6 +57,7 @@ format:
       light: minty
       dark:  superhero
     code-copy: true
+    code-fold: true
     code-link: true
     css: styles.css
     toc: true 

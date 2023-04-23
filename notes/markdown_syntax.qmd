@@ -1,9 +1,6 @@
 ---
 title: "Markdown Syntax Guide"
-format:
-    html:
-        code-fold: true
-        code-copy: true
+
 ---
 
 This is a guide that's also written in **Markdown**, a *guide* that has some important and useful syntax for markdown if you can't remember it all:
