@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Tony Liang",
     "section": "",
-    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most times of live in Santo Domingo, Dominican Republic. And now residing at Vancouver, Canada.\nSo I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-04-15 23:27:08\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
+    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most times of live in Santo Domingo, Dominican Republic. And now residing at Vancouver, Canada.\nSo I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-04-22 18:20:26\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
   },
   {
     "objectID": "index.html#experience",
@@ -35,6 +35,132 @@
     "text": "This is FIFA 22 post"
   },
   {
+    "objectID": "notes/markdown_syntax.html",
+    "href": "notes/markdown_syntax.html",
+    "title": "Markdown Syntax Guide",
+    "section": "",
+    "text": "This is a guide that’s also written in Markdown, a guide that has some important and useful syntax for markdown if you can’t remember it all:\nBefore starting, I will use md to denote markdown"
+  },
+  {
+    "objectID": "notes/markdown_syntax.html#making-tables",
+    "href": "notes/markdown_syntax.html#making-tables",
+    "title": "Markdown Syntax Guide",
+    "section": "Making tables",
+    "text": "Making tables\nIf you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:\n\n\n\n\n\n\n\n\n\nHeader for column 1\nHeader for column 2\n….\nHeader for column n\n\n\n\n\nThis text is left-aligned\nThis text is center-aligned\nThis one nothing\nThis one is right-aligned\n\n\n1\n2\n3\n4\n\n\n\nNotice above, creating table is easy, simply use:\n\n### First row is always header or column name, and it should be spanned like\n\n| <col_name here> | , use two bars to separate\n\n### Then the next row is to determine how that column's content is to be aligned\n### By Default it is left-aligned\n\n| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered\n\nThis above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter\n\nCenter-aligned:\n\n| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`\n\nRight-aligned:\n\n| -----: |, you need `-` with `:` to the right of the `-`.\n\nThen you can just fill up the table as you like.\nIn summary, the “|-|” is used for indicate the table and “:” is used for indicate the text alignment. If |:-| entered that is a left aligned text column. If |-:| entered that is a right aligned text and if |:-:| entered that is a centre aligned."
+  },
+  {
+    "objectID": "notes/git.html",
+    "href": "notes/git.html",
+    "title": "Git",
+    "section": "",
+    "text": "This page will explain some very frequent usage of Git and solutions for common known issues."
+  },
+  {
+    "objectID": "notes/git.html#usual-workflow",
+    "href": "notes/git.html#usual-workflow",
+    "title": "Git",
+    "section": "Usual Workflow",
+    "text": "Usual Workflow\nEdit your .gitignore frequently, track stuffs that needs version control, but not those are confidential like secrets, credentials. Moreover, keep your files below 100MB each as possible. And you will be doing the following a lot:\n\ngit add . or git add <path_to_dir-or-file>.\n\nThe first one is to add everything to ready for commit, use it carefully, sometimes you don’t want to add everything (as mentioned above)\nIf you need to add dir itself that is another git repo, go to this section\nuse git add -f <file> if you have to add a file mandatorily, usually this is applied in ignore folders, but certain files like README.md within that dir need to be included.\n\ngit commit -m \"any meaningful message within this quotation\", the message is for you to know what have you done in one commit (or checkpoint if you prefer this), like update README.md, looping in a bug, fix later\n\nThe message is then fixed to the file that you committed with like below:  As you can see, the circled red is all messages that’s accompanied by the file modified in that commit particularly.\n\ngit push <branch-name> or git push -u origin <branch-name>.\n\nThe first one is to tell which branch you want to push the commit(s) onto github.\nThe second one is usually done for a first time created branch on local, meaning that’s likely not on the remote yet. So, this essentially tells git, if the <branch-name is not on remote yet, create it on the remote, and set the local branch-name to track this upstream remote branch (meaning everything time you switch into the local branch, by default it tracks the same remote branch on github for pull/fetch/push)"
+  },
+  {
+    "objectID": "notes/git.html#adding-a-git-repo-inside-another-git-repo",
+    "href": "notes/git.html#adding-a-git-repo-inside-another-git-repo",
+    "title": "Git",
+    "section": "Adding a git repo inside another git repo",
+    "text": "Adding a git repo inside another git repo\nSay you have a big repo that contains many other sub-repos, this is called a git submodule, whereas you could have like a following structure:\nBig_repo\n|-------         Sub-repo 1 \n|-------         Sub-repo 2\n|-------         .....\n|-------         Sub-repo n\nThis allows you to version control within each the sub-repo with its own history, and the Big_repo just gives you access to each the repository link of it as shown below:\n\nWhere each of the blue highlighted are a sub-repo, that links to another GitHub repo (that you can actually click on it! :blush:), the xxxxxxx next to the link is the hash of latest commit of that repo.\nTo add submodules, you required the sub-modules to rely within sub-directories of the major repo, and use below:\ngit submodule add <remote-link-of-sub-repo> <local-path-to-the-sub-repo>"
+  },
+  {
+    "objectID": "notes/git.html#changing-ssh-to-https-or-vice-versa",
+    "href": "notes/git.html#changing-ssh-to-https-or-vice-versa",
+    "title": "Git",
+    "section": "Changing SSH to HTTPS or Vice-versa",
+    "text": "Changing SSH to HTTPS or Vice-versa\nIf you want to change from HTTPS to SSH, i.e. you want to see the remote url link not just ssh. Or the other way round, when you are sick of authenticating over and over again using personal access token (PAT). Use the following to config the .gitconfig file:\ngit config --global url.https://.insteadOf git:// + This tells Git to automatically translate any remote beginning with git:// to remote beginning with https://\ngit config --global url.git://.insteadOf https:// + This tells Git to automatically translate any remote beginning with https:// to remote beginning with git://\nTo do sanity check, use to following command to check the .gitconfig file has updated correctly:\ngit config --global --list, this list all options/configurations that you have, and NOTE, this file affects all git repos you have locally on your laptop/computer. And it should like the below:\n\nAnd ,this is the file itself"
+  },
+  {
+    "objectID": "notes/git.html#hub-cli",
+    "href": "notes/git.html#hub-cli",
+    "title": "Git",
+    "section": "Hub CLI",
+    "text": "Hub CLI\nThis hub is a command-line-interface (CLI) made by GitHub, that allows to do almost everything of git and GitHub without leaving the terminal, for example, this allows to create a repo on GitHub, add issues, and many mores.\n\nCreating a repository\nYou might be tired of creating empty repositories on GitHub that need to leave your favorite terminal and use the mouse? Why not just do everything with your terminal :smirk:\nNOTE: For the first time using this, it might asks you for credentials like github username and github password, but actually you need to put in the Personal Access Token(PAT)\nIf you don’t know how to add it, look at here\nFollow these steps: 1. cd into the directory you want to be a git repo 2.hub create -p or hub create + This creates a GitHub repository NOT git (this is done in step 1) + The first one creates the repo as private-only (only you have access) + The second one is standard public repo + Note: it creates an empty repo with no README or .gitignore templates, you might need to add more options to the command above\nAnd it should look like this: \nThe https://... is the actual url to the github repo created, try copy that to your browser, and see what’s in there, then you can just follow the instructions on that website or here"
+  },
+  {
+    "objectID": "notes/git.html#edit-hub-config",
+    "href": "notes/git.html#edit-hub-config",
+    "title": "Git",
+    "section": "Edit hub config",
+    "text": "Edit hub config\nThis teaches you how to edit the hub cli config file, that should live on this path, ~/.config/hub, where ~ assumes to be your $HOME. And the file itself looks like this:\n\nWhere you could find your github username, github PAT (The light blue highlight I have here), and whatever protocol you use (default is https, and apparently it only supports https? You could verify that if you wish to know more)"
+  },
+  {
+    "objectID": "notes/docker.html",
+    "href": "notes/docker.html",
+    "title": "Docker",
+    "section": "",
+    "text": "This page stores some useful commands (with explanation) and things that you might not know about Docker!"
+  },
+  {
+    "objectID": "notes/docker.html#push-local-build-image",
+    "href": "notes/docker.html#push-local-build-image",
+    "title": "Docker",
+    "section": "Push Local Build Image",
+    "text": "Push Local Build Image\nIf you want to push your locally built docker image, use the following steps:\n\nDocker build . -t <name_local_image>\nDocker login # This is required to authenticate first\nDocker tag <name_local_image> <docker_username/repo_name>\nDocker push <docker_username/repo_name>"
+  },
+  {
+    "objectID": "notes/linux.html",
+    "href": "notes/linux.html",
+    "title": "Linux",
+    "section": "",
+    "text": "This page contains useful? or maybe essential tips for Linux usage. Still under development"
+  },
+  {
+    "objectID": "notes/linux.html#change-passwords-for-users",
+    "href": "notes/linux.html#change-passwords-for-users",
+    "title": "Linux",
+    "section": "Change passwords for users",
+    "text": "Change passwords for users\nThe bash passwd command is used to change password for user in the system,altough you need sudo access to do so:\npasswd [username]\nIf no username where provided, it would change the password for the current log-on user."
+  },
+  {
+    "objectID": "notes/linux.html#linux-install-package-guide",
+    "href": "notes/linux.html#linux-install-package-guide",
+    "title": "Linux",
+    "section": "Linux Install Package guide",
+    "text": "Linux Install Package guide\nTo install package in Linux, i.e. *.rpm packages through terminal, use the Alien utility like below:\nFirst copy the *.rpm file to WSL:\ncp /mnt/c/Users/<your_username>/Downloads/<the_package.rpm> ~, where ~ should be the root path or /home/username of the WSL\nthen in your WSL terminal:\napt-get install alien dpkg-dev debhelper build-essential\nNOTE: This above might ask you to use sudo access, simply add sudo before the command: sudo apt-get ... build-essential.\nThen after installing alien, prompt in the following:\nalien <package_name>.rpm\nAnd finally install it:\ndpkg -i package_name.deb\n\nUpgrade packages\nUse the following command to see if there are any package upgradable:\napt list --upgradable\nAnd to update those packages:\napt-get upgrade, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires\n\n\nIssues in installing\nIf your apt-get install <package_name> is failing, check if you have any typo, CASE_SENSITVE, otherwise update your apt by:\nsudo apt update"
+  },
+  {
+    "objectID": "notes/makefile.html",
+    "href": "notes/makefile.html",
+    "title": "Makefile",
+    "section": "",
+    "text": "This is quite note for Makefile, explaining how to make a sample Makefile that could automate some of the repetitive actions that you carry throught your codes and projects.\n\n# A sample Makefile look like this\n\ntarget_name: <any optional dependencies that this target depends on>\n    \n    action_a\n    action_b\n    action_n\n\n# This means that the <target_name> is to be carried and do not rely on other stuffs\n.PHONY: target_name\ntarget_name:\n    action_a\n    action_b\n    action_n\nNOTE: special notation requires when you need to access other variables through $ or evaluating bash expression like $()\nAnd that is you need a second $ like or use the make’s built-in shell: - docker container rm $$(docker ps -aq) -f and NOT docker container rm $(docker ps -aq) -f + So you likely see this when you believe your command is correct but you see an error like: requires at least 1 argument.\n\ndocker container rm $(shell docker ps -aq) -f The reason why this happens is because the single $ is expanded as Makefile variable when the Makefile is parsed. It expands to blank. And the second $ sign causes make to expand $$ to $ which is then the correct usage.\n\nAnd the second usage is to prepend the command at stake with Make’s shell builtin"
+  },
+  {
+    "objectID": "notes/ssh.html",
+    "href": "notes/ssh.html",
+    "title": "SSH",
+    "section": "",
+    "text": "This is cheasheet/quicknote to connect and access remote servers through ssh."
+  },
+  {
+    "objectID": "notes/ssh.html#check-your-existing-key",
+    "href": "notes/ssh.html#check-your-existing-key",
+    "title": "SSH",
+    "section": "Check your existing key",
+    "text": "Check your existing key\nEnter this command in your temrinal:\nls -al ~/.ssh\nThis checks if you have any existing ssh key-pairs, with something like:\n\nid_rsa.pub\nid_ecdsa.pub\nid_ed25519.pub\n\nNote: If you receive an error that ~/.ssh doesn’t exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step."
+  },
+  {
+    "objectID": "notes/ssh.html#add-your-key-to-other-hosts",
+    "href": "notes/ssh.html#add-your-key-to-other-hosts",
+    "title": "SSH",
+    "section": "Add your key to other hosts",
+    "text": "Add your key to other hosts\nTo authenticate with a remote-host using your public SSH key you will use the ssh-copy-id command. Use the -i flag to specify the public key to copy to the remote-host.\nEnter this command in you terminal, replacing <username@host>:\nssh-copy-id -i ~/.ssh/id_rsa.pub <username@host>\nThis command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:\n$(username@host) Enter your password:\nAnd you only need to enter this for the “last” time, after that you could just do ssh username@host without typing password anymore. Moreover, you could also, use the shorthand by replacing to a host alias in a config file under ~/.ssh (See below section) Note: 2 Factor-Authentication (2FA) is not avoidable."
+  },
+  {
+    "objectID": "notes/ssh.html#making-alias-for-your-known-host-servers",
+    "href": "notes/ssh.html#making-alias-for-your-known-host-servers",
+    "title": "SSH",
+    "section": "Making alias for your known host servers",
+    "text": "Making alias for your known host servers\nIf you want to avoid typing out whole host and ip address of your servers, try the following:\n\ncreate a file (if not extists yet) with touch ~.ssh/config\nUse the template below to add the server you like to connect to:\n\n\n# Indentation is required\n\n# Host is the alias shorthand you want to be ugin later like:\n\n# ssc <Host> , i.e. ssh foo\nHost <the-alias-you-want-to-use>\n    # The HostName is some domain like abc.cd.ef.gh, usually like a email link?\n    HostName <this.should.be.domain>\n    # User is the allocated user with permission alonsgside with the HostName\n    User tliang19\n\n# ideally like ssh User@HostName to ssh Host"
+  },
+  {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Projects",
@@ -53,6 +179,6 @@
     "href": "demos/r_demo.html",
     "title": "R Code Demo",
     "section": "",
-    "text": "Here are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn <- 10\nx <- rnorm(n=n)\nprint(mean(x))\n\n\n[1] -0.06165082\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn <- 25\nx1 <- rnorm(n=n, mean=2, sd=3)\nx2 <- rnorm(n=n, mean=3, sd=2)\ny <- 2*x1 + 3*x2\ndata <- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg <- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n  (Intercept)            x1            x2 \n-2.842171e-15  2.000000e+00  3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit <- reg\np <- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
+    "text": "Here are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn <- 10\nx <- rnorm(n=n)\nprint(mean(x))\n\n\n[1] 0.453497\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn <- 25\nx1 <- rnorm(n=n, mean=2, sd=3)\nx2 <- rnorm(n=n, mean=3, sd=2)\ny <- 2*x1 + 3*x2\ndata <- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg <- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n (Intercept)           x1           x2 \n3.092364e-15 2.000000e+00 3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit <- reg\np <- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
   }
 ]

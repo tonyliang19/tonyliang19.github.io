@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tony Liang">
 
-<title>Tony Liang - FIFA22</title>
+<title>Tony Liang - Linux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -152,36 +151,81 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Linux</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/docker.html" class="sidebar-item-text sidebar-link">Docker</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/git.html" class="sidebar-item-text sidebar-link">Git</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/linux.html" class="sidebar-item-text sidebar-link active">Linux</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/makefile.html" class="sidebar-item-text sidebar-link">Makefile</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/markdown_syntax.html" class="sidebar-item-text sidebar-link">Markdown Syntax Guide</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/ssh.html" class="sidebar-item-text sidebar-link">SSH</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#change-passwords-for-users" id="toc-change-passwords-for-users" class="nav-link active" data-scroll-target="#change-passwords-for-users">Change passwords for users</a></li>
+  <li><a href="#linux-install-package-guide" id="toc-linux-install-package-guide" class="nav-link" data-scroll-target="#linux-install-package-guide">Linux Install Package guide</a>
+  <ul class="collapse">
+  <li><a href="#upgrade-packages" id="toc-upgrade-packages" class="nav-link" data-scroll-target="#upgrade-packages">Upgrade packages</a></li>
+  <li><a href="#issues-in-installing" id="toc-issues-in-installing" class="nav-link" data-scroll-target="#issues-in-installing">Issues in installing</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/linux.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FIFA22</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">blog</div>
-    <div class="quarto-category">cat</div>
-  </div>
-  </div>
+<h1 class="title d-none d-lg-block">Linux</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tony Liang </p>
-          </div>
-  </div>
     
   
     
@@ -190,9 +234,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is FIFA 22 post</p>
+<p>This page contains useful? or maybe essential tips for Linux usage. Still under development</p>
+<section id="change-passwords-for-users" class="level2">
+<h2 class="anchored" data-anchor-id="change-passwords-for-users">Change passwords for users</h2>
+<p>The bash <code>passwd</code> command is used to change password for user in the system,altough you need sudo access to do so:</p>
+<p><code>passwd [username]</code></p>
+<p>If no <code>username</code> where provided, it would change the password for the current log-on user.</p>
+</section>
+<section id="linux-install-package-guide" class="level2">
+<h2 class="anchored" data-anchor-id="linux-install-package-guide">Linux Install Package guide</h2>
+<p>To install package in Linux, i.e.&nbsp;<code>*.rpm</code> packages through terminal, use the <code>Alien</code> utility like below:</p>
+<p>First copy the <code>*.rpm</code> file to WSL:</p>
+<p><code>cp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~</code>, where <code>~</code> should be the root path or <code>/home/username</code> of the WSL</p>
+<p>then in your WSL terminal:</p>
+<p><code>apt-get install alien dpkg-dev debhelper build-essential</code></p>
+<p><strong>NOTE</strong>: This above might ask you to use <code>sudo</code> access, simply add sudo before the command: <code>sudo apt-get ... build-essential</code>.</p>
+<p>Then after installing <code>alien</code>, prompt in the following:</p>
+<p><code>alien &lt;package_name&gt;.rpm</code></p>
+<p>And finally install it:</p>
+<p><code>dpkg -i package_name.deb</code></p>
+<section id="upgrade-packages" class="level3">
+<h3 class="anchored" data-anchor-id="upgrade-packages">Upgrade packages</h3>
+<p>Use the following command to see if there are any package upgradable:</p>
+<p><code>apt list --upgradable</code></p>
+<p>And to update those packages:</p>
+<p><code>apt-get upgrade</code>, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires</p>
+</section>
+<section id="issues-in-installing" class="level3">
+<h3 class="anchored" data-anchor-id="issues-in-installing">Issues in installing</h3>
+<p>If your <code>apt-get install &lt;package_name&gt;</code> is failing, check if you have any typo, <code>CASE_SENSITVE</code>, otherwise update your <code>apt</code> by:</p>
+<p><code>sudo apt update</code> <!---
+### Install without sudo privilege
+
+If you're a user with limited access, i.e. you are not sudo user, to instal package requires a series of step like the following to compile the package from source:
+
+1. Check if `$HOME/.profile` exists, and find if you see the following block:
+
+        if [ -d "$HOME/.local/bin" ] ; then
+            PATH="$HOME/.local/bin:$PATH"
+        fi
+
+If it does not exists, add it to the `$HOME/.profile`, where this tells the terminal to add everything within `$HOME/.local/bin` to you path, so it can find the executable and make it available to you, and of course, make sure to create such directory by: `mkdir -p $HOME/.local/bin`
+
+2. Once you created `$HOME/.local/bin`, cd into that directory
+3. Now compile the package you like with:
+
+    apt-get source <PACKAGE>
+    ./configure
+---></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
