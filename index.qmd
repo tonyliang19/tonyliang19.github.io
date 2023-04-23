@@ -1,6 +1,6 @@
 ---
 title: "Tony Liang"
-image: bio_pic.jpg
+image: resources/bio_pic.jpg
 execute:
   echo: false
 format:
