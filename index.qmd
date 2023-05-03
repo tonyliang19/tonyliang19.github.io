@@ -1,8 +1,7 @@
 ---
 title: "Tony Liang"
 image: resources/bio_pic.jpg
-execute:
-  echo: false
+engine: knitr
 format:
   html:
     page-layout: full
@@ -32,6 +31,7 @@ I am originally from Kaiping, China ([here](https://www.google.com/maps/place/Ji
 当然中文也会一点点(这已经是我所有的水平了)。 
 
 Last updated at `r format(Sys.time(), tz = "America/Los_Angeles")`
+
 
 Please dont't hesitate to contact me or just to chat, you could open any of my links above
 
