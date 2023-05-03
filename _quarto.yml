@@ -30,7 +30,7 @@ website:
         text: "{{< iconify fa6-brands linkedin >}}"
       - href: 'https://github.com/tonyliang19'
         text: "{{< iconify fa6-brands github >}}"
-      - href: https://www.instagram.com/tonyliang19/
+      - href: 'https://www.instagram.com/tonyliang19/'
         text: "{{< iconify fa6-brands instagram >}}"
   sidebar:
   # dropdown for demos
@@ -60,10 +60,10 @@ format:
     code-fold: true
     code-link: true
     css: styles.css
-    toc: true 
+    toc: true
     link-external-newwindow: true
     link-external-icon: true
-    
+
 
 #execute:
 #  freeze: auto
