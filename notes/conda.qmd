@@ -7,11 +7,41 @@ This page contains useful commands/tips for conda usage
 ## Frequently used commands
 
 ```bash
-conda remove -n ENV_NAME --all # Deletes the ENV_NAME along with all its packages (This one requiers you to confirm yes)
+# Deletes the ENV_NAME along with all its packages
+# (This one requiers you to confirm yes)
+conda remove -n ENV_NAME --all 
 conda remove -n ENV_NAME --all -y # This one do not ask for confirmation
-
 ```
 
 ```bash
-conda env list # List all environments
+# List all environments
+conda env list
 ```
+
+```bash
+# creates ENV_NAME could use either with -n or --name
+conda create -n | --name -y ENV_NAME 
+```
+
+## Combine usage with JupyterLab
+
+JupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels:
+- ipykernel 
+- iRkernel
+
+It is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having `nb_conda_kernels` in the environment that you launch Jupyter Notebook or JupyterLab.
+
+For example, this is how I use it:
+
+1. Install `nb_conda_kernels` in the conda environment that has `jupyter lab`, in my case, I use the `base` env.
+2. Create new conda envs for the projects that I do: 
+  - `conda create -n -y python_proj ipyerkernel` For Python
+  - `conda craete -n -y r_proj r-irkernel` For R
+3. Launch `jupyter lab` from `base` (by staying at `base` env), then when it launches you will be able to see the following:
+![](../resources/conda/jupyter_conda_env.png)
+4. Lastly, just choose the environment you are going to use
+
+If you want to install packages to specified environments, do the following:
+
+1. `conda activate ENV_NAME` , replace `ENV_NAME` of the one you like to deal and mess around with
+2. `conda install -y PKG_NAME` or `pip install PKG_NAME`, install the packages you need depending on where they are supported (**NOTE**: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend [Docker](docker.qmd) or renv.
