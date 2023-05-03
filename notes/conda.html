@@ -259,6 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link active" data-scroll-target="#frequently-used-commands">Frequently used commands</a></li>
+  <li><a href="#combine-usage-with-jupyterlab" id="toc-combine-usage-with-jupyterlab" class="nav-link" data-scroll-target="#combine-usage-with-jupyterlab">Combine usage with JupyterLab</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/conda.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -285,9 +286,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This page contains useful commands/tips for conda usage</p>
 <section id="frequently-used-commands" class="level2">
 <h2 class="anchored" data-anchor-id="frequently-used-commands">Frequently used commands</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> <span class="co"># Deletes the ENV_NAME along with all its packages (This one requiers you to confirm yes)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> <span class="at">-y</span> <span class="co"># This one do not ask for confirmation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env list <span class="co"># List all environments</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Deletes the ENV_NAME along with all its packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (This one requiers you to confirm yes)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> <span class="at">-y</span> <span class="co"># This one do not ask for confirmation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List all environments</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creates ENV_NAME could use either with -n or --name</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="kw">|</span> <span class="ex">--name</span> <span class="at">-y</span> ENV_NAME </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="combine-usage-with-jupyterlab" class="level2">
+<h2 class="anchored" data-anchor-id="combine-usage-with-jupyterlab">Combine usage with JupyterLab</h2>
+<p>JupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels: - ipykernel - iRkernel</p>
+<p>It is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having <code>nb_conda_kernels</code> in the environment that you launch Jupyter Notebook or JupyterLab.</p>
+<p>For example, this is how I use it:</p>
+<ol type="1">
+<li>Install <code>nb_conda_kernels</code> in the conda environment that has <code>jupyter lab</code>, in my case, I use the <code>base</code> env.</li>
+<li>Create new conda envs for the projects that I do:</li>
+</ol>
+<ul>
+<li><code>conda create -n -y python_proj ipyerkernel</code> For Python</li>
+<li><code>conda craete -n -y r_proj r-irkernel</code> For R</li>
+</ul>
+<ol start="3" type="1">
+<li>Launch <code>jupyter lab</code> from <code>base</code> (by staying at <code>base</code> env), then when it launches you will be able to see the following: <img src="../resources/conda/jupyter_conda_env.png" class="img-fluid"></li>
+<li>Lastly, just choose the environment you are going to use</li>
+</ol>
+<p>If you want to install packages to specified environments, do the following:</p>
+<ol type="1">
+<li><code>conda activate ENV_NAME</code> , replace <code>ENV_NAME</code> of the one you like to deal and mess around with</li>
+<li><code>conda install -y PKG_NAME</code> or <code>pip install PKG_NAME</code>, install the packages you need depending on where they are supported (<strong>NOTE</strong>: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend <a href="../notes/docker.html">Docker</a> or renv.</li>
+</ol>
 
 
 </section>
