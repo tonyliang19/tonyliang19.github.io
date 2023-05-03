@@ -1,0 +1,12 @@
+---
+title: "Conda"
+---
+
+This page contains useful commands/tips for conda usage
+
+## Frequently used commands
+
+`conda remove -n ENV_NAME --all`
+
+This command removes a certain ENV_NAME in your local, whereas you need to also prompt `-y` after prompting above command to confirm the removal.
+
