@@ -7,7 +7,9 @@ This page contains useful commands/tips for conda usage
 ## Frequently used commands
 
 ```bash
-conda remove -n ENV_NAME --all # Deletes the ENV_NAME along with all its packages
+conda remove -n ENV_NAME --all # Deletes the ENV_NAME along with all its packages (This one requiers you to confirm yes)
+conda remove -n ENV_NAME --all -y # This one do not ask for confirmation
+
 ```
 
 ```bash
