@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Tony Liang",
-    "section": "",
-    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at r format(Sys.time(), tz = \"America/Los_Angeles\")\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Tony Liang",
-    "section": "Experience",
-    "text": "Experience\n\nMachine Learning Developer, Sep 2022 - Present\nCentre of Heart Lung Innovation, St Paul’s Hospital, Vancouver, CA\nUndergraduate Teaching Assistant, Sep 2022 - Present\nDepartment of Statistics, University of British Columbia, Vancouver, CA\nComputational Entomology Research Assistant, May 2022 - Sep 2022\nDepartment of Land Food and Systems, University of British Columbia, Vancouver, CA"
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "Tony Liang",
-    "section": "Interests",
-    "text": "Interests\n\nBioinformatics\nMulti-omics\nReproducibile Workflows\nData Analysis\nMachine Learning\nMathematical Science"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Tony Liang",
-    "section": "Education",
-    "text": "Education\n\n B.Sc. in Mathematics and Statistics and Minor in Data Science, Sep 2020 - Nov 2023\nUniversity of British Columbia, Vancouver, CA"
-  },
-  {
     "objectID": "projects/fifa22.html",
     "href": "projects/fifa22.html",
     "title": "FIFA22",
@@ -35,18 +7,53 @@
     "text": "This is FIFA 22 post"
   },
   {
-    "objectID": "notes/markdown_syntax.html",
-    "href": "notes/markdown_syntax.html",
-    "title": "Markdown Syntax Guide",
+    "objectID": "demos/python_demo.html",
+    "href": "demos/python_demo.html",
+    "title": "Python Code Demo",
     "section": "",
-    "text": "This is a guide that’s also written in Markdown, a guide that has some important and useful syntax for markdown if you can’t remember it all:\nBefore starting, I will use md to denote markdown"
+    "text": "Placeholder file to test out python functionality with Quarto"
   },
   {
-    "objectID": "notes/markdown_syntax.html#making-tables",
-    "href": "notes/markdown_syntax.html#making-tables",
-    "title": "Markdown Syntax Guide",
-    "section": "Making tables",
-    "text": "Making tables\nIf you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:\n\n\n\n\n\n\n\n\n\nHeader for column 1\nHeader for column 2\n….\nHeader for column n\n\n\n\n\nThis text is left-aligned\nThis text is center-aligned\nThis one nothing\nThis one is right-aligned\n\n\n1\n2\n3\n4\n\n\n\nNotice above, creating table is easy, simply use:\n\n### First row is always header or column name, and it should be spanned like\n\n| &lt;col_name here&gt; | , use two bars to separate\n\n### Then the next row is to determine how that column's content is to be aligned\n### By Default it is left-aligned\n\n| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered\n\nThis above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter\n\nCenter-aligned:\n\n| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`\n\nRight-aligned:\n\n| -----: |, you need `-` with `:` to the right of the `-`.\n\nThen you can just fill up the table as you like.\nIn summary, the “|-|” is used for indicate the table and “:” is used for indicate the text alignment. If |:-| entered that is a left aligned text column. If |-:| entered that is a right aligned text and if |:-:| entered that is a centre aligned."
+    "objectID": "demos/r_demo.html",
+    "href": "demos/r_demo.html",
+    "title": "R Code Demo",
+    "section": "",
+    "text": "Here are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] 0.1189517\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n(Intercept)          x1          x2 \n 2.4869e-15  2.0000e+00  3.0000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
+  },
+  {
+    "objectID": "notes/makefile.html",
+    "href": "notes/makefile.html",
+    "title": "Makefile",
+    "section": "",
+    "text": "This is quite note for Makefile, explaining how to make a sample Makefile that could automate some of the repetitive actions that you carry throught your codes and projects.\n\n# A sample Makefile look like this\n\ntarget_name: &lt;any optional dependencies that this target depends on&gt;\n    \n    action_a\n    action_b\n    action_n\n\n# This means that the &lt;target_name&gt; is to be carried and do not rely on other stuffs\n.PHONY: target_name\ntarget_name:\n    action_a\n    action_b\n    action_n\nNOTE: special notation requires when you need to access other variables through $ or evaluating bash expression like $()\nAnd that is you need a second $ like or use the make’s built-in shell: - docker container rm $$(docker ps -aq) -f and NOT docker container rm $(docker ps -aq) -f + So you likely see this when you believe your command is correct but you see an error like: requires at least 1 argument.\n\ndocker container rm $(shell docker ps -aq) -f The reason why this happens is because the single $ is expanded as Makefile variable when the Makefile is parsed. It expands to blank. And the second $ sign causes make to expand $$ to $ which is then the correct usage.\n\nAnd the second usage is to prepend the command at stake with Make’s shell builtin"
+  },
+  {
+    "objectID": "notes/docker.html",
+    "href": "notes/docker.html",
+    "title": "Docker",
+    "section": "",
+    "text": "This page stores some useful commands (with explanation) and things that you might not know about Docker!"
+  },
+  {
+    "objectID": "notes/docker.html#push-local-build-image",
+    "href": "notes/docker.html#push-local-build-image",
+    "title": "Docker",
+    "section": "Push Local Build Image",
+    "text": "Push Local Build Image\nIf you want to push your locally built docker image, use the following steps:\n\nDocker build . -t &lt;name_local_image&gt;\nDocker login # This is required to authenticate first\nDocker tag &lt;name_local_image&gt; &lt;docker_username/repo_name&gt;\nDocker push &lt;docker_username/repo_name&gt;"
+  },
+  {
+    "objectID": "notes/conda.html",
+    "href": "notes/conda.html",
+    "title": "Conda",
+    "section": "",
+    "text": "This page contains useful commands/tips for conda usage"
+  },
+  {
+    "objectID": "notes/conda.html#frequently-used-commands",
+    "href": "notes/conda.html#frequently-used-commands",
+    "title": "Conda",
+    "section": "Frequently used commands",
+    "text": "Frequently used commands\nconda remove -n ENV_NAME --all # Deletes the ENV_NAME along with all its packages (This one requiers you to confirm yes)\nconda remove -n ENV_NAME --all -y # This one do not ask for confirmation\nconda env list # List all environments"
   },
   {
     "objectID": "notes/git.html",
@@ -91,46 +98,18 @@
     "text": "Edit hub config\nThis teaches you how to edit the hub cli config file, that should live on this path, ~/.config/hub, where ~ assumes to be your $HOME. And the file itself looks like this:\n\nWhere you could find your github username, github PAT (The light blue highlight I have here), and whatever protocol you use (default is https, and apparently it only supports https? You could verify that if you wish to know more)"
   },
   {
-    "objectID": "notes/docker.html",
-    "href": "notes/docker.html",
-    "title": "Docker",
+    "objectID": "notes/markdown_syntax.html",
+    "href": "notes/markdown_syntax.html",
+    "title": "Markdown Syntax Guide",
     "section": "",
-    "text": "This page stores some useful commands (with explanation) and things that you might not know about Docker!"
+    "text": "This is a guide that’s also written in Markdown, a guide that has some important and useful syntax for markdown if you can’t remember it all:\nBefore starting, I will use md to denote markdown"
   },
   {
-    "objectID": "notes/docker.html#push-local-build-image",
-    "href": "notes/docker.html#push-local-build-image",
-    "title": "Docker",
-    "section": "Push Local Build Image",
-    "text": "Push Local Build Image\nIf you want to push your locally built docker image, use the following steps:\n\nDocker build . -t &lt;name_local_image&gt;\nDocker login # This is required to authenticate first\nDocker tag &lt;name_local_image&gt; &lt;docker_username/repo_name&gt;\nDocker push &lt;docker_username/repo_name&gt;"
-  },
-  {
-    "objectID": "notes/linux.html",
-    "href": "notes/linux.html",
-    "title": "Linux",
-    "section": "",
-    "text": "This page contains useful? or maybe essential tips for Linux usage. Still under development"
-  },
-  {
-    "objectID": "notes/linux.html#change-passwords-for-users",
-    "href": "notes/linux.html#change-passwords-for-users",
-    "title": "Linux",
-    "section": "Change passwords for users",
-    "text": "Change passwords for users\nThe bash passwd command is used to change password for user in the system,altough you need sudo access to do so:\npasswd [username]\nIf no username where provided, it would change the password for the current log-on user."
-  },
-  {
-    "objectID": "notes/linux.html#linux-install-package-guide",
-    "href": "notes/linux.html#linux-install-package-guide",
-    "title": "Linux",
-    "section": "Linux Install Package guide",
-    "text": "Linux Install Package guide\nTo install package in Linux, i.e. *.rpm packages through terminal, use the Alien utility like below:\nFirst copy the *.rpm file to WSL:\ncp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~, where ~ should be the root path or /home/username of the WSL\nthen in your WSL terminal:\napt-get install alien dpkg-dev debhelper build-essential\nNOTE: This above might ask you to use sudo access, simply add sudo before the command: sudo apt-get ... build-essential.\nThen after installing alien, prompt in the following:\nalien &lt;package_name&gt;.rpm\nAnd finally install it:\ndpkg -i package_name.deb\n\nUpgrade packages\nUse the following command to see if there are any package upgradable:\napt list --upgradable\nAnd to update those packages:\napt-get upgrade, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires\n\n\nIssues in installing\nIf your apt-get install &lt;package_name&gt; is failing, check if you have any typo, CASE_SENSITVE, otherwise update your apt by:\nsudo apt update"
-  },
-  {
-    "objectID": "notes/makefile.html",
-    "href": "notes/makefile.html",
-    "title": "Makefile",
-    "section": "",
-    "text": "This is quite note for Makefile, explaining how to make a sample Makefile that could automate some of the repetitive actions that you carry throught your codes and projects.\n\n# A sample Makefile look like this\n\ntarget_name: &lt;any optional dependencies that this target depends on&gt;\n    \n    action_a\n    action_b\n    action_n\n\n# This means that the &lt;target_name&gt; is to be carried and do not rely on other stuffs\n.PHONY: target_name\ntarget_name:\n    action_a\n    action_b\n    action_n\nNOTE: special notation requires when you need to access other variables through $ or evaluating bash expression like $()\nAnd that is you need a second $ like or use the make’s built-in shell: - docker container rm $$(docker ps -aq) -f and NOT docker container rm $(docker ps -aq) -f + So you likely see this when you believe your command is correct but you see an error like: requires at least 1 argument.\n\ndocker container rm $(shell docker ps -aq) -f The reason why this happens is because the single $ is expanded as Makefile variable when the Makefile is parsed. It expands to blank. And the second $ sign causes make to expand $$ to $ which is then the correct usage.\n\nAnd the second usage is to prepend the command at stake with Make’s shell builtin"
+    "objectID": "notes/markdown_syntax.html#making-tables",
+    "href": "notes/markdown_syntax.html#making-tables",
+    "title": "Markdown Syntax Guide",
+    "section": "Making tables",
+    "text": "Making tables\nIf you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:\n\n\n\n\n\n\n\n\n\nHeader for column 1\nHeader for column 2\n….\nHeader for column n\n\n\n\n\nThis text is left-aligned\nThis text is center-aligned\nThis one nothing\nThis one is right-aligned\n\n\n1\n2\n3\n4\n\n\n\nNotice above, creating table is easy, simply use:\n\n### First row is always header or column name, and it should be spanned like\n\n| &lt;col_name here&gt; | , use two bars to separate\n\n### Then the next row is to determine how that column's content is to be aligned\n### By Default it is left-aligned\n\n| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered\n\nThis above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter\n\nCenter-aligned:\n\n| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`\n\nRight-aligned:\n\n| -----: |, you need `-` with `:` to the right of the `-`.\n\nThen you can just fill up the table as you like.\nIn summary, the “|-|” is used for indicate the table and “:” is used for indicate the text alignment. If |:-| entered that is a left aligned text column. If |-:| entered that is a right aligned text and if |:-:| entered that is a centre aligned."
   },
   {
     "objectID": "notes/ssh.html",
@@ -161,24 +140,59 @@
     "text": "Making alias for your known host servers\nIf you want to avoid typing out whole host and ip address of your servers, try the following:\n\ncreate a file (if not extists yet) with touch ~.ssh/config\nUse the template below to add the server you like to connect to:\n\n\n# Indentation is required\n\n# Host is the alias shorthand you want to be ugin later like:\n\n# ssc &lt;Host&gt; , i.e. ssh foo\nHost &lt;the-alias-you-want-to-use&gt;\n    # The HostName is some domain like abc.cd.ef.gh, usually like a email link?\n    HostName &lt;this.should.be.domain&gt;\n    # User is the allocated user with permission alonsgside with the HostName\n    User tliang19\n\n# ideally like ssh User@HostName to ssh Host"
   },
   {
+    "objectID": "notes/linux.html",
+    "href": "notes/linux.html",
+    "title": "Linux",
+    "section": "",
+    "text": "This page contains useful? or maybe essential tips for Linux usage. Still under development"
+  },
+  {
+    "objectID": "notes/linux.html#change-passwords-for-users",
+    "href": "notes/linux.html#change-passwords-for-users",
+    "title": "Linux",
+    "section": "Change passwords for users",
+    "text": "Change passwords for users\nThe bash passwd command is used to change password for user in the system,altough you need sudo access to do so:\npasswd [username]\nIf no username where provided, it would change the password for the current log-on user."
+  },
+  {
+    "objectID": "notes/linux.html#linux-install-package-guide",
+    "href": "notes/linux.html#linux-install-package-guide",
+    "title": "Linux",
+    "section": "Linux Install Package guide",
+    "text": "Linux Install Package guide\nTo install package in Linux, i.e. *.rpm packages through terminal, use the Alien utility like below:\nFirst copy the *.rpm file to WSL:\ncp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~, where ~ should be the root path or /home/username of the WSL\nthen in your WSL terminal:\napt-get install alien dpkg-dev debhelper build-essential\nNOTE: This above might ask you to use sudo access, simply add sudo before the command: sudo apt-get ... build-essential.\nThen after installing alien, prompt in the following:\nalien &lt;package_name&gt;.rpm\nAnd finally install it:\ndpkg -i package_name.deb\n\nUpgrade packages\nUse the following command to see if there are any package upgradable:\napt list --upgradable\nAnd to update those packages:\napt-get upgrade, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires\n\n\nIssues in installing\nIf your apt-get install &lt;package_name&gt; is failing, check if you have any typo, CASE_SENSITVE, otherwise update your apt by:\nsudo apt update"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tony Liang",
+    "section": "",
+    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at r format(Sys.time(), tz = \"America/Los_Angeles\")\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Tony Liang",
+    "section": "Experience",
+    "text": "Experience\n\nMachine Learning Developer, Sep 2022 - Present\nCentre of Heart Lung Innovation, St Paul’s Hospital, Vancouver, CA\nUndergraduate Teaching Assistant, Sep 2022 - Present\nDepartment of Statistics, University of British Columbia, Vancouver, CA\nComputational Entomology Research Assistant, May 2022 - Sep 2022\nDepartment of Land Food and Systems, University of British Columbia, Vancouver, CA"
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Tony Liang",
+    "section": "Interests",
+    "text": "Interests\n\nBioinformatics\nMulti-omics\nReproducibile Workflows\nData Analysis\nMachine Learning\nMathematical Science"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Tony Liang",
+    "section": "Education",
+    "text": "Education\n\n B.Sc. in Mathematics and Statistics and Minor in Data Science, Sep 2020 - Nov 2023\nUniversity of British Columbia, Vancouver, CA"
+  },
+  {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Projects",
     "section": "",
     "text": "Hello, this a is a page to host a list of projects that I have done work/academic/personal. Feel free to open their source repos.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nFIFA22\n\n\n\n\n\n\n\n\n\n\n\n\nTony Liang\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "demos/python_demo.html",
-    "href": "demos/python_demo.html",
-    "title": "Python Code Demo",
-    "section": "",
-    "text": "Placeholder file to test out python functionality with Quarto"
-  },
-  {
-    "objectID": "demos/r_demo.html",
-    "href": "demos/r_demo.html",
-    "title": "R Code Demo",
-    "section": "",
-    "text": "Here are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] -0.02333597\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n (Intercept)           x1           x2 \n5.684342e-15 2.000000e+00 3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
   }
 ]
