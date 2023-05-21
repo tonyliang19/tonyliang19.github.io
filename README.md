@@ -11,3 +11,4 @@ Possible updates for the website:
 - [ ] Add this to R plot [here](https://stackoverflow.com/questions/7144118/how-to-save-a-plot-as-image-on-the-disk)
 - [ ] Add this to R to automate scrap library used [here](https://tilburgsciencehub.com/building-blocks/automate-and-execute-your-work/automate-your-workflow/auto-install-r-packages/)
 - [ ] Add this to bash/make for auto completion of available make targets [here](https://stackoverflow.com/questions/4188324/bash-completion-of-makefile-target)
+- [ ] Add this to conda to show env prefix short/long on remote places [here](https://stackoverflow.com/questions/60122569/how-to-revert-back-to-default-behavior-of-env-prompt-parameter-in-condarc)
