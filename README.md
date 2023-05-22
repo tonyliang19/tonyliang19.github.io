@@ -14,3 +14,4 @@ Possible updates for the website:
 - [ ] Add this to conda to show env prefix short/long on remote places [here](https://stackoverflow.com/questions/60122569/how-to-revert-back-to-default-behavior-of-env-prompt-parameter-in-condarc)
 - [ ] Add this to Makefile/conda , it involves usage of conda and make intersected [here](https://stackoverflow.com/questions/53382383/makefile-cant-use-conda-activate)
 - [ ] Add this to Git Bash for using more sdk, package manager of linux env in Windows [here](https://stackoverflow.com/questions/32712133/package-management-in-git-for-windows-git-bash)
+- [ ] Add this to bash for checking if command is available [here](https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script)
