@@ -1,0 +1,11 @@
+---
+title: "Shell"
+---
+
+This is quick note for `shell` commands.
+
+To show size of a directory:
+
+`du -sh <path_of_dir>`
+
+
