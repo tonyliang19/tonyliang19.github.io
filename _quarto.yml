@@ -51,9 +51,6 @@ website:
     border: true
     right: "© 2023, Tony Liang"
 
-engine: knitr
-execute: 
-  eval: false
 
 format:
   html:
@@ -69,6 +66,8 @@ format:
     code-tools: true
     css: styles.css
     fontsize: 1.2em # change size for text here
+    # change highlight of code
+    highlight-style: github
     link-external-newwindow: true
     link-external-icon: true
     toc: true
