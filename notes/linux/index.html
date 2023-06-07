@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tony Liang - Markdown Syntax Guide</title>
+<title>Tony Liang - Linux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,58 +20,23 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -88,7 +53,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -98,7 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Tony Liang</span>
     </a>
   </div>
@@ -108,15 +73,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project.html" rel="" target="">
+    <a class="nav-link" href="../../project.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume/index.html" rel="" target="">
+    <a class="nav-link" href="../../resume/index.html" rel="" target="">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -125,51 +90,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-demos">    
         <li>
-    <a class="dropdown-item" href="../demos/python_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/python_demo.html" rel="" target="">
  <span class="dropdown-text">Python Code Demo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../demos/r_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/r_demo.html" rel="" target="">
  <span class="dropdown-text">R Code Demo</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-quick-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Quick Notes</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Notes</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-quick-notes">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
         <li>
-    <a class="dropdown-item" href="../notes/conda.html" rel="" target="">
- <span class="dropdown-text">Conda</span></a>
+    <a class="dropdown-item" href="../../notes/ssh/index.html" rel="" target="">
+ <span class="dropdown-text">SSH</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/docker.html" rel="" target="">
- <span class="dropdown-text">Docker</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/git.html" rel="" target="">
- <span class="dropdown-text">Git</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/linux.html" rel="" target="">
- <span class="dropdown-text">Linux</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/makefile.html" rel="" target="">
- <span class="dropdown-text">Makefile</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/markdown_syntax.html" rel="" target="">
+    <a class="dropdown-item" href="../../notes/markdown/index.html" rel="" target="">
  <span class="dropdown-text">Markdown Syntax Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/shell.html" rel="" target="">
- <span class="dropdown-text">Shell</span></a>
+    <a class="dropdown-item" href="../../notes/conda/index.html" rel="" target="">
+ <span class="dropdown-text">Conda</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/ssh.html" rel="" target="">
- <span class="dropdown-text">SSH</span></a>
+    <a class="dropdown-item" href="../../notes/git/index.html" rel="" target="">
+ <span class="dropdown-text">Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/make/index.html" rel="" target="">
+ <span class="dropdown-text">Makefile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/linux/index.html" rel="" target="">
+ <span class="dropdown-text">Linux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/docker/index.html" rel="" target="">
+ <span class="dropdown-text">Docker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/shell/index.html" rel="" target="">
+ <span class="dropdown-text">Shell</span></a>
   </li>  
     </ul>
   </li>
@@ -199,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/markdown_syntax.html">Markdown Syntax Guide</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/linux/index.html">Linux</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -213,50 +178,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/conda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conda</span></a>
+  <a href="../../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSH</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Docker</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/linux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linux</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/makefile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Makefile</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/markdown_syntax.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Markdown Syntax Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/shell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell</span></a>
+  <a href="../../notes/conda/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conda</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/ssh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SSH</span></a>
+  <a href="../../notes/git/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/make/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Makefile</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/linux/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Linux</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/docker/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/shell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shell</span></a>
   </div>
 </li>
     </ul>
@@ -269,16 +234,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#making-tables" id="toc-making-tables" class="nav-link active" data-scroll-target="#making-tables">Making tables</a></li>
+  <li><a href="#change-passwords-for-users" id="toc-change-passwords-for-users" class="nav-link active" data-scroll-target="#change-passwords-for-users">Change passwords for users</a></li>
+  <li><a href="#linux-install-package-guide" id="toc-linux-install-package-guide" class="nav-link" data-scroll-target="#linux-install-package-guide">Linux Install Package guide</a>
+  <ul class="collapse">
+  <li><a href="#upgrade-packages" id="toc-upgrade-packages" class="nav-link" data-scroll-target="#upgrade-packages">Upgrade packages</a></li>
+  <li><a href="#issues-in-installing" id="toc-issues-in-installing" class="nav-link" data-scroll-target="#issues-in-installing">Issues in installing</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/markdown_syntax.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/linux/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Markdown Syntax Guide</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Linux</h1>
 </div>
 
 
@@ -293,76 +263,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This is a guide that’s also written in <strong>Markdown</strong>, a <em>guide</em> that has some important and useful syntax for markdown if you can’t remember it all:</p>
-<ul>
-<li>Referencing to other <a href="../index.html">link</a></li>
-<li>Creating sub list like this:
-<ul>
-<li><strong>Sub level</strong></li>
-</ul></li>
-<li>And many more</li>
-</ul>
-<p>Before starting, I will use md to denote <code>markdown</code></p>
-<section id="making-tables" class="level2">
-<h2 class="anchored" data-anchor-id="making-tables">Making tables</h2>
-<p>If you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:</p>
-<table class="table">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 31%">
-<col style="width: 6%">
-<col style="width: 31%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Header for column 1</th>
-<th style="text-align: center;">Header for column 2</th>
-<th>….</th>
-<th style="text-align: right;">Header for column n</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">This text is left-aligned</td>
-<td style="text-align: center;">This text is center-aligned</td>
-<td>This one nothing</td>
-<td style="text-align: right;">This one is right-aligned</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1</td>
-<td style="text-align: center;">2</td>
-<td>3</td>
-<td style="text-align: right;">4</td>
-</tr>
-</tbody>
-</table>
-<p>Notice above, creating table is easy, simply use:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">### First row is always header or column name, and it should be spanned like</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| <span class="kw">&lt;col_name</span> <span class="er">here</span><span class="kw">&gt;</span> | , use two bars to separate</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### Then the next row is to determine how that column's content is to be aligned</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### By Default it is left-aligned</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Center-aligned:</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>| :----: | , you need <span class="in">`-`</span> wrap in two <span class="in">`:`</span>. one left and one right just like <span class="in">`:-:`</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Right-aligned:</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>| -----: |, you need <span class="in">`-`</span> with <span class="in">`:`</span> to the right of the <span class="in">`-`</span>.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Then you can just fill up the table as you like.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>In summary, the <strong>“|-|”</strong> is used for indicate the table and <strong>“:”</strong> is used for indicate the text alignment. If <strong>|:-|</strong> entered that is a left aligned text column. If <strong>|-:|</strong> entered that is a right aligned text and if <strong>|:-:|</strong> entered that is a centre aligned.</p>
+<p>This page contains useful? or maybe essential tips for Linux usage. Still under development</p>
+<section id="change-passwords-for-users" class="level2">
+<h2 class="anchored" data-anchor-id="change-passwords-for-users">Change passwords for users</h2>
+<p>The bash <code>passwd</code> command is used to change password for user in the system,altough you need sudo access to do so:</p>
+<p><code>passwd [username]</code></p>
+<p>If no <code>username</code> where provided, it would change the password for the current log-on user.</p>
+</section>
+<section id="linux-install-package-guide" class="level2">
+<h2 class="anchored" data-anchor-id="linux-install-package-guide">Linux Install Package guide</h2>
+<p>To install package in Linux, i.e.&nbsp;<code>*.rpm</code> packages through terminal, use the <code>Alien</code> utility like below:</p>
+<p>First copy the <code>*.rpm</code> file to WSL:</p>
+<p><code>cp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~</code>, where <code>~</code> should be the root path or <code>/home/username</code> of the WSL</p>
+<p>then in your WSL terminal:</p>
+<p><code>apt-get install alien dpkg-dev debhelper build-essential</code></p>
+<p><strong>NOTE</strong>: This above might ask you to use <code>sudo</code> access, simply add sudo before the command: <code>sudo apt-get ... build-essential</code>.</p>
+<p>Then after installing <code>alien</code>, prompt in the following:</p>
+<p><code>alien &lt;package_name&gt;.rpm</code></p>
+<p>And finally install it:</p>
+<p><code>dpkg -i package_name.deb</code></p>
+<section id="upgrade-packages" class="level3">
+<h3 class="anchored" data-anchor-id="upgrade-packages">Upgrade packages</h3>
+<p>Use the following command to see if there are any package upgradable:</p>
+<p><code>apt list --upgradable</code></p>
+<p>And to update those packages:</p>
+<p><code>apt-get upgrade</code>, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires</p>
+</section>
+<section id="issues-in-installing" class="level3">
+<h3 class="anchored" data-anchor-id="issues-in-installing">Issues in installing</h3>
+<p>If your <code>apt-get install &lt;package_name&gt;</code> is failing, check if you have any typo, <code>CASE_SENSITVE</code>, otherwise update your <code>apt</code> by:</p>
+<p><code>sudo apt update</code> <!---
+### Install without sudo privilege
+
+If you're a user with limited access, i.e. you are not sudo user, to instal package requires a series of step like the following to compile the package from source:
+
+1. Check if `$HOME/.profile` exists, and find if you see the following block:
+
+        if [ -d "$HOME/.local/bin" ] ; then
+            PATH="$HOME/.local/bin:$PATH"
+        fi
+
+If it does not exists, add it to the `$HOME/.profile`, where this tells the terminal to add everything within `$HOME/.local/bin` to you path, so it can find the executable and make it available to you, and of course, make sure to create such directory by: `mkdir -p $HOME/.local/bin`
+
+2. Once you created `$HOME/.local/bin`, cd into that directory
+3. Now compile the package you like with:
+
+    apt-get source <PACKAGE>
+    ./configure
+---></p>
 
 
-<!-- -->
-
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -560,57 +511,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -780,60 +680,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Markdown Syntax Guide"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>This is a guide that's also written in **Markdown**, a *guide* that has some important and useful syntax for markdown if you can't remember it all:</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Referencing to other <span class="co">[</span><span class="ot">link</span><span class="co">](../index.qmd)</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Creating sub list like this:</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>**Sub level**</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>And many more</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Before starting, I will use md to denote <span class="in">`markdown`</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Making tables</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>If you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>| Header for column 1 | Header for column 2 | .... | Header for column n |</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>| :-------------------| :------------------:| ---- | -------------------:|</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>| This text is left-aligned | This text is center-aligned| This one nothing | This one is right-aligned |</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>| 1 | 2 | 3| 4|</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>Notice above, creating table is easy, simply use:</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="in">```markdown</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### First row is always header or column name, and it should be spanned like</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>| <span class="kw">&lt;col_name</span> <span class="er">here</span><span class="kw">&gt;</span> | , use two bars to separate</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="fu">### Then the next row is to determine how that column's content is to be aligned</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### By Default it is left-aligned</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>This above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>Center-aligned:</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>| :----: | , you need <span class="in">`-`</span> wrap in two <span class="in">`:`</span>. one left and one right just like <span class="in">`:-:`</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>Right-aligned:</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>| -----: |, you need <span class="in">`-`</span> with <span class="in">`:`</span> to the right of the <span class="in">`-`</span>.</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>Then you can just fill up the table as you like.</span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>In summary, the **"|-|"** is used for indicate the table and **":"** is used for indicate the text alignment. If **|:-|** entered that is a left aligned text column. If **|-:|** entered that is a right aligned text and if **|:-:|** entered that is a centre aligned.</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -4,5 +4,18 @@
     "items": [
       "/projects/fifa22.html"
     ]
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/conda/index.html",
+      "/notes/docker/index.html",
+      "/notes/git/index.html",
+      "/notes/linux/index.html",
+      "/notes/make/index.html",
+      "/notes/markdown/index.html",
+      "/notes/ssh/index.html",
+      "/notes/shell/index.html"
+    ]
   }
 ]

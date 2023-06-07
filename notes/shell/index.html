@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tony Liang - SSH</title>
+<title>Tony Liang - Shell</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,21 +57,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -88,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -98,7 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Tony Liang</span>
     </a>
   </div>
@@ -108,15 +107,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project.html" rel="" target="">
+    <a class="nav-link" href="../../project.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume/index.html" rel="" target="">
+    <a class="nav-link" href="../../resume/index.html" rel="" target="">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -125,51 +124,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-demos">    
         <li>
-    <a class="dropdown-item" href="../demos/python_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/python_demo.html" rel="" target="">
  <span class="dropdown-text">Python Code Demo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../demos/r_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/r_demo.html" rel="" target="">
  <span class="dropdown-text">R Code Demo</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-quick-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Quick Notes</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Notes</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-quick-notes">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
         <li>
-    <a class="dropdown-item" href="../notes/conda.html" rel="" target="">
- <span class="dropdown-text">Conda</span></a>
+    <a class="dropdown-item" href="../../notes/ssh/index.html" rel="" target="">
+ <span class="dropdown-text">SSH</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/docker.html" rel="" target="">
- <span class="dropdown-text">Docker</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/git.html" rel="" target="">
- <span class="dropdown-text">Git</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/linux.html" rel="" target="">
- <span class="dropdown-text">Linux</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/makefile.html" rel="" target="">
- <span class="dropdown-text">Makefile</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/markdown_syntax.html" rel="" target="">
+    <a class="dropdown-item" href="../../notes/markdown/index.html" rel="" target="">
  <span class="dropdown-text">Markdown Syntax Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/shell.html" rel="" target="">
- <span class="dropdown-text">Shell</span></a>
+    <a class="dropdown-item" href="../../notes/conda/index.html" rel="" target="">
+ <span class="dropdown-text">Conda</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/ssh.html" rel="" target="">
- <span class="dropdown-text">SSH</span></a>
+    <a class="dropdown-item" href="../../notes/git/index.html" rel="" target="">
+ <span class="dropdown-text">Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/make/index.html" rel="" target="">
+ <span class="dropdown-text">Makefile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/linux/index.html" rel="" target="">
+ <span class="dropdown-text">Linux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/docker/index.html" rel="" target="">
+ <span class="dropdown-text">Docker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/shell/index.html" rel="" target="">
+ <span class="dropdown-text">Shell</span></a>
   </li>  
     </ul>
   </li>
@@ -199,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/ssh.html">SSH</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/shell/index.html">Shell</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -213,50 +212,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/conda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conda</span></a>
+  <a href="../../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSH</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Docker</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/linux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linux</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/makefile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Makefile</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/markdown_syntax.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Markdown Syntax Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/shell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell</span></a>
+  <a href="../../notes/conda/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conda</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/ssh.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">SSH</span></a>
+  <a href="../../notes/git/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/make/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Makefile</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/linux/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linux</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/docker/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/shell/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Shell</span></a>
   </div>
 </li>
     </ul>
@@ -269,18 +268,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#check-your-existing-key" id="toc-check-your-existing-key" class="nav-link active" data-scroll-target="#check-your-existing-key">Check your existing key</a></li>
-  <li><a href="#add-your-key-to-other-hosts" id="toc-add-your-key-to-other-hosts" class="nav-link" data-scroll-target="#add-your-key-to-other-hosts">Add your key to other hosts</a></li>
-  <li><a href="#making-alias-for-your-known-host-servers" id="toc-making-alias-for-your-known-host-servers" class="nav-link" data-scroll-target="#making-alias-for-your-known-host-servers">Making alias for your known host servers</a></li>
+  <li><a href="#basic-information" id="toc-basic-information" class="nav-link active" data-scroll-target="#basic-information">Basic information</a></li>
+  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link" data-scroll-target="#frequently-used-commands">Frequently used commands</a>
+  <ul class="collapse">
+  <li><a href="#navigating-files-and-directories" id="toc-navigating-files-and-directories" class="nav-link" data-scroll-target="#navigating-files-and-directories">Navigating Files and Directories</a></li>
+  <li><a href="#others" id="toc-others" class="nav-link" data-scroll-target="#others">Others:</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/ssh.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/shell/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">SSH</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Shell</h1>
 </div>
 
 
@@ -295,52 +297,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This is cheasheet/quicknote to connect and access remote servers through ssh.</p>
-<section id="check-your-existing-key" class="level2">
-<h2 class="anchored" data-anchor-id="check-your-existing-key">Check your existing key</h2>
-<p>Enter this command in your temrinal:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This checks if you have any existing ssh key-pairs, with something like:</p>
+<section id="basic-information" class="level2">
+<h2 class="anchored" data-anchor-id="basic-information">Basic information</h2>
+<p><strong>Shell</strong> is a program where users type commands, and directly interact with system. It is usually done through <strong>command line interface</strong> (CLI). And, it’s also scripting language just like Python or Java.</p>
+<p>Typically uses <code>$</code> as prompt, followed by a <strong>text cursor</strong>, and some word to indicate an executable binary:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="co"># This is a built-in command/binary for Bash shells</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Most shells present in different OS are:</p>
 <ul>
-<li>id_rsa.pub</li>
-<li>id_ecdsa.pub</li>
-<li>id_ed25519.pub</li>
+<li><code>Powershell</code> in Windows</li>
+<li><code>Zsh</code> in MacOS</li>
+<li><code>Bash</code> in Linux</li>
 </ul>
-<p>Note: If you receive an error that ~/.ssh doesn’t exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step.</p>
 </section>
-<section id="add-your-key-to-other-hosts" class="level2">
-<h2 class="anchored" data-anchor-id="add-your-key-to-other-hosts">Add your key to other hosts</h2>
-<p>To authenticate with a remote-host using your public SSH key you will use the <code>ssh-copy-id</code> command. Use the <code>-i</code> flag to specify the public key to copy to the remote-host.</p>
-<p>Enter this command in you terminal, replacing <code>&lt;username@host&gt;</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/id_rsa.pub <span class="op">&lt;</span>username@host<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="va">$(</span><span class="ex">username@host</span><span class="va">)</span> Enter your password:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And you only need to enter this for the “last” time, after that you could just do <code>ssh username@host</code> without typing password anymore. Moreover, you could also, use the shorthand by replacing to a host alias in a <code>config</code> file under <code>~/.ssh</code> (See below section) <strong>Note</strong>: 2 Factor-Authentication (2FA) is not avoidable.</p>
+<section id="frequently-used-commands" class="level2">
+<h2 class="anchored" data-anchor-id="frequently-used-commands">Frequently used commands</h2>
+<section id="navigating-files-and-directories" class="level3">
+<h3 class="anchored" data-anchor-id="navigating-files-and-directories">Navigating Files and Directories</h3>
+<ul>
+<li><code>pwd</code>: prints current working directory</li>
+<li><code>ls</code>: list files in current directory (by default), accepts optional argument</li>
+<li><code>cd</code>: change working directory</li>
+</ul>
 </section>
-<section id="making-alias-for-your-known-host-servers" class="level2">
-<h2 class="anchored" data-anchor-id="making-alias-for-your-known-host-servers">Making alias for your known host servers</h2>
-<p>If you want to avoid typing out whole host and ip address of your servers, try the following:</p>
-<ol type="1">
-<li>create a file (if not extists yet) with <code>touch ~.ssh/config</code></li>
-<li>Use the template below to add the server you like to connect to:</li>
-</ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Indentation is required</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Host is the alias shorthand you want to be ugin later like:</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># ssc &lt;Host&gt; , i.e. ssh foo</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Host</span> <span class="op">&lt;</span>the-alias-you-want-to-use<span class="op">&gt;</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The HostName is some domain like abc.cd.ef.gh, usually like a email link?</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="ex">HostName</span> <span class="op">&lt;</span>this.should.be.domain<span class="op">&gt;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># User is the allocated user with permission alonsgside with the HostName</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="ex">User</span> tliang19</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># ideally like ssh User@HostName to ssh Host</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="others" class="level3">
+<h3 class="anchored" data-anchor-id="others">Others:</h3>
+<ul>
+<li><code>du -sh &lt;path_of_dir&gt;</code> : show size of a directory</li>
+</ul>
 
 
-<!-- -->
-
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -538,57 +524,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -758,71 +693,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "SSH"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>This is cheasheet/quicknote to connect and access remote servers through ssh.</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Check your existing key</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>Enter this command in your temrinal:</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>This checks if you have any existing ssh key-pairs, with something like:</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>id_rsa.pub</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>id_ecdsa.pub</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>id_ed25519.pub</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>Note: If you receive an error that ~/.ssh doesn't exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step.</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## Add your key to other hosts</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>To authenticate with a remote-host using your public SSH key you will use the <span class="in">`ssh-copy-id`</span> command. Use the <span class="in">`-i`</span> flag to specify the public key to copy to the remote-host.</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>Enter this command in you terminal, replacing <span class="in">`&lt;username@host&gt;`</span>:</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/id_rsa.pub <span class="op">&lt;</span>username@host<span class="op">&gt;</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>This command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="va">$(</span><span class="ex">username@host</span><span class="va">)</span> Enter your password:</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>And you only need to enter this for the "last" time, after that you could just do <span class="in">`ssh username@host`</span> without typing password anymore.  Moreover, you could also, use the shorthand by replacing to a host alias in a <span class="in">`config`</span> file under <span class="in">`~/.ssh`</span> (See below section) **Note**: 2 Factor-Authentication (2FA) is not avoidable. </span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Making alias for your known host servers</span></span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>If you want to avoid typing out whole host and ip address of your servers, try the following:</span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>create a file (if not extists yet) with <span class="in">`touch ~.ssh/config`</span></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Use the template below to add the server you like to connect to:</span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Indentation is required</span></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Host is the alias shorthand you want to be ugin later like:</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="co"># ssc &lt;Host&gt; , i.e. ssh foo</span></span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="ex">Host</span> <span class="op">&lt;</span>the-alias-you-want-to-use<span class="op">&gt;</span></span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The HostName is some domain like abc.cd.ef.gh, usually like a email link?</span></span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>    <span class="ex">HostName</span> <span class="op">&lt;</span>this.should.be.domain<span class="op">&gt;</span></span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># User is the allocated user with permission alonsgside with the HostName</span></span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>    <span class="ex">User</span> tliang19</span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="co"># ideally like ssh User@HostName to ssh Host</span></span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

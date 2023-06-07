@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tony Liang - Conda</title>
+<title>Tony Liang - Markdown Syntax Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,21 +57,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -88,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -98,7 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Tony Liang</span>
     </a>
   </div>
@@ -108,15 +107,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project.html" rel="" target="">
+    <a class="nav-link" href="../../project.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume/index.html" rel="" target="">
+    <a class="nav-link" href="../../resume/index.html" rel="" target="">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -125,51 +124,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-demos">    
         <li>
-    <a class="dropdown-item" href="../demos/python_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/python_demo.html" rel="" target="">
  <span class="dropdown-text">Python Code Demo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../demos/r_demo.html" rel="" target="">
+    <a class="dropdown-item" href="../../demos/r_demo.html" rel="" target="">
  <span class="dropdown-text">R Code Demo</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-quick-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Quick Notes</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Notes</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-quick-notes">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
         <li>
-    <a class="dropdown-item" href="../notes/conda.html" rel="" target="">
- <span class="dropdown-text">Conda</span></a>
+    <a class="dropdown-item" href="../../notes/ssh/index.html" rel="" target="">
+ <span class="dropdown-text">SSH</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/docker.html" rel="" target="">
- <span class="dropdown-text">Docker</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/git.html" rel="" target="">
- <span class="dropdown-text">Git</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/linux.html" rel="" target="">
- <span class="dropdown-text">Linux</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/makefile.html" rel="" target="">
- <span class="dropdown-text">Makefile</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../notes/markdown_syntax.html" rel="" target="">
+    <a class="dropdown-item" href="../../notes/markdown/index.html" rel="" target="">
  <span class="dropdown-text">Markdown Syntax Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/shell.html" rel="" target="">
- <span class="dropdown-text">Shell</span></a>
+    <a class="dropdown-item" href="../../notes/conda/index.html" rel="" target="">
+ <span class="dropdown-text">Conda</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../notes/ssh.html" rel="" target="">
- <span class="dropdown-text">SSH</span></a>
+    <a class="dropdown-item" href="../../notes/git/index.html" rel="" target="">
+ <span class="dropdown-text">Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/make/index.html" rel="" target="">
+ <span class="dropdown-text">Makefile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/linux/index.html" rel="" target="">
+ <span class="dropdown-text">Linux</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/docker/index.html" rel="" target="">
+ <span class="dropdown-text">Docker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../notes/shell/index.html" rel="" target="">
+ <span class="dropdown-text">Shell</span></a>
   </li>  
     </ul>
   </li>
@@ -199,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/conda.html">Conda</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/markdown/index.html">Markdown Syntax Guide</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -213,50 +212,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/conda.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Conda</span></a>
+  <a href="../../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSH</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Docker</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/linux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linux</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/makefile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Makefile</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notes/markdown_syntax.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Markdown Syntax Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/shell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell</span></a>
+  <a href="../../notes/conda/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conda</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/ssh.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SSH</span></a>
+  <a href="../../notes/git/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/make/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Makefile</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/linux/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linux</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/docker/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/shell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shell</span></a>
   </div>
 </li>
     </ul>
@@ -269,17 +268,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link active" data-scroll-target="#frequently-used-commands">Frequently used commands</a></li>
-  <li><a href="#combine-usage-with-jupyterlab" id="toc-combine-usage-with-jupyterlab" class="nav-link" data-scroll-target="#combine-usage-with-jupyterlab">Combine usage with JupyterLab</a></li>
+  <li><a href="#making-tables" id="toc-making-tables" class="nav-link active" data-scroll-target="#making-tables">Making tables</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/conda.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/markdown/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Conda</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<h1 class="title">Markdown Syntax Guide</h1>
 </div>
 
 
@@ -294,58 +292,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This page contains useful commands/tips for conda usage</p>
-<section id="frequently-used-commands" class="level2">
-<h2 class="anchored" data-anchor-id="frequently-used-commands">Frequently used commands</h2>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Deletes the ENV_NAME along with all its packages</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (This one requiers you to confirm yes)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> <span class="at">-y</span> <span class="co"># This one do not ask for confirmation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List all environments</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creates ENV_NAME could use either with -n or --name</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="kw">|</span> <span class="ex">--name</span> <span class="at">-y</span> ENV_NAME </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="combine-usage-with-jupyterlab" class="level2">
-<h2 class="anchored" data-anchor-id="combine-usage-with-jupyterlab">Combine usage with JupyterLab</h2>
-<p>JupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels: - ipykernel - iRkernel</p>
-<p>It is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having <code>nb_conda_kernels</code> in the environment that you launch Jupyter Notebook or JupyterLab.</p>
-<p>For example, this is how I use it:</p>
-<ol type="1">
-<li>Install <code>nb_conda_kernels</code> in the conda environment that has <code>jupyter lab</code>, in my case, I use the <code>base</code> env.</li>
-<li>Create new conda envs for the projects that I do:</li>
-</ol>
+<p>This is a guide that’s also written in <strong>Markdown</strong>, a <em>guide</em> that has some important and useful syntax for markdown if you can’t remember it all:</p>
 <ul>
-<li><code>conda create -n -y python_proj ipyerkernel</code> For Python</li>
-<li><code>conda craete -n -y r_proj r-irkernel</code> For R</li>
+<li>Referencing to other <a href="../../notes/index.html">link</a></li>
+<li>Creating sub list like this:
+<ul>
+<li><strong>Sub level</strong></li>
+</ul></li>
+<li>And many more</li>
 </ul>
-<ol start="3" type="1">
-<li>Launch <code>jupyter lab</code> from <code>base</code> (by staying at <code>base</code> env), then when it launches you will be able to see the following: <img src="../resources/conda/jupyter_conda_env.png" class="img-fluid"></li>
-<li>Lastly, just choose the environment you are going to use</li>
-</ol>
-<p>If you want to install packages to specified environments, do the following:</p>
-<ol type="1">
-<li><code>conda activate ENV_NAME</code> , replace <code>ENV_NAME</code> of the one you like to deal and mess around with</li>
-<li><code>conda install -y PKG_NAME</code> or <code>pip install PKG_NAME</code>, install the packages you need depending on where they are supported (<strong>NOTE</strong>: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend <a href="../notes/docker.html">Docker</a> or renv.</li>
-</ol>
+<p>Before starting, I will use md to denote <code>markdown</code></p>
+<section id="making-tables" class="level2">
+<h2 class="anchored" data-anchor-id="making-tables">Making tables</h2>
+<p>If you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:</p>
+<table class="table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 31%">
+<col style="width: 6%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Header for column 1</th>
+<th style="text-align: center;">Header for column 2</th>
+<th>….</th>
+<th style="text-align: right;">Header for column n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">This text is left-aligned</td>
+<td style="text-align: center;">This text is center-aligned</td>
+<td>This one nothing</td>
+<td style="text-align: right;">This one is right-aligned</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">2</td>
+<td>3</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<p>Notice above, creating table is easy, simply use:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">### First row is always header or column name, and it should be spanned like</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| <span class="kw">&lt;col_name</span> <span class="er">here</span><span class="kw">&gt;</span> | , use two bars to separate</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### Then the next row is to determine how that column's content is to be aligned</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### By Default it is left-aligned</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Center-aligned:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>| :----: | , you need <span class="in">`-`</span> wrap in two <span class="in">`:`</span>. one left and one right just like <span class="in">`:-:`</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Right-aligned:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>| -----: |, you need <span class="in">`-`</span> with <span class="in">`:`</span> to the right of the <span class="in">`-`</span>.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Then you can just fill up the table as you like.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In summary, the <strong>“|-|”</strong> is used for indicate the table and <strong>“:”</strong> is used for indicate the text alignment. If <strong>|:-|</strong> entered that is a left aligned text column. If <strong>|-:|</strong> entered that is a right aligned text and if <strong>|:-:|</strong> entered that is a centre aligned.</p>
 
-
-<!-- -->
 
 </section>
 
@@ -544,57 +557,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -764,59 +726,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Conda"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">engine:</span><span class="co"> knitr</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">  eval: false</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>This page contains useful commands/tips for conda usage</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Frequently used commands</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="in">```{bash}</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Deletes the ENV_NAME along with all its packages</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># (This one requiers you to confirm yes)</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> </span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">-n</span> ENV_NAME <span class="at">--all</span> <span class="at">-y</span> <span class="co"># This one do not ask for confirmation</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="in">```{bash}</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co"># List all environments</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env list</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="in">```{bash}</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co"># creates ENV_NAME could use either with -n or --name</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> <span class="kw">|</span> <span class="ex">--name</span> <span class="at">-y</span> ENV_NAME </span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Combine usage with JupyterLab</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>JupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels:</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ipykernel </span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>iRkernel</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>It is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having <span class="in">`nb_conda_kernels`</span> in the environment that you launch Jupyter Notebook or JupyterLab.</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>For example, this is how I use it:</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Install <span class="in">`nb_conda_kernels`</span> in the conda environment that has <span class="in">`jupyter lab`</span>, in my case, I use the <span class="in">`base`</span> env.</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Create new conda envs for the projects that I do: </span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`conda create -n -y python_proj ipyerkernel`</span> For Python</span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="in">`conda craete -n -y r_proj r-irkernel`</span> For R</span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Launch <span class="in">`jupyter lab`</span> from <span class="in">`base`</span> (by staying at <span class="in">`base`</span> env), then when it launches you will be able to see the following:</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="al">![](../resources/conda/jupyter_conda_env.png)</span></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Lastly, just choose the environment you are going to use</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>If you want to install packages to specified environments, do the following:</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="in">`conda activate ENV_NAME`</span> , replace <span class="in">`ENV_NAME`</span> of the one you like to deal and mess around with</span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="in">`conda install -y PKG_NAME`</span> or <span class="in">`pip install PKG_NAME`</span>, install the packages you need depending on where they are supported (**NOTE**: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend <span class="co">[</span><span class="ot">Docker</span><span class="co">](docker.qmd)</span> or renv.</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
