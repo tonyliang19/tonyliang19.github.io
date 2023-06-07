@@ -53,9 +53,14 @@ website:
 
 format:
   html:
+    # Control to show as border for code block
+    code-block-border-left: "#31BAE9"
+    code-block-bg: true
+    # Copy button upon hover
     code-copy: hover
+    # Folding codes
     code-fold: true
-    code-link: true
+    # code-link: true
     code-summary: "Show the code"
     code-tools: true
     css: styles.css
