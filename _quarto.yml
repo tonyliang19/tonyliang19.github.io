@@ -51,6 +51,10 @@ website:
     border: true
     right: "© 2023, Tony Liang"
 
+engine: knitr
+execute: 
+  eval: false
+
 format:
   html:
     # Control to show as border for code block
