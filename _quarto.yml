@@ -42,11 +42,12 @@ website:
     contents: demos/*
   # dropdiwn for coding notes
   - id: notes
-    title: "Quick Notes"
+    pinned: true
+    title: "Notes"
     style: "docked"
     background: light
-    collapse-level: 2
-    contents: notes/*
+    collapse-level: 1
+    contents: notes/**
   page-footer:
     border: true
     right: "© 2023, Tony Liang"

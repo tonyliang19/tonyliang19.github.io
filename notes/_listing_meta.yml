@@ -1,0 +1,8 @@
+# Metadata option for qmds within notes
+search: false
+listing:
+  fields: [title, description]
+  type: table
+  sort-ui: true
+  filter-ui: false
+  max-description-length: 50
