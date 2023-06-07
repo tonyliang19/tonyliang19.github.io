@@ -1,24 +1,27 @@
 ---
 title: "Conda"
+engine: knitr
+execute: 
+  eval: false
 ---
 
 This page contains useful commands/tips for conda usage
 
 ## Frequently used commands
 
-```bash
+```{bash}
 # Deletes the ENV_NAME along with all its packages
 # (This one requiers you to confirm yes)
 conda remove -n ENV_NAME --all 
 conda remove -n ENV_NAME --all -y # This one do not ask for confirmation
 ```
 
-```bash
+```{bash}
 # List all environments
 conda env list
 ```
 
-```bash
+```{bash}
 # creates ENV_NAME could use either with -n or --name
 conda create -n | --name -y ENV_NAME 
 ```
