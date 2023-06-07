@@ -48,4 +48,4 @@ For example, this is how I use it:
 If you want to install packages to specified environments, do the following:
 
 1. `conda activate ENV_NAME` , replace `ENV_NAME` of the one you like to deal and mess around with
-2. `conda install -y PKG_NAME` or `pip install PKG_NAME`, install the packages you need depending on where they are supported (**NOTE**: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend [Docker](docker.qmd) or renv.
+2. `conda install -y PKG_NAME` or `pip install PKG_NAME`, install the packages you need depending on where they are supported (**NOTE**: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend [Docker](../docker/index.qmd) or renv.

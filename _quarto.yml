@@ -13,6 +13,8 @@ website:
 
   # focus to read mode
   navbar:
+    collapse: false
+    pinned: false
     background: primary
     left:
       - text: "Home"
@@ -22,7 +24,9 @@ website:
       - text: Resume
         href: resume/index.qmd
       - sidebar:demos
-      - sidebar:notes
+      - text: Notes
+        href: notes/index.qmd
+      #- sidebar:notes
     
 
     right:
@@ -38,17 +42,18 @@ website:
     title:  "Demos"
     style:  "docked"
     background: light
-    collapse-level: 2
+    collapse-level: 1
     contents: demos/*
-  # dropdiwn for coding notes
   
+  # dropdown for coding notes
   - id: notes
     pinned: true
     title: "Notes"
     style: docked
-    background: light
+    #background: light
     collapse-level: 1
     contents: notes/**
+  # footer in all pages
   page-footer:
     border: true
     right: "© 2023, Tony Liang"
