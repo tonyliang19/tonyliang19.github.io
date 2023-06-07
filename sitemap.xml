@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/makefile.html</loc>
-    <lastmod>2023-05-24T03:36:37.376Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/shell.html</loc>
-    <lastmod>2023-05-24T03:36:38.653Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/git.html</loc>
-    <lastmod>2023-05-24T03:36:39.317Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/ssh.html</loc>
-    <lastmod>2023-05-24T03:36:39.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/conda.html</loc>
-    <lastmod>2023-05-24T03:36:40.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/markdown_syntax.html</loc>
-    <lastmod>2023-05-24T03:36:40.917Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/docker.html</loc>
-    <lastmod>2023-05-24T03:36:41.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux.html</loc>
-    <lastmod>2023-05-24T03:36:41.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/index.html</loc>
-    <lastmod>2023-05-24T03:36:44.449Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/projects/fifa22.html</loc>
-    <lastmod>2023-05-24T03:36:44.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/project.html</loc>
-    <lastmod>2023-05-24T03:36:45.377Z</lastmod>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/r_demo.html</loc>
+    <lastmod>2023-06-07T02:39:41.583Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/python_demo.html</loc>
-    <lastmod>2023-05-24T03:36:45.797Z</lastmod>
+    <lastmod>2023-06-07T02:39:43.923Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/r_demo.html</loc>
-    <lastmod>2023-05-24T03:36:51.685Z</lastmod>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/projects/fifa22.html</loc>
+    <lastmod>2023-06-07T02:39:44.355Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/project.html</loc>
+    <lastmod>2023-06-07T02:39:44.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/index.html</loc>
+    <lastmod>2023-06-07T02:39:47.515Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/resume/index.html</loc>
+    <lastmod>2023-06-07T02:39:49.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/makefile.html</loc>
+    <lastmod>2023-06-07T02:39:49.491Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/git.html</loc>
+    <lastmod>2023-06-07T02:39:50.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/docker.html</loc>
+    <lastmod>2023-06-07T02:39:50.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux.html</loc>
+    <lastmod>2023-06-07T02:39:51.127Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/shell.html</loc>
+    <lastmod>2023-06-07T02:39:51.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/ssh.html</loc>
+    <lastmod>2023-06-07T02:39:52.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/markdown_syntax.html</loc>
+    <lastmod>2023-06-07T02:39:52.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/conda.html</loc>
+    <lastmod>2023-06-07T02:39:53.219Z</lastmod>
   </url>
 </urlset>
