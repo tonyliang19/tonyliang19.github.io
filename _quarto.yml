@@ -53,16 +53,17 @@ website:
 
 format:
   html:
-    theme:
-      light: minty
-      dark:  darkly #solar #darkly 
     code-copy: true
     code-fold: true
     code-link: true
     css: styles.css
-    toc: true
+    fontsize: 1.2em # change size for text here
     link-external-newwindow: true
     link-external-icon: true
+    toc: true
+    theme:
+      light: flatly
+      dark:  darkly #solar #darkly 
 
 
 #execute:
