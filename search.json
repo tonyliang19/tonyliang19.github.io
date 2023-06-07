@@ -4,7 +4,7 @@
     "href": "demos/r_demo.html",
     "title": "R Code Demo",
     "section": "",
-    "text": "Here are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] 0.2489317\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n  (Intercept)            x1            x2 \n-7.105427e-16  2.000000e+00  3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
+    "text": "Note\n\n\n\nNote that below is not fully developed.\n\n\nHere are some examples of R codes:\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] 0.1710324\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n# fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n  (Intercept)            x1            x2 \n-2.388614e-15  2.000000e+00  3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
   },
   {
     "objectID": "demos/python_demo.html",
@@ -25,14 +25,14 @@
     "href": "project.html",
     "title": "Projects",
     "section": "",
-    "text": "Hello, this a is a page to host a list of projects that I have done work/academic/personal. Feel free to open their source repos.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nFIFA22\n\n\n\n\n\n\n\n\n\n\n\n\nTony Liang\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello, this a is a page to host a list of projects that I have done work/academic/personal. Feel free to open their source repos.\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nFIFA22\n\n\n\n\n\n\n\n\n\n\n\n\nTony Liang\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Tony Liang",
     "section": "",
-    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-06-06 19:39:45\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
+    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-06-06 20:17:40\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above"
   },
   {
     "objectID": "index.html#experience",
@@ -58,9 +58,9 @@
   {
     "objectID": "resume/index.html",
     "href": "resume/index.html",
-    "title": "Tony Liang",
+    "title": "",
     "section": "",
-    "text": "Download current CV"
+    "text": "Code\n\n\n\n\n\n\n\n  \n     Download current resume"
   },
   {
     "objectID": "notes/makefile.html",
@@ -221,7 +221,7 @@
     "href": "notes/conda.html#frequently-used-commands",
     "title": "Conda",
     "section": "Frequently used commands",
-    "text": "Frequently used commands\n# Deletes the ENV_NAME along with all its packages\n# (This one requiers you to confirm yes)\nconda remove -n ENV_NAME --all \nconda remove -n ENV_NAME --all -y # This one do not ask for confirmation\n# List all environments\nconda env list\n# creates ENV_NAME could use either with -n or --name\nconda create -n | --name -y ENV_NAME"
+    "text": "Frequently used commands\n\n\nCode\n# Deletes the ENV_NAME along with all its packages\n# (This one requiers you to confirm yes)\nconda remove -n ENV_NAME --all \nconda remove -n ENV_NAME --all -y # This one do not ask for confirmation\n\n\n\n\nCode\n# List all environments\nconda env list\n\n\n\n\nCode\n# creates ENV_NAME could use either with -n or --name\nconda create -n | --name -y ENV_NAME"
   },
   {
     "objectID": "notes/conda.html#combine-usage-with-jupyterlab",
