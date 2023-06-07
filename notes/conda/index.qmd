@@ -1,6 +1,7 @@
 ---
 title: "Conda"
 engine: knitr
+layout: default
 execute: 
   eval: false
 ---

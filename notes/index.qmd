@@ -6,8 +6,8 @@ search: false
 sidebar_position: 1
 listing:
     contents:
-        - "/*.qmd"
-        - "/*/index.qmd"
+    - "/*.qmd"
+    - "/*/index.qmd"
 format:
     html:
         code-tools: false
