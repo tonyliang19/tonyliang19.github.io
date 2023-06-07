@@ -41,10 +41,11 @@ website:
     collapse-level: 2
     contents: demos/*
   # dropdiwn for coding notes
+  
   - id: notes
     pinned: true
     title: "Notes"
-    style: "docked"
+    style: docked
     background: light
     collapse-level: 1
     contents: notes/**
@@ -64,7 +65,7 @@ format:
     code-fold: true
     # code-link: true
     code-summary: "Show the code"
-    code-tools: true
+    code-tools: false
     css: styles.css
     fontsize: 1.2em # change size for text here
     # change highlight of code
@@ -75,8 +76,4 @@ format:
     theme:
       light: flatly
       dark:  darkly #solar #darkly 
-
-
-#execute:
-#  freeze: auto
-
+    reference-location: document

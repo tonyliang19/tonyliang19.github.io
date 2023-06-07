@@ -2,7 +2,7 @@
 title: "Python Code Demo"
 format:
   html:
-    code-fold: true
+    code-tools: true
 ---
 
 Placeholder file to test out python functionality with Quarto
