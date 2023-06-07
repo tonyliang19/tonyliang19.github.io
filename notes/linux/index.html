@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Notes on Linux usage">
 
 <title>Tony Liang - Linux</title>
 <style>
@@ -24,6 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -51,7 +54,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -60,18 +94,14 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Tony Liang</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+          <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
@@ -99,47 +129,12 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-notes" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Notes</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
-        <li>
-    <a class="dropdown-item" href="../../notes/ssh/index.html" rel="" target="">
- <span class="dropdown-text">SSH</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/markdown/index.html" rel="" target="">
- <span class="dropdown-text">Markdown Syntax Guide</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/conda/index.html" rel="" target="">
- <span class="dropdown-text">Conda</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/git/index.html" rel="" target="">
- <span class="dropdown-text">Git</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/make/index.html" rel="" target="">
- <span class="dropdown-text">Makefile</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/linux/index.html" rel="" target="">
- <span class="dropdown-text">Linux</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/docker/index.html" rel="" target="">
- <span class="dropdown-text">Docker</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../notes/shell/index.html" rel="" target="">
- <span class="dropdown-text">Shell</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+          <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="https://www.linkedin.com/in/tonyliang19" rel="" target="">
  <span class="menu-text"><iconify-icon inline="" icon="fa6-brands:linkedin"></iconify-icon></span></a>
@@ -153,10 +148,9 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><iconify-icon inline="" icon="fa6-brands:instagram"></iconify-icon></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -178,14 +172,8 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SSH</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Markdown Syntax Guide</span></a>
+  <a href="../../notes/shell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shell</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -196,20 +184,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/git/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../notes/make/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Makefile</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/linux/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Linux</span></a>
+  <a href="../../notes/git/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSH</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -220,28 +208,40 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/shell/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell</span></a>
+  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown Syntax Guide</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../notes/linux/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Linux</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/linux/cheatsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cheatsheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/linux/other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#change-passwords-for-users" id="toc-change-passwords-for-users" class="nav-link active" data-scroll-target="#change-passwords-for-users">Change passwords for users</a></li>
-  <li><a href="#linux-install-package-guide" id="toc-linux-install-package-guide" class="nav-link" data-scroll-target="#linux-install-package-guide">Linux Install Package guide</a>
-  <ul class="collapse">
-  <li><a href="#upgrade-packages" id="toc-upgrade-packages" class="nav-link" data-scroll-target="#upgrade-packages">Upgrade packages</a></li>
-  <li><a href="#issues-in-installing" id="toc-issues-in-installing" class="nav-link" data-scroll-target="#issues-in-installing">Issues in installing</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/linux/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -251,6 +251,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Linux</h1>
 </div>
 
+<div>
+  <div class="description">
+    Notes on Linux usage
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -263,60 +268,47 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This page contains useful? or maybe essential tips for Linux usage. Still under development</p>
-<section id="change-passwords-for-users" class="level2">
-<h2 class="anchored" data-anchor-id="change-passwords-for-users">Change passwords for users</h2>
-<p>The bash <code>passwd</code> command is used to change password for user in the system,altough you need sudo access to do so:</p>
-<p><code>passwd [username]</code></p>
-<p>If no <code>username</code> where provided, it would change the password for the current log-on user.</p>
-</section>
-<section id="linux-install-package-guide" class="level2">
-<h2 class="anchored" data-anchor-id="linux-install-package-guide">Linux Install Package guide</h2>
-<p>To install package in Linux, i.e.&nbsp;<code>*.rpm</code> packages through terminal, use the <code>Alien</code> utility like below:</p>
-<p>First copy the <code>*.rpm</code> file to WSL:</p>
-<p><code>cp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~</code>, where <code>~</code> should be the root path or <code>/home/username</code> of the WSL</p>
-<p>then in your WSL terminal:</p>
-<p><code>apt-get install alien dpkg-dev debhelper build-essential</code></p>
-<p><strong>NOTE</strong>: This above might ask you to use <code>sudo</code> access, simply add sudo before the command: <code>sudo apt-get ... build-essential</code>.</p>
-<p>Then after installing <code>alien</code>, prompt in the following:</p>
-<p><code>alien &lt;package_name&gt;.rpm</code></p>
-<p>And finally install it:</p>
-<p><code>dpkg -i package_name.deb</code></p>
-<section id="upgrade-packages" class="level3">
-<h3 class="anchored" data-anchor-id="upgrade-packages">Upgrade packages</h3>
-<p>Use the following command to see if there are any package upgradable:</p>
-<p><code>apt list --upgradable</code></p>
-<p>And to update those packages:</p>
-<p><code>apt-get upgrade</code>, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires</p>
-</section>
-<section id="issues-in-installing" class="level3">
-<h3 class="anchored" data-anchor-id="issues-in-installing">Issues in installing</h3>
-<p>If your <code>apt-get install &lt;package_name&gt;</code> is failing, check if you have any typo, <code>CASE_SENSITVE</code>, otherwise update your <code>apt</code> by:</p>
-<p><code>sudo apt update</code> <!---
-### Install without sudo privilege
-
-If you're a user with limited access, i.e. you are not sudo user, to instal package requires a series of step like the following to compile the package from source:
-
-1. Check if `$HOME/.profile` exists, and find if you see the following block:
-
-        if [ -d "$HOME/.local/bin" ] ; then
-            PATH="$HOME/.local/bin:$PATH"
-        fi
-
-If it does not exists, add it to the `$HOME/.profile`, where this tells the terminal to add everything within `$HOME/.local/bin` to you path, so it can find the executable and make it available to you, and of course, make sure to create such directory by: `mkdir -p $HOME/.local/bin`
-
-2. Once you created `$HOME/.local/bin`, cd into that directory
-3. Now compile the package you like with:
-
-    apt-get source <PACKAGE>
-    ./configure
----></p>
 
 
-</section>
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1686110794832" data-listing-reading-time-sort="2" data-listing-title-sort="Cheatsheet" data-listing-filename-sort="cheatsheet.md">
+<td>
+<a href="../../notes/linux/cheatsheet.html" class="title listing-title">Cheatsheet</a>
+</td>
+<td>
+<span class="listing-description">Useful commands in Linux Bash</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-file-modified-sort="1686110794832" data-listing-reading-time-sort="1" data-listing-title-sort="Other" data-listing-filename-sort="other.md">
+<td>
+<a href="../../notes/linux/other.html" class="title listing-title">Other</a>
+</td>
+<td>
+<span class="listing-description">Test page</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -689,7 +681,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/linux/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">© 2023, Tony Liang</div>
   </div>
 </footer>

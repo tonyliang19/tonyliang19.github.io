@@ -17,5 +17,12 @@
       "/notes/ssh/index.html",
       "/notes/shell/index.html"
     ]
+  },
+  {
+    "listing": "/notes/linux/index.html",
+    "items": [
+      "/notes/linux/cheatsheet.html",
+      "/notes/linux/other.html"
+    ]
   }
 ]
