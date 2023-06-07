@@ -2,10 +2,33 @@
 title: "Shell"
 ---
 
-This is quick note for `shell` commands.
+## Basic information
 
-To show size of a directory:
+**Shell** is a program where users type commands, and directly interact with system. It is usually done through **command line interface** (CLI). And, it's also scripting language just like Python or Java. 
 
-`du -sh <path_of_dir>`
+Typically uses `$` as prompt, followed by a **text cursor**, and some word to indicate an executable binary:
+
+```bash
+$ ls # This is a built-in command/binary for Bash shells
+```
+
+Most shells present in different OS are:
+
+- `Powershell` in Windows
+- `Zsh` in MacOS
+- `Bash` in Linux
+
+## Frequently used commands
+
+### Navigating Files and Directories
+
+- `pwd`: prints current working directory
+- `ls`: list files in current directory (by default), accepts optional argument
+- `cd `: change working directory 
+
+### Others:
+
+- `du -sh <path_of_dir>` : show size of a directory
+
 
 
