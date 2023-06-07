@@ -17,10 +17,10 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - href: project.qmd
-        text: "Projects"
-      - href: resources/chunqing_tony_liang_resume.pdf
-        text: Resume
+      - text: "Projects" 
+        href: project.qmd
+      - text: Resume
+        href: resume/index.qmd
       - sidebar:demos
       - sidebar:notes
     
