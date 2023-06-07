@@ -5,6 +5,12 @@ format:
     code-fold: true
 ---
 
+:::{.callout-note}
+
+Note that below is not fully developed.
+
+:::
+
 Here are some examples of R codes:
 
 ```{r}
