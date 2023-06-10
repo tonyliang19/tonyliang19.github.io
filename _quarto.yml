@@ -20,7 +20,7 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Projects" 
-        href: project.qmd
+        href: projects/index.qmd
       - text: Resume
         href: resume/index.qmd
       - sidebar:demos

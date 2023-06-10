@@ -1,0 +1,14 @@
+---
+comments: false
+toc: false
+link-external-icon: false
+---
+
+
+### FIFA 22 Ultimate Team Recommender <a href="https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender" style="float: right;"><i class="fab fa-github" style="color: black;"></i></a>
+
+<!-- ### FIFA 22 Ultimate Team Recommender{#fifa-22} 
+
+[{{< fa brands github >}}  code](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender) -->
+
+This project uses Python `beautifulSoup` and `requests` to scrap FIFA player data from an open source website [SoFIFA](https://sofifa.com/) then fit unsupervised model to player statistics to setup a recommender (With UI) of players in FIFA22 given user inputs as constraints eg. budget, potential, attribute and etc in an automated pipeline manner.
