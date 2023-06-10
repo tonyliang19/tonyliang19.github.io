@@ -2,8 +2,8 @@
   {
     "listing": "/demos/index.html",
     "items": [
-      "/demos/python/python_demo.html",
-      "/demos/R/r_demo.html"
+      "/demos/R/fit_lr.html",
+      "/demos/python/python_demo.html"
     ]
   },
   {
