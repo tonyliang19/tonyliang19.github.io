@@ -42,7 +42,7 @@ For example, this is how I use it:
   - `conda create -n -y python_proj ipyerkernel` For Python
   - `conda craete -n -y r_proj r-irkernel` For R
 3. Launch `jupyter lab` from `base` (by staying at `base` env), then when it launches you will be able to see the following:
-![](../resources/conda/jupyter_conda_env.png)
+![](../../resources/conda/jupyter_conda_env.png)
 4. Lastly, just choose the environment you are going to use
 
 If you want to install packages to specified environments, do the following:
