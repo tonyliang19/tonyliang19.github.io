@@ -4,6 +4,7 @@ project:
 
 bibliography: references.bib
 website:
+  page-navigation: true
   #open-graph: true
   title: "Tony Liang"
   
@@ -44,6 +45,7 @@ website:
   sidebar:
   # dropdown for demos
   - id: demos
+    pinned: true
     title:  "Demos"
     style:  "docked"
     background: light

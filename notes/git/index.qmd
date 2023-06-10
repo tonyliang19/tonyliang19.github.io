@@ -15,7 +15,7 @@ Edit your `.gitignore` frequently, track stuffs that needs version control, but 
 
 2. `git commit -m "any meaningful message within this quotation"`, the message is for you to know what have you done in one commit (or checkpoint if you prefer this), like `update README.md`, `looping in a bug, fix later`
     + The message is then fixed to the file that you committed with like below:
-     ![](../resources/git/commits.png)
+     ![](../../resources/git/commits.png)
      As you can see, the circled red is all messages that's accompanied by the file modified in that commit particularly.
 
 3. `git push <branch-name>` or `git push -u origin <branch-name>`.
@@ -35,7 +35,7 @@ Say you have a big repo that contains many other sub-repos, this is called a `gi
 
  This allows you to version control within each the `sub-repo` with its own history, and the `Big_repo` just gives you access to each the repository link of it as shown below:
 
- ![](../resources/git/git_submodule.png)
+ ![](../../resources/git/git_submodule.png)
 
  Where each of the blue highlighted are a sub-repo, that links to another GitHub repo (that you can actually click on it! :blush:), the `xxxxxxx` next to the link is the hash of latest commit of that repo.
 
@@ -58,11 +58,11 @@ If you want to change from HTTPS to SSH, i.e. you want to see the remote url lin
 
 `git config --global --list`, this list all options/configurations that you have, and **NOTE**, this file affects all git repos you have locally on your laptop/computer. And it should like the below:
 
-![](../resources/git/gitconfig_terminal.png)
+![](../../resources/git/gitconfig_terminal.png)
 
 
 And ,this is the file itself
-![](../resources/git/gitconfig.png)
+![](../../resources/git/gitconfig.png)
 
 
 ## Hub CLI
@@ -84,7 +84,7 @@ Follow these steps:
  + **Note:** it creates an empty repo with no `README` or `.gitignore` templates, you might need to add more options to the command above
  
  And it should look like this:
- ![](../resources/git/hub_create.png)
+ ![](../../resources/git/hub_create.png)
 
  The `https://...` is the actual url to the github repo created, try copy that to your browser, and see what's in there, then you can just follow the instructions on that website or [here](#usual-workflow)
 
@@ -92,7 +92,7 @@ Follow these steps:
 
 This teaches you how to edit the `hub` cli config file, that should live on this path, `~/.config/hub`, where `~` assumes to be your `$HOME`.  And the file itself looks like this:
 
-![](../resources/git/hub_config.png)
+![](../../resources/git/hub_config.png)
 
 Where you could find your github `username`, github `PAT` (The light blue highlight I have here), and whatever protocol you use (default is https, and apparently it only supports https? You could verify that if you wish to know more)
 

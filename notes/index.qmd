@@ -1,5 +1,4 @@
 ---
-id: notes
 title: Tony's notes
 metadata-files: ["_listing_meta.yml"]
 search: false
