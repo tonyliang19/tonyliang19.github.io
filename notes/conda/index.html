@@ -124,10 +124,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../notes/index.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../presentations/" rel="" target="">
- <span class="menu-text">Presentation</span></a>
-  </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -240,8 +236,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link active" data-scroll-target="#frequently-used-commands">Frequently used commands</a></li>
-  <li><a href="#combine-usage-with-jupyterlab" id="toc-combine-usage-with-jupyterlab" class="nav-link" data-scroll-target="#combine-usage-with-jupyterlab">Combine usage with JupyterLab</a></li>
+  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link active" data-scroll-target="#frequently-used-commands"><span class="header-section-number">1</span> Frequently used commands</a></li>
+  <li><a href="#combine-usage-with-jupyterlab" id="toc-combine-usage-with-jupyterlab" class="nav-link" data-scroll-target="#combine-usage-with-jupyterlab"><span class="header-section-number">2</span> Combine usage with JupyterLab</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/conda/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -266,8 +262,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>This page contains useful commands/tips for conda usage</p>
-<section id="frequently-used-commands" class="level2">
-<h2 class="anchored" data-anchor-id="frequently-used-commands">Frequently used commands</h2>
+<section id="frequently-used-commands" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="frequently-used-commands"><span class="header-section-number">1</span> Frequently used commands</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -292,8 +288,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="combine-usage-with-jupyterlab" class="level2">
-<h2 class="anchored" data-anchor-id="combine-usage-with-jupyterlab">Combine usage with JupyterLab</h2>
+<section id="combine-usage-with-jupyterlab" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="combine-usage-with-jupyterlab"><span class="header-section-number">2</span> Combine usage with JupyterLab</h2>
 <p>JupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels: - ipykernel - iRkernel</p>
 <p>It is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having <code>nb_conda_kernels</code> in the environment that you launch Jupyter Notebook or JupyterLab.</p>
 <p>For example, this is how I use it:</p>

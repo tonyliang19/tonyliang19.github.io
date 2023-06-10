@@ -124,10 +124,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../notes/index.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../presentations/" rel="" target="">
- <span class="menu-text">Presentation</span></a>
-  </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -240,9 +236,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#check-your-existing-key" id="toc-check-your-existing-key" class="nav-link active" data-scroll-target="#check-your-existing-key">Check your existing key</a></li>
-  <li><a href="#add-your-key-to-other-hosts" id="toc-add-your-key-to-other-hosts" class="nav-link" data-scroll-target="#add-your-key-to-other-hosts">Add your key to other hosts</a></li>
-  <li><a href="#making-alias-for-your-known-host-servers" id="toc-making-alias-for-your-known-host-servers" class="nav-link" data-scroll-target="#making-alias-for-your-known-host-servers">Making alias for your known host servers</a></li>
+  <li><a href="#check-your-existing-key" id="toc-check-your-existing-key" class="nav-link active" data-scroll-target="#check-your-existing-key"><span class="header-section-number">1</span> Check your existing key</a></li>
+  <li><a href="#add-your-key-to-other-hosts" id="toc-add-your-key-to-other-hosts" class="nav-link" data-scroll-target="#add-your-key-to-other-hosts"><span class="header-section-number">2</span> Add your key to other hosts</a></li>
+  <li><a href="#making-alias-for-your-known-host-servers" id="toc-making-alias-for-your-known-host-servers" class="nav-link" data-scroll-target="#making-alias-for-your-known-host-servers"><span class="header-section-number">3</span> Making alias for your known host servers</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/ssh/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -267,8 +263,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>This is cheasheet/quicknote to connect and access remote servers through ssh.</p>
-<section id="check-your-existing-key" class="level2">
-<h2 class="anchored" data-anchor-id="check-your-existing-key">Check your existing key</h2>
+<section id="check-your-existing-key" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="check-your-existing-key"><span class="header-section-number">1</span> Check your existing key</h2>
 <p>Enter this command in your temrinal:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This checks if you have any existing ssh key-pairs, with something like:</p>
@@ -279,8 +275,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Note: If you receive an error that ~/.ssh doesn’t exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step.</p>
 </section>
-<section id="add-your-key-to-other-hosts" class="level2">
-<h2 class="anchored" data-anchor-id="add-your-key-to-other-hosts">Add your key to other hosts</h2>
+<section id="add-your-key-to-other-hosts" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="add-your-key-to-other-hosts"><span class="header-section-number">2</span> Add your key to other hosts</h2>
 <p>To authenticate with a remote-host using your public SSH key you will use the <code>ssh-copy-id</code> command. Use the <code>-i</code> flag to specify the public key to copy to the remote-host.</p>
 <p>Enter this command in you terminal, replacing <code>&lt;username@host&gt;</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/id_rsa.pub <span class="op">&lt;</span>username@host<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -288,8 +284,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="va">$(</span><span class="ex">username@host</span><span class="va">)</span> Enter your password:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>And you only need to enter this for the “last” time, after that you could just do <code>ssh username@host</code> without typing password anymore. Moreover, you could also, use the shorthand by replacing to a host alias in a <code>config</code> file under <code>~/.ssh</code> (See below section) <strong>Note</strong>: 2 Factor-Authentication (2FA) is not avoidable.</p>
 </section>
-<section id="making-alias-for-your-known-host-servers" class="level2">
-<h2 class="anchored" data-anchor-id="making-alias-for-your-known-host-servers">Making alias for your known host servers</h2>
+<section id="making-alias-for-your-known-host-servers" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="making-alias-for-your-known-host-servers"><span class="header-section-number">3</span> Making alias for your known host servers</h2>
 <p>If you want to avoid typing out whole host and ip address of your servers, try the following:</p>
 <ol type="1">
 <li>create a file (if not extists yet) with <code>touch ~.ssh/config</code></li>

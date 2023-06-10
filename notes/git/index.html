@@ -90,10 +90,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../notes/index.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../presentations/" rel="" target="">
- <span class="menu-text">Presentation</span></a>
-  </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -206,14 +202,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#usual-workflow" id="toc-usual-workflow" class="nav-link active" data-scroll-target="#usual-workflow">Usual Workflow</a></li>
-  <li><a href="#adding-a-git-repo-inside-another-git-repo" id="toc-adding-a-git-repo-inside-another-git-repo" class="nav-link" data-scroll-target="#adding-a-git-repo-inside-another-git-repo">Adding a git repo inside another git repo</a></li>
-  <li><a href="#changing-ssh-to-https-or-vice-versa" id="toc-changing-ssh-to-https-or-vice-versa" class="nav-link" data-scroll-target="#changing-ssh-to-https-or-vice-versa">Changing SSH to HTTPS or Vice-versa</a></li>
-  <li><a href="#hub-cli" id="toc-hub-cli" class="nav-link" data-scroll-target="#hub-cli">Hub CLI</a>
+  <li><a href="#usual-workflow" id="toc-usual-workflow" class="nav-link active" data-scroll-target="#usual-workflow"><span class="header-section-number">1</span> Usual Workflow</a></li>
+  <li><a href="#adding-a-git-repo-inside-another-git-repo" id="toc-adding-a-git-repo-inside-another-git-repo" class="nav-link" data-scroll-target="#adding-a-git-repo-inside-another-git-repo"><span class="header-section-number">2</span> Adding a git repo inside another git repo</a></li>
+  <li><a href="#changing-ssh-to-https-or-vice-versa" id="toc-changing-ssh-to-https-or-vice-versa" class="nav-link" data-scroll-target="#changing-ssh-to-https-or-vice-versa"><span class="header-section-number">3</span> Changing SSH to HTTPS or Vice-versa</a></li>
+  <li><a href="#hub-cli" id="toc-hub-cli" class="nav-link" data-scroll-target="#hub-cli"><span class="header-section-number">4</span> Hub CLI</a>
   <ul class="collapse">
-  <li><a href="#creating-a-repository" id="toc-creating-a-repository" class="nav-link" data-scroll-target="#creating-a-repository">Creating a repository</a></li>
+  <li><a href="#creating-a-repository" id="toc-creating-a-repository" class="nav-link" data-scroll-target="#creating-a-repository"><span class="header-section-number">4.1</span> Creating a repository</a></li>
   </ul></li>
-  <li><a href="#edit-hub-config" id="toc-edit-hub-config" class="nav-link" data-scroll-target="#edit-hub-config">Edit hub config</a></li>
+  <li><a href="#edit-hub-config" id="toc-edit-hub-config" class="nav-link" data-scroll-target="#edit-hub-config"><span class="header-section-number">5</span> Edit hub config</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/git/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -238,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>This page will explain some very frequent usage of Git and solutions for common known issues.</p>
-<section id="usual-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="usual-workflow">Usual Workflow</h2>
+<section id="usual-workflow" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="usual-workflow"><span class="header-section-number">1</span> Usual Workflow</h2>
 <p>Edit your <code>.gitignore</code> frequently, track stuffs that needs version control, but not those are <strong>confidential</strong> like secrets, credentials. Moreover, keep your files below <code>100MB</code> each as possible. And you will be doing the following a lot:</p>
 <ol type="1">
 <li><code>git add .</code> or <code>git add &lt;path_to_dir-or-file&gt;</code>.
@@ -259,8 +255,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 </section>
-<section id="adding-a-git-repo-inside-another-git-repo" class="level2">
-<h2 class="anchored" data-anchor-id="adding-a-git-repo-inside-another-git-repo">Adding a git repo inside another git repo</h2>
+<section id="adding-a-git-repo-inside-another-git-repo" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="adding-a-git-repo-inside-another-git-repo"><span class="header-section-number">2</span> Adding a git repo inside another git repo</h2>
 <p>Say you have a big repo that contains many other sub-repos, this is called a <code>git submodule</code>, whereas you could have like a following structure:</p>
 <pre><code>Big_repo
 |-------         Sub-repo 1 
@@ -273,8 +269,8 @@ ul.task-list li input[type="checkbox"] {
 <p>To add submodules, you required the sub-modules to rely within sub-directories of the major repo, and use below:</p>
 <p><code>git submodule add &lt;remote-link-of-sub-repo&gt; &lt;local-path-to-the-sub-repo&gt;</code></p>
 </section>
-<section id="changing-ssh-to-https-or-vice-versa" class="level2">
-<h2 class="anchored" data-anchor-id="changing-ssh-to-https-or-vice-versa">Changing SSH to HTTPS or Vice-versa</h2>
+<section id="changing-ssh-to-https-or-vice-versa" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="changing-ssh-to-https-or-vice-versa"><span class="header-section-number">3</span> Changing SSH to HTTPS or Vice-versa</h2>
 <p>If you want to change from HTTPS to SSH, i.e.&nbsp;you want to see the remote url link not just ssh. Or the other way round, when you are sick of authenticating over and over again using personal access token (PAT). Use the following to config the <code>.gitconfig</code> file:</p>
 <p><code>git config --global url.https://.insteadOf git://</code> + This tells Git to automatically translate any remote beginning with <code>git://</code> to remote beginning with <code>https://</code></p>
 <p><code>git config --global url.git://.insteadOf https://</code> + This tells Git to automatically translate any remote beginning with <code>https://</code> to remote beginning with <code>git://</code></p>
@@ -283,11 +279,11 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="../../resources/git/gitconfig_terminal.png" class="img-fluid"></p>
 <p>And ,this is the file itself <img src="../../resources/git/gitconfig.png" class="img-fluid"></p>
 </section>
-<section id="hub-cli" class="level2">
-<h2 class="anchored" data-anchor-id="hub-cli">Hub CLI</h2>
+<section id="hub-cli" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="hub-cli"><span class="header-section-number">4</span> Hub CLI</h2>
 <p>This <code>hub</code> is a command-line-interface (CLI) made by GitHub, that allows to do almost everything of <code>git</code> and <code>GitHub</code> without leaving the terminal, for example, this allows to create a repo on GitHub, add issues, and many mores.</p>
-<section id="creating-a-repository" class="level3">
-<h3 class="anchored" data-anchor-id="creating-a-repository">Creating a repository</h3>
+<section id="creating-a-repository" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="creating-a-repository"><span class="header-section-number">4.1</span> Creating a repository</h3>
 <p>You might be tired of creating empty repositories on GitHub that need to leave your favorite terminal and use the mouse? Why not just do everything with your terminal :smirk:</p>
 <p><strong>NOTE:</strong> For the first time using this, it might asks you for credentials like github <code>username</code> and github <code>password</code>, but actually you need to put in the Personal Access Token(PAT)</p>
 <p>If you don’t know how to add it, look at <a href="#edit-hub-config">here</a></p>
@@ -296,8 +292,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The <code>https://...</code> is the actual url to the github repo created, try copy that to your browser, and see what’s in there, then you can just follow the instructions on that website or <a href="#usual-workflow">here</a></p>
 </section>
 </section>
-<section id="edit-hub-config" class="level2">
-<h2 class="anchored" data-anchor-id="edit-hub-config">Edit hub config</h2>
+<section id="edit-hub-config" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="edit-hub-config"><span class="header-section-number">5</span> Edit hub config</h2>
 <p>This teaches you how to edit the <code>hub</code> cli config file, that should live on this path, <code>~/.config/hub</code>, where <code>~</code> assumes to be your <code>$HOME</code>. And the file itself looks like this:</p>
 <p><img src="../../resources/git/hub_config.png" class="img-fluid"></p>
 <p>Where you could find your github <code>username</code>, github <code>PAT</code> (The light blue highlight I have here), and whatever protocol you use (default is https, and apparently it only supports https? You could verify that if you wish to know more)</p>

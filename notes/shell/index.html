@@ -123,10 +123,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../notes/index.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../presentations/" rel="" target="">
- <span class="menu-text">Presentation</span></a>
-  </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -239,11 +235,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basic-information" id="toc-basic-information" class="nav-link active" data-scroll-target="#basic-information">Basic information</a></li>
-  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link" data-scroll-target="#frequently-used-commands">Frequently used commands</a>
+  <li><a href="#basic-information" id="toc-basic-information" class="nav-link active" data-scroll-target="#basic-information"><span class="header-section-number">1</span> Basic information</a></li>
+  <li><a href="#frequently-used-commands" id="toc-frequently-used-commands" class="nav-link" data-scroll-target="#frequently-used-commands"><span class="header-section-number">2</span> Frequently used commands</a>
   <ul class="collapse">
-  <li><a href="#navigating-files-and-directories" id="toc-navigating-files-and-directories" class="nav-link" data-scroll-target="#navigating-files-and-directories">Navigating Files and Directories</a></li>
-  <li><a href="#others" id="toc-others" class="nav-link" data-scroll-target="#others">Others:</a></li>
+  <li><a href="#navigating-files-and-directories" id="toc-navigating-files-and-directories" class="nav-link" data-scroll-target="#navigating-files-and-directories"><span class="header-section-number">2.1</span> Navigating Files and Directories</a></li>
+  <li><a href="#others" id="toc-others" class="nav-link" data-scroll-target="#others"><span class="header-section-number">2.2</span> Others:</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/shell/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -268,8 +264,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="basic-information" class="level2">
-<h2 class="anchored" data-anchor-id="basic-information">Basic information</h2>
+<section id="basic-information" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="basic-information"><span class="header-section-number">1</span> Basic information</h2>
 <p><strong>Shell</strong> is a program where users type commands, and directly interact with system. It is usually done through <strong>command line interface</strong> (CLI). And, it’s also scripting language just like Python or Java.</p>
 <p>Typically uses <code>$</code> as prompt, followed by a <strong>text cursor</strong>, and some word to indicate an executable binary:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="co"># This is a built-in command/binary for Bash shells</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -280,18 +276,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>Bash</code> in Linux</li>
 </ul>
 </section>
-<section id="frequently-used-commands" class="level2">
-<h2 class="anchored" data-anchor-id="frequently-used-commands">Frequently used commands</h2>
-<section id="navigating-files-and-directories" class="level3">
-<h3 class="anchored" data-anchor-id="navigating-files-and-directories">Navigating Files and Directories</h3>
+<section id="frequently-used-commands" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="frequently-used-commands"><span class="header-section-number">2</span> Frequently used commands</h2>
+<section id="navigating-files-and-directories" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="navigating-files-and-directories"><span class="header-section-number">2.1</span> Navigating Files and Directories</h3>
 <ul>
 <li><code>pwd</code>: prints current working directory</li>
 <li><code>ls</code>: list files in current directory (by default), accepts optional argument</li>
 <li><code>cd</code>: change working directory</li>
 </ul>
 </section>
-<section id="others" class="level3">
-<h3 class="anchored" data-anchor-id="others">Others:</h3>
+<section id="others" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="others"><span class="header-section-number">2.2</span> Others:</h3>
 <ul>
 <li><code>du -sh &lt;path_of_dir&gt;</code> : show size of a directory</li>
 </ul>

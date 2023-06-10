@@ -91,10 +91,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../notes/index.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../presentations/" rel="" target="">
- <span class="menu-text">Presentation</span></a>
-  </li>  
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -207,11 +203,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#change-passwords-for-users" id="toc-change-passwords-for-users" class="nav-link active" data-scroll-target="#change-passwords-for-users">Change passwords for users</a></li>
-  <li><a href="#linux-install-package-guide" id="toc-linux-install-package-guide" class="nav-link" data-scroll-target="#linux-install-package-guide">Linux Install Package guide</a>
+  <li><a href="#change-passwords-for-users" id="toc-change-passwords-for-users" class="nav-link active" data-scroll-target="#change-passwords-for-users"><span class="header-section-number">1</span> Change passwords for users</a></li>
+  <li><a href="#linux-install-package-guide" id="toc-linux-install-package-guide" class="nav-link" data-scroll-target="#linux-install-package-guide"><span class="header-section-number">2</span> Linux Install Package guide</a>
   <ul class="collapse">
-  <li><a href="#upgrade-packages" id="toc-upgrade-packages" class="nav-link" data-scroll-target="#upgrade-packages">Upgrade packages</a></li>
-  <li><a href="#issues-in-installing" id="toc-issues-in-installing" class="nav-link" data-scroll-target="#issues-in-installing">Issues in installing</a></li>
+  <li><a href="#upgrade-packages" id="toc-upgrade-packages" class="nav-link" data-scroll-target="#upgrade-packages"><span class="header-section-number">2.1</span> Upgrade packages</a></li>
+  <li><a href="#issues-in-installing" id="toc-issues-in-installing" class="nav-link" data-scroll-target="#issues-in-installing"><span class="header-section-number">2.2</span> Issues in installing</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/linux/cheatsheet.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -242,14 +238,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>This page contains useful? or maybe essential tips for Linux usage. Still under development</p>
-<section id="change-passwords-for-users" class="level2">
-<h2 class="anchored" data-anchor-id="change-passwords-for-users">Change passwords for users</h2>
+<section id="change-passwords-for-users" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="change-passwords-for-users"><span class="header-section-number">1</span> Change passwords for users</h2>
 <p>The bash <code>passwd</code> command is used to change password for user in the system,altough you need sudo access to do so:</p>
 <p><code>passwd [username]</code></p>
 <p>If no <code>username</code> where provided, it would change the password for the current log-on user.</p>
 </section>
-<section id="linux-install-package-guide" class="level2">
-<h2 class="anchored" data-anchor-id="linux-install-package-guide">Linux Install Package guide</h2>
+<section id="linux-install-package-guide" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="linux-install-package-guide"><span class="header-section-number">2</span> Linux Install Package guide</h2>
 <p>To install package in Linux, i.e.&nbsp;<code>*.rpm</code> packages through terminal, use the <code>Alien</code> utility like below:</p>
 <p>First copy the <code>*.rpm</code> file to WSL:</p>
 <p><code>cp /mnt/c/Users/&lt;your_username&gt;/Downloads/&lt;the_package.rpm&gt; ~</code>, where <code>~</code> should be the root path or <code>/home/username</code> of the WSL</p>
@@ -260,15 +256,15 @@ ul.task-list li input[type="checkbox"] {
 <p><code>alien &lt;package_name&gt;.rpm</code></p>
 <p>And finally install it:</p>
 <p><code>dpkg -i package_name.deb</code></p>
-<section id="upgrade-packages" class="level3">
-<h3 class="anchored" data-anchor-id="upgrade-packages">Upgrade packages</h3>
+<section id="upgrade-packages" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="upgrade-packages"><span class="header-section-number">2.1</span> Upgrade packages</h3>
 <p>Use the following command to see if there are any package upgradable:</p>
 <p><code>apt list --upgradable</code></p>
 <p>And to update those packages:</p>
 <p><code>apt-get upgrade</code>, after this command, it would ask you to upgrade or not [Y/n] and telling you any additional spaces it might requires</p>
 </section>
-<section id="issues-in-installing" class="level3">
-<h3 class="anchored" data-anchor-id="issues-in-installing">Issues in installing</h3>
+<section id="issues-in-installing" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="issues-in-installing"><span class="header-section-number">2.2</span> Issues in installing</h3>
 <p>If your <code>apt-get install &lt;package_name&gt;</code> is failing, check if you have any typo, <code>CASE_SENSITVE</code>, otherwise update your <code>apt</code> by:</p>
 <p><code>sudo apt update</code> <!---
 ### Install without sudo privilege
