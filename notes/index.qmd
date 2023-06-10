@@ -2,6 +2,7 @@
 title: Tony's notes
 metadata-files: ["_listing_meta.yml"]
 search: false
+sidebar: notes
 sidebar_position: 1
 listing:
     contents:

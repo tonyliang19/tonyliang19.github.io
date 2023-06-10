@@ -3,6 +3,7 @@ title: Code Demos
 id: demos
 metadata-files: ["_listing_meta.yml"]
 search: false
+sidebar: demos
 sidebar_position: 1
 listing:
     contents:
