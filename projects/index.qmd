@@ -4,7 +4,6 @@ toc: false
 link-external-icon: false
 ---
 
-
 ### FIFA 22 Ultimate Team Recommender <a href="https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender" style="float: right;"><i class="fab fa-github" style="color: black;"></i></a>
 
 <!-- ### FIFA 22 Ultimate Team Recommender{#fifa-22} 
@@ -12,3 +11,16 @@ link-external-icon: false
 [{{< fa brands github >}}  code](https://github.com/FIFA22-UT-REC/fifa22-ultimate-team-recommender) -->
 
 This project uses Python `beautifulSoup` and `requests` to scrap FIFA player data from an open source website [SoFIFA](https://sofifa.com/) then fit unsupervised model to player statistics to setup a recommender (With UI) of players in FIFA22 given user inputs as constraints eg. budget, potential, attribute and etc in an automated pipeline manner.
+
+<hr>
+
+### Pollen Image Recognition <a href="https://github.com/tonyliang19/pollen_id" style="float: right;"><i class="fab fa-github" style="color: black;"></i></a>
+
+This project uses a convolutional neural network based library `detectron2` [@wu2019detectron2] to recognize pollens from high resolution custom annotated pictures and further classify different species of pollen with deep learning approach.
+
+<hr>
+
+### Mock University Enrollment App <a href="https://github.com/tonyliang19/flask-web-app" style="float: right;"><i class="fab fa-github" style="color: black;"></i></a>
+
+This project uses Python `Flask` and database `mongoDB` to mock university enrollment, and to experiment process of web development, interactions of front-end and back-end data from nonSQL database through RESTful API. 
+

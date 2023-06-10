@@ -1,10 +1,12 @@
 project:
   type: website
   output-dir: docs
-
+  
+bibliography: references.bib
 website:
   #open-graph: true
   title: "Tony Liang"
+  
   search: false
   #site-url: https:/tonyliang19.com/  
   repo-url: https://github.com/tonyliang19/tonyliang19.github.io/
