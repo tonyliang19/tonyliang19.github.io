@@ -30,9 +30,8 @@ website:
         href: demos/index.qmd
       - text: Notes
         href: notes/index.qmd
-      - text: Presentation
-        href: presentations/
-      #- sidebar:notes
+      # - text: Presentation
+      #   href: presentations/
     
 
     right:
@@ -85,6 +84,8 @@ format:
     link-external-newwindow: true
     link-external-icon: true
     toc: true
+    # optional to have number in sections
+    number-sections: true
     theme:
       light: flatly
       dark:  darkly #solar #darkly 

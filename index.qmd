@@ -21,6 +21,7 @@ about:
     - icon: envelope
       text: Email
       href: mailto:tliang19@student.ubc.ca
+number-sections: false
 ---
 
 ::: [#bio]
