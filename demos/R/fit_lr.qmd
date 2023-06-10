@@ -1,9 +1,14 @@
 ---
-title: "R Code Demo"
+title: "Fit a LR model"
 format:
   html:
     code-fold: true
 ---
+
+```{r}
+#| echo: false
+source("_common.R")
+```
 
 R is good in the stat, bio side.
 
@@ -16,10 +21,10 @@ Note that below is not fully developed.
 
 Here are some examples of R codes:
 
+Have all setups like loading library in one block of code
+
 ```{r}
 #| label: setup
-#| echo: true
-#| warning: false
 #| message: false
 # load library
 library(tidyverse)
@@ -49,7 +54,7 @@ x2 <- rnorm(n=n, mean=3, sd=2)
 y <- 2*x1 + 3*x2
 data <- data.frame(x1 = x1, x2 = x2, y = y)
 
-# fit model and print fitted coefficients
+#> fit model and print fitted coefficients
 reg <- lm(y ~ . , data=data)
 print(reg$coefficients)
 ```
