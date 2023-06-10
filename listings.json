@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/project.html",
-    "items": [
-      "/projects/fifa22.html"
-    ]
-  },
-  {
     "listing": "/notes/index.html",
     "items": [
       "/notes/conda/index.html",
