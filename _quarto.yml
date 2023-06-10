@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  
+
 bibliography: references.bib
 website:
   #open-graph: true
@@ -25,9 +25,12 @@ website:
         href: projects/index.qmd
       - text: Resume
         href: resume/index.qmd
-      - sidebar:demos
+      - text: Demos
+        href: demos/index.qmd
       - text: Notes
         href: notes/index.qmd
+      - text: Presentation
+        href: presentations/
       #- sidebar:notes
     
 
@@ -45,7 +48,7 @@ website:
     style:  "docked"
     background: light
     collapse-level: 1
-    contents: demos/*
+    contents: demos/**
   
   # dropdown for coding notes
   - id: notes

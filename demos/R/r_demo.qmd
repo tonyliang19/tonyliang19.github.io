@@ -5,6 +5,9 @@ format:
     code-fold: true
 ---
 
+R is good in the stat, bio side.
+
+
 :::{.callout-note}
 
 Note that below is not fully developed.

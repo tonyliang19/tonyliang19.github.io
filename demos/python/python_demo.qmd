@@ -5,4 +5,4 @@ format:
     code-tools: true
 ---
 
-Placeholder file to test out python functionality with Quarto
+Why everyone use Python? 

@@ -1,0 +1,21 @@
+---
+title: Code Demos
+id: demos
+metadata-files: ["_listing_meta.yml"]
+search: false
+sidebar_position: 1
+listing:
+    contents:
+    - "/*.qmd"
+    - "/*/*.qmd"
+format:
+    html:
+        code-tools: false
+---
+
+I have some demos for code here, they are meant to be your "hello world" script but with extra material there.
+Why not try following them and see if it works on your side?
+
+:::{.callout-caution}
+I assume you have your laptop/PC have proper setup to run these codes! I will add setup later once I have more time
+:::
