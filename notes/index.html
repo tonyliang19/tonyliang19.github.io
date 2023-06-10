@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,10 +145,92 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tony’s notes</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/shell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shell</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/conda/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conda</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/make/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Makefile</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/git/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/ssh/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SSH</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/docker/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown Syntax Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../notes/linux/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Linux</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/linux/cheatsheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cheatsheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notes/linux/other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Other</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
@@ -173,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a place to store and share some of my notes. This is still in progress, not sure how long might take me to update. <strong>Last updated at 2023-06-10 16:23:06</strong></p>
+<p>This is a place to store and share some of my notes. This is still in progress, not sure how long might take me to update. <strong>Last updated at 2023-06-10 16:30:07</strong></p>
 <p>If you find any error, please get in touch with me <a href="../index.html">here</a>.</p>
 
 
@@ -193,7 +275,7 @@ Description
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="2" data-listing-title-sort="Conda" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="2" data-listing-title-sort="Conda" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/conda/index.html" class="title listing-title">Conda</a>
 </td>
@@ -201,7 +283,7 @@ Description
 <span class="listing-description">This…</span>
 </td>
 </tr>
-<tr data-index="1" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="1" data-listing-title-sort="Docker" data-listing-filename-sort="index.qmd">
+<tr data-index="1" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="1" data-listing-title-sort="Docker" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/docker/index.html" class="title listing-title">Docker</a>
 </td>
@@ -209,7 +291,7 @@ Description
 <span class="listing-description">This page stores some useful commands (with…</span>
 </td>
 </tr>
-<tr data-index="2" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="5" data-listing-title-sort="Git" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="5" data-listing-title-sort="Git" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/git/index.html" class="title listing-title">Git</a>
 </td>
@@ -217,7 +299,7 @@ Description
 <span class="listing-description">This page will explain some very frequent…</span>
 </td>
 </tr>
-<tr data-index="3" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="1" data-listing-title-sort="Linux" data-listing-filename-sort="index.qmd">
+<tr data-index="3" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="1" data-listing-title-sort="Linux" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/linux/index.html" class="title listing-title">Linux</a>
 </td>
@@ -225,7 +307,7 @@ Description
 <span class="listing-description">Notes on Linux usage</span>
 </td>
 </tr>
-<tr data-index="4" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="1" data-listing-title-sort="Makefile" data-listing-filename-sort="index.qmd">
+<tr data-index="4" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="1" data-listing-title-sort="Makefile" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/make/index.html" class="title listing-title">Makefile</a>
 </td>
@@ -233,7 +315,7 @@ Description
 <span class="listing-description">This is quite note for <code>Makefile</code>, explaining…<code></code></span>
 </td>
 </tr>
-<tr data-index="5" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="2" data-listing-title-sort="Markdown Syntax Guide" data-listing-filename-sort="index.qmd">
+<tr data-index="5" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="2" data-listing-title-sort="Markdown Syntax Guide" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/markdown/index.html" class="title listing-title">Markdown Syntax Guide</a>
 </td>
@@ -241,7 +323,7 @@ Description
 <span class="listing-description">This is a guide that’s also written in <strong>Markdown</strong>…<em></em></span>
 </td>
 </tr>
-<tr data-index="6" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="2" data-listing-title-sort="SSH" data-listing-filename-sort="index.qmd">
+<tr data-index="6" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="2" data-listing-title-sort="SSH" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/ssh/index.html" class="title listing-title">SSH</a>
 </td>
@@ -249,7 +331,7 @@ Description
 <span class="listing-description">This is…</span>
 </td>
 </tr>
-<tr data-index="7" data-listing-file-modified-sort="1686439290908" data-listing-reading-time-sort="1" data-listing-title-sort="Shell" data-listing-filename-sort="index.qmd">
+<tr data-index="7" data-listing-file-modified-sort="1686439693720" data-listing-reading-time-sort="1" data-listing-title-sort="Shell" data-listing-filename-sort="index.qmd">
 <td>
 <a href="../notes/shell/index.html" class="title listing-title">Shell</a>
 </td>
