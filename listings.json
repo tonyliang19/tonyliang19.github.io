@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/demos/index.html",
+    "items": [
+      "/demos/python/python_demo.html",
+      "/demos/R/r_demo.html"
+    ]
+  },
+  {
     "listing": "/notes/index.html",
     "items": [
       "/notes/conda/index.html",
