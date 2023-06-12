@@ -1,0 +1,40 @@
+---
+title: "Multi-Omics"
+description: "Methods on multi-omics data"
+format:
+    html:
+        link-external-icon: false
+tbl-cap-location: bottom
+---
+
+## Background of Multi-Omics Data Integration
+
+### What is Multi-Omics?
+
+Multi-omics involves studying multiple omics data from same samples at once (eg. epigenomics, proteomics, transcriptomics, genomics).  More general term for this type of data analysis are:
+
+- multi-modal
+- multi-table
+- multi-way
+
+The data can be described as multiple matrices/tables with same number of samples and varying number of features ^[@githubGitHubMikeloveawesomemultiomics]. 
+
+### Public Data Sources
+
+| **Data Repository**                                 	| **Link**                                                 	| **Disease**       	| **Types of Multi-Omics data available**                                                          	|
+|-----------------------------------------------------	|--------------------------------------------------------------	|-------------------	|--------------------------------------------------------------------------------------------------	|
+| The Cancer Genome Atlas (TCGA)                      	| [link](https://cancergenome.nih.gov/)                                	| Cancer            	| RNA-seq, DNA-seq, miRNA-Seq, SNV, CNV, DNA methylation, RPPA                                     	|
+| Clinical Proteomic Tumor Analysis Consortium(CPTAC) 	| [link](https://cptac-data-portal.georgetown.edu/cptacPublic/)        	| Cancer            	| Proteomics data corresponding to TCGA cohorts                                                    	|
+| International Cancer Genomics Consortium (ICGC)     	| [link](https://icgc.org/)                                            	| Cancer            	| Whole genome sequencing, genomic variations data (somatic and germline mutation)                 	|
+| Cancer Cell Line Encyclopedia (CCLE)                	| [link](https://sites.broadinstitute.org/ccle/)                       	| Cancer cell line  	| Gene expression, copy number, and sequencing data; pharmalogical profiles of 24 anticancer drugs 	|
+| TARGET                                              	| [link](https://www.cancer.gov/ccg/research/genome-sequencing/target) 	| Pediatric cancers 	| Gene expression, miRNA expression, copy number, and sequenciing data                             	|
+
+: Abbreaviations: CNV, copy number variation; miRNA, microRNA; RPPA, reverse phase protein array; SNP, single-nucleotide polymorphism; SNV, single-nucleotide variant
+
+### Common analysis themes and examples
+
+Placeholder
+
+## Methods for Vertical Multi-Omics Data Integration
+
+Placeholder

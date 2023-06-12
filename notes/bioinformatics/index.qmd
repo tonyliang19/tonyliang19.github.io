@@ -1,0 +1,7 @@
+---
+title: "Bioinformatics"
+description: "Notes on Bioinformatics basics and tools"
+metadata-files: ["../_listing_meta.yml"]
+---
+
+Bioinformatics is an **interdisciplinary** field that develops **methods** and **softwares** tools for understanding **biological** data.
