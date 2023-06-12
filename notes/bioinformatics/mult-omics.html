@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Methods on multi-omics data">
 
-<title>Tony Liang - Markdown Syntax Guide</title>
+<title>Tony Liang - Multi-Omics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,46 +21,31 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="../../notes/bioinformatics/index.html" rel="next">
-<link href="../../notes/docker/index.html" rel="prev">
+<link href="../../notes/linux/index.html" rel="next">
+<link href="../../notes/bioinformatics/index.html" rel="prev">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -149,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/markdown/index.html">Markdown Syntax Guide</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/bioinformatics/index.html">Bioinformatics</a></li><li class="breadcrumb-item"><a href="../../notes/bioinformatics/mult-omics.html">Multi-Omics</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -199,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notes/markdown/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Markdown Syntax Guide</span></a>
   </div>
 </li>
@@ -214,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/bioinformatics/mult-omics.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes/bioinformatics/mult-omics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Multi-Omics</span></a>
   </div>
 </li>
@@ -253,18 +239,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#making-tables" id="toc-making-tables" class="nav-link active" data-scroll-target="#making-tables"><span class="header-section-number">1</span> Making tables</a></li>
+  <li><a href="#background-of-multi-omics-data-integration" id="toc-background-of-multi-omics-data-integration" class="nav-link active" data-scroll-target="#background-of-multi-omics-data-integration"><span class="header-section-number">1</span> Background of Multi-Omics Data Integration</a>
+  <ul class="collapse">
+  <li><a href="#what-is-multi-omics" id="toc-what-is-multi-omics" class="nav-link" data-scroll-target="#what-is-multi-omics"><span class="header-section-number">1.1</span> What is Multi-Omics?</a></li>
+  <li><a href="#public-data-sources" id="toc-public-data-sources" class="nav-link" data-scroll-target="#public-data-sources"><span class="header-section-number">1.2</span> Public Data Sources</a></li>
+  <li><a href="#common-analysis-themes-and-examples" id="toc-common-analysis-themes-and-examples" class="nav-link" data-scroll-target="#common-analysis-themes-and-examples"><span class="header-section-number">1.3</span> Common analysis themes and examples</a></li>
+  </ul></li>
+  <li><a href="#methods-for-vertical-multi-omics-data-integration" id="toc-methods-for-vertical-multi-omics-data-integration" class="nav-link" data-scroll-target="#methods-for-vertical-multi-omics-data-integration"><span class="header-section-number">2</span> Methods for Vertical Multi-Omics Data Integration</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/markdown/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/edit/main/notes/bioinformatics/mult-omics.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/tonyliang19/tonyliang19.github.io/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Markdown Syntax Guide</h1>
+<h1 class="title">Multi-Omics</h1>
 </div>
 
+<div>
+  <div class="description">
+    Methods on multi-omics data
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -277,77 +274,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This is a guide that’s also written in <strong>Markdown</strong>, a <em>guide</em> that has some important and useful syntax for markdown if you can’t remember it all:</p>
+<section id="background-of-multi-omics-data-integration" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="background-of-multi-omics-data-integration"><span class="header-section-number">1</span> Background of Multi-Omics Data Integration</h2>
+<section id="what-is-multi-omics" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="what-is-multi-omics"><span class="header-section-number">1.1</span> What is Multi-Omics?</h3>
+<p>Multi-omics involves studying multiple omics data from same samples at once (eg. epigenomics, proteomics, transcriptomics, genomics). More general term for this type of data analysis are:</p>
 <ul>
-<li>Referencing to other <a href="../../notes/index.html">link</a></li>
-<li>Creating sub list like this:
-<ul>
-<li><strong>Sub level</strong></li>
-</ul></li>
-<li>And many more</li>
+<li>multi-modal</li>
+<li>multi-table</li>
+<li>multi-way</li>
 </ul>
-<p>Before starting, I will use md to denote <code>markdown</code></p>
-<section id="making-tables" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="making-tables"><span class="header-section-number">1</span> Making tables</h2>
-<p>If you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:</p>
+<p>The data can be described as multiple matrices/tables with same number of samples and varying number of features <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+</section>
+<section id="public-data-sources" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="public-data-sources"><span class="header-section-number">1.2</span> Public Data Sources</h3>
 <table class="table">
-<colgroup>
-<col style="width: 31%">
-<col style="width: 31%">
-<col style="width: 6%">
-<col style="width: 31%">
-</colgroup>
+<caption>Abbreaviations: CNV, copy number variation; miRNA, microRNA; RPPA, reverse phase protein array; SNP, single-nucleotide polymorphism; SNV, single-nucleotide variant</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Header for column 1</th>
-<th style="text-align: center;">Header for column 2</th>
-<th>….</th>
-<th style="text-align: right;">Header for column n</th>
+<th><strong>Data Repository</strong></th>
+<th><strong>Link</strong></th>
+<th><strong>Disease</strong></th>
+<th><strong>Types of Multi-Omics data available</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">This text is left-aligned</td>
-<td style="text-align: center;">This text is center-aligned</td>
-<td>This one nothing</td>
-<td style="text-align: right;">This one is right-aligned</td>
+<td>The Cancer Genome Atlas (TCGA)</td>
+<td><a href="https://cancergenome.nih.gov/">link</a></td>
+<td>Cancer</td>
+<td>RNA-seq, DNA-seq, miRNA-Seq, SNV, CNV, DNA methylation, RPPA</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">1</td>
-<td style="text-align: center;">2</td>
-<td>3</td>
-<td style="text-align: right;">4</td>
+<td>Clinical Proteomic Tumor Analysis Consortium(CPTAC)</td>
+<td><a href="https://cptac-data-portal.georgetown.edu/cptacPublic/">link</a></td>
+<td>Cancer</td>
+<td>Proteomics data corresponding to TCGA cohorts</td>
+</tr>
+<tr class="odd">
+<td>International Cancer Genomics Consortium (ICGC)</td>
+<td><a href="https://icgc.org/">link</a></td>
+<td>Cancer</td>
+<td>Whole genome sequencing, genomic variations data (somatic and germline mutation)</td>
+</tr>
+<tr class="even">
+<td>Cancer Cell Line Encyclopedia (CCLE)</td>
+<td><a href="https://sites.broadinstitute.org/ccle/">link</a></td>
+<td>Cancer cell line</td>
+<td>Gene expression, copy number, and sequencing data; pharmalogical profiles of 24 anticancer drugs</td>
+</tr>
+<tr class="odd">
+<td>TARGET</td>
+<td><a href="https://www.cancer.gov/ccg/research/genome-sequencing/target">link</a></td>
+<td>Pediatric cancers</td>
+<td>Gene expression, miRNA expression, copy number, and sequenciing data</td>
 </tr>
 </tbody>
 </table>
-<p>Notice above, creating table is easy, simply use:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">### First row is always header or column name, and it should be spanned like</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| <span class="kw">&lt;col_name</span> <span class="er">here</span><span class="kw">&gt;</span> | , use two bars to separate</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### Then the next row is to determine how that column's content is to be aligned</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### By Default it is left-aligned</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Center-aligned:</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>| :----: | , you need <span class="in">`-`</span> wrap in two <span class="in">`:`</span>. one left and one right just like <span class="in">`:-:`</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Right-aligned:</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>| -----: |, you need <span class="in">`-`</span> with <span class="in">`:`</span> to the right of the <span class="in">`-`</span>.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Then you can just fill up the table as you like.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>In summary, the <strong>“|-|”</strong> is used for indicate the table and <strong>“:”</strong> is used for indicate the text alignment. If <strong>|:-|</strong> entered that is a left aligned text column. If <strong>|-:|</strong> entered that is a right aligned text and if <strong>|:-:|</strong> entered that is a centre aligned.</p>
+</section>
+<section id="common-analysis-themes-and-examples" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="common-analysis-themes-and-examples"><span class="header-section-number">1.3</span> Common analysis themes and examples</h3>
+<p>Placeholder</p>
+</section>
+</section>
+<section id="methods-for-vertical-multi-omics-data-integration" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="methods-for-vertical-multi-omics-data-integration"><span class="header-section-number">2</span> Methods for Vertical Multi-Omics Data Integration</h2>
+<p>Placeholder</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-githubGitHubMikeloveawesomemultiomics" class="csl-entry" role="listitem">
+<span>“<span>G</span>it<span>H</span>ub - Mikelove/Awesome-Multi-Omics: <span>L</span>ist of Software Packages for Multi-Omics Analysis — Github.com.”</span> <a href="https://github.com/mikelove/awesome-multi-omics" class="uri">https://github.com/mikelove/awesome-multi-omics</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><span class="citation" data-cites="githubGitHubMikeloveawesomemultiomics"><span>“<span>G</span>it<span>H</span>ub - Mikelove/Awesome-Multi-Omics: <span>L</span>ist of Software Packages for Multi-Omics Analysis — Github.com”</span></span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -706,21 +714,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (!isInternal(link.href)) {
           // target, if specified
           link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
       }
     }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../notes/docker/index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Docker</span>
+      <a href="../../notes/bioinformatics/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Bioinformatics</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../notes/bioinformatics/index.html" class="pagination-link">
-        <span class="nav-page-text">Bioinformatics</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../notes/linux/index.html" class="pagination-link">
+        <span class="nav-page-text">Linux</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

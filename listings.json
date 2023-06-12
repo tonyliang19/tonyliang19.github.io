@@ -7,8 +7,15 @@
     ]
   },
   {
+    "listing": "/notes/bioinformatics/index.html",
+    "items": [
+      "/notes/bioinformatics/mult-omics.html"
+    ]
+  },
+  {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/bioinformatics/index.html",
       "/notes/conda/index.html",
       "/notes/docker/index.html",
       "/notes/git/index.html",
