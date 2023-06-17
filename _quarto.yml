@@ -82,7 +82,8 @@ format:
     # change highlight of code
     highlight-style: github
     link-external-newwindow: true
-    link-external-icon: true
+    # set global external link to false, could override in specific qmd
+    link-external-icon: false
     toc: true
     # optional to have number in sections
     number-sections: true
