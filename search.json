@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "demos/R/fit_lr.html",
-    "href": "demos/R/fit_lr.html",
-    "title": "Fit a LR model",
-    "section": "",
-    "text": "R is good in the stat, bio side.\n\n\n\n\n\n\nNote\n\n\n\nNote that below is not fully developed.\n\n\nHere are some examples of R codes:\nHave all setups like loading library in one block of code\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] -0.6382674\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n#&gt; fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n  (Intercept)            x1            x2 \n-7.105427e-16  2.000000e+00  3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
-  },
-  {
-    "objectID": "demos/python/python_demo.html",
-    "href": "demos/python/python_demo.html",
-    "title": "Python Code Demo",
-    "section": "",
-    "text": "Why everyone use Python?"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Tony Liang",
-    "section": "",
-    "text": "FIFA 22 Ultimate Team Recommender \n\nThis project uses Python beautifulSoup and requests to scrap FIFA player data from an open source website SoFIFA then fit unsupervised model to player statistics to setup a recommender (With UI) of players in FIFA22 given user inputs as constraints eg. budget, potential, attribute and etc in an automated pipeline manner.\n\n\n\nPollen Image Recognition \nThis project uses a convolutional neural network based library detectron2 (Wu et al. 2019) to recognize pollens from high resolution custom annotated pictures and further classify different species of pollen with deep learning approach.\n\n\n\nMock University Enrollment App \nThis project uses Python Flask and database mongoDB to mock university enrollment, and to experiment process of web development, interactions of front-end and back-end data from nonSQL database through RESTful API.\n\n\n\n\n\nReferences\n\nWu, Yuxin, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick. 2019. “Detectron2.” https://github.com/facebookresearch/detectron2."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Tony Liang",
     "section": "",
-    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-06-14 16:12:30\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above."
+    "text": "My name is Tony Liang, currently undergraduate Math and Statistics Student at University of British Columbia (UBC) in Vancouver, Canada. I am originally from Kaiping, China (here). But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado.\n当然中文也会一点点(这已经是我所有的水平了)。\nLast updated at 2023-06-17 15:45:32\nPlease dont’t hesitate to contact me or just to chat, you could open any of my links above."
   },
   {
     "objectID": "index.html#experience",
@@ -49,32 +28,18 @@
     "text": "Education\n\n B.Sc. in Mathematics and Statistics and Minor in Data Science, Sep 2020 - Nov 2023\nUniversity of British Columbia, Vancouver, CA"
   },
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Tony Liang",
+    "section": "",
+    "text": "FIFA 22 Ultimate Team Recommender \n\nThis project uses Python beautifulSoup and requests to scrap FIFA player data from an open source website SoFIFA then fit unsupervised model to player statistics to setup a recommender (With UI) of players in FIFA22 given user inputs as constraints eg. budget, potential, attribute and etc in an automated pipeline manner.\n\n\n\nPollen Image Recognition \nThis project uses a convolutional neural network based library detectron2 (Wu et al. 2019) to recognize pollens from high resolution custom annotated pictures and further classify different species of pollen with deep learning approach.\n\n\n\nMock University Enrollment App \nThis project uses Python Flask and database mongoDB to mock university enrollment, and to experiment process of web development, interactions of front-end and back-end data from nonSQL database through RESTful API.\n\n\n\n\n\nReferences\n\nWu, Yuxin, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick. 2019. “Detectron2.” https://github.com/facebookresearch/detectron2."
+  },
+  {
     "objectID": "resume/index.html",
     "href": "resume/index.html",
     "title": "Tony Liang",
     "section": "",
     "text": "Download current resume"
-  },
-  {
-    "objectID": "notes/shell/index.html",
-    "href": "notes/shell/index.html",
-    "title": "Shell",
-    "section": "",
-    "text": "Shell is a program where users type commands, and directly interact with system. It is usually done through command line interface (CLI). And, it’s also scripting language just like Python or Java.\nTypically uses $ as prompt, followed by a text cursor, and some word to indicate an executable binary:\n$ ls # This is a built-in command/binary for Bash shells\nMost shells present in different OS are:\n\nPowershell in Windows\nZsh in MacOS\nBash in Linux"
-  },
-  {
-    "objectID": "notes/shell/index.html#basic-information",
-    "href": "notes/shell/index.html#basic-information",
-    "title": "Shell",
-    "section": "",
-    "text": "Shell is a program where users type commands, and directly interact with system. It is usually done through command line interface (CLI). And, it’s also scripting language just like Python or Java.\nTypically uses $ as prompt, followed by a text cursor, and some word to indicate an executable binary:\n$ ls # This is a built-in command/binary for Bash shells\nMost shells present in different OS are:\n\nPowershell in Windows\nZsh in MacOS\nBash in Linux"
-  },
-  {
-    "objectID": "notes/shell/index.html#frequently-used-commands",
-    "href": "notes/shell/index.html#frequently-used-commands",
-    "title": "Shell",
-    "section": "2 Frequently used commands",
-    "text": "2 Frequently used commands\n\n2.1 Navigating Files and Directories\n\npwd: prints current working directory\nls: list files in current directory (by default), accepts optional argument\ncd: change working directory\n\n\n\n2.2 Others:\n\ndu -sh &lt;path_of_dir&gt; : show size of a directory"
   },
   {
     "objectID": "notes/bioinformatics/mult-omics.html",
@@ -105,6 +70,48 @@
     "text": "Footnotes\n\n\n“GitHub - Mikelove/Awesome-Multi-Omics: List of Software Packages for Multi-Omics Analysis — Github.com”↩︎"
   },
   {
+    "objectID": "notes/ssh/index.html",
+    "href": "notes/ssh/index.html",
+    "title": "SSH",
+    "section": "",
+    "text": "This is cheasheet/quicknote to connect and access remote servers through ssh."
+  },
+  {
+    "objectID": "notes/ssh/index.html#check-your-existing-key",
+    "href": "notes/ssh/index.html#check-your-existing-key",
+    "title": "SSH",
+    "section": "1 Check your existing key",
+    "text": "1 Check your existing key\nEnter this command in your temrinal:\nls -al ~/.ssh\nThis checks if you have any existing ssh key-pairs, with something like:\n\nid_rsa.pub\nid_ecdsa.pub\nid_ed25519.pub\n\nNote: If you receive an error that ~/.ssh doesn’t exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step."
+  },
+  {
+    "objectID": "notes/ssh/index.html#add-your-key-to-other-hosts",
+    "href": "notes/ssh/index.html#add-your-key-to-other-hosts",
+    "title": "SSH",
+    "section": "2 Add your key to other hosts",
+    "text": "2 Add your key to other hosts\nTo authenticate with a remote-host using your public SSH key you will use the ssh-copy-id command. Use the -i flag to specify the public key to copy to the remote-host.\nEnter this command in you terminal, replacing &lt;username@host&gt;:\nssh-copy-id -i ~/.ssh/id_rsa.pub &lt;username@host&gt;\nThis command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:\n$(username@host) Enter your password:\nAnd you only need to enter this for the “last” time, after that you could just do ssh username@host without typing password anymore. Moreover, you could also, use the shorthand by replacing to a host alias in a config file under ~/.ssh (See below section) Note: 2 Factor-Authentication (2FA) is not avoidable."
+  },
+  {
+    "objectID": "notes/ssh/index.html#making-alias-for-your-known-host-servers",
+    "href": "notes/ssh/index.html#making-alias-for-your-known-host-servers",
+    "title": "SSH",
+    "section": "3 Making alias for your known host servers",
+    "text": "3 Making alias for your known host servers\nIf you want to avoid typing out whole host and ip address of your servers, try the following:\n\ncreate a file (if not extists yet) with touch ~.ssh/config\nUse the template below to add the server you like to connect to:\n\n\n# Indentation is required\n\n# Host is the alias shorthand you want to be ugin later like:\n\n# ssc &lt;Host&gt; , i.e. ssh foo\nHost &lt;the-alias-you-want-to-use&gt;\n    # The HostName is some domain like abc.cd.ef.gh, usually like a email link?\n    HostName &lt;this.should.be.domain&gt;\n    # User is the allocated user with permission alonsgside with the HostName\n    User tliang19\n\n# ideally like ssh User@HostName to ssh Host"
+  },
+  {
+    "objectID": "notes/markdown/index.html",
+    "href": "notes/markdown/index.html",
+    "title": "Markdown Syntax Guide",
+    "section": "",
+    "text": "This is a guide that’s also written in Markdown, a guide that has some important and useful syntax for markdown if you can’t remember it all:\nBefore starting, I will use md to denote markdown"
+  },
+  {
+    "objectID": "notes/markdown/index.html#making-tables",
+    "href": "notes/markdown/index.html#making-tables",
+    "title": "Markdown Syntax Guide",
+    "section": "1 Making tables",
+    "text": "1 Making tables\nIf you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:\n\n\n\n\n\n\n\n\n\nHeader for column 1\nHeader for column 2\n….\nHeader for column n\n\n\n\n\nThis text is left-aligned\nThis text is center-aligned\nThis one nothing\nThis one is right-aligned\n\n\n1\n2\n3\n4\n\n\n\nNotice above, creating table is easy, simply use:\n\n### First row is always header or column name, and it should be spanned like\n\n| &lt;col_name here&gt; | , use two bars to separate\n\n### Then the next row is to determine how that column's content is to be aligned\n### By Default it is left-aligned\n\n| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered\n\nThis above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter\n\nCenter-aligned:\n\n| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`\n\nRight-aligned:\n\n| -----: |, you need `-` with `:` to the right of the `-`.\n\nThen you can just fill up the table as you like.\nIn summary, the “|-|” is used for indicate the table and “:” is used for indicate the text alignment. If |:-| entered that is a left aligned text column. If |-:| entered that is a right aligned text and if |:-:| entered that is a centre aligned."
+  },
+  {
     "objectID": "notes/conda/index.html",
     "href": "notes/conda/index.html",
     "title": "Conda",
@@ -124,13 +131,6 @@
     "title": "Conda",
     "section": "2 Combine usage with JupyterLab",
     "text": "2 Combine usage with JupyterLab\nJupyterLab enables you to use interactive kernels of conda, such that each of the kernel could have a conda manager and pip manager. And, there are two frequent kernels: - ipykernel - iRkernel\nIt is recommended to separate Python and R kernel usages, say have different conda environments for each individual Python/R kernel. And, having nb_conda_kernels in the environment that you launch Jupyter Notebook or JupyterLab.\nFor example, this is how I use it:\n\nInstall nb_conda_kernels in the conda environment that has jupyter lab, in my case, I use the base env.\nCreate new conda envs for the projects that I do:\n\n\nconda create -n -y python_proj ipyerkernel For Python\nconda craete -n -y r_proj r-irkernel For R\n\n\nLaunch jupyter lab from base (by staying at base env), then when it launches you will be able to see the following: \nLastly, just choose the environment you are going to use\n\nIf you want to install packages to specified environments, do the following:\n\nconda activate ENV_NAME , replace ENV_NAME of the one you like to deal and mess around with\nconda install -y PKG_NAME or pip install PKG_NAME, install the packages you need depending on where they are supported (NOTE: It supports most python packages, but not quite for R packages). If you like to use more R packages, I recommend Docker or renv."
-  },
-  {
-    "objectID": "notes/make/index.html",
-    "href": "notes/make/index.html",
-    "title": "Makefile",
-    "section": "",
-    "text": "This is quite note for Makefile, explaining how to make a sample Makefile that could automate some of the repetitive actions that you carry throught your codes and projects.\n\n# A sample Makefile look like this\n\ntarget_name: &lt;any optional dependencies that this target depends on&gt;\n    \n    action_a\n    action_b\n    action_n\n\n# This means that the &lt;target_name&gt; is to be carried and do not rely on other stuffs\n.PHONY: target_name\ntarget_name:\n    action_a\n    action_b\n    action_n\nNOTE: special notation requires when you need to access other variables through $ or evaluating bash expression like $()\nAnd that is you need a second $ like or use the make’s built-in shell: - docker container rm $$(docker ps -aq) -f and NOT docker container rm $(docker ps -aq) -f + So you likely see this when you believe your command is correct but you see an error like: requires at least 1 argument.\n\ndocker container rm $(shell docker ps -aq) -f The reason why this happens is because the single $ is expanded as Makefile variable when the Makefile is parsed. It expands to blank. And the second $ sign causes make to expand $$ to $ which is then the correct usage.\n\nAnd the second usage is to prepend the command at stake with Make’s shell builtin"
   },
   {
     "objectID": "notes/git/index.html",
@@ -175,6 +175,13 @@
     "text": "5 Edit hub config\nThis teaches you how to edit the hub cli config file, that should live on this path, ~/.config/hub, where ~ assumes to be your $HOME. And the file itself looks like this:\n\nWhere you could find your github username, github PAT (The light blue highlight I have here), and whatever protocol you use (default is https, and apparently it only supports https? You could verify that if you wish to know more)"
   },
   {
+    "objectID": "notes/make/index.html",
+    "href": "notes/make/index.html",
+    "title": "Makefile",
+    "section": "",
+    "text": "This is quite note for Makefile, explaining how to make a sample Makefile that could automate some of the repetitive actions that you carry throught your codes and projects.\n\n# A sample Makefile look like this\n\ntarget_name: &lt;any optional dependencies that this target depends on&gt;\n    \n    action_a\n    action_b\n    action_n\n\n# This means that the &lt;target_name&gt; is to be carried and do not rely on other stuffs\n.PHONY: target_name\ntarget_name:\n    action_a\n    action_b\n    action_n\nNOTE: special notation requires when you need to access other variables through $ or evaluating bash expression like $()\nAnd that is you need a second $ like or use the make’s built-in shell: - docker container rm $$(docker ps -aq) -f and NOT docker container rm $(docker ps -aq) -f + So you likely see this when you believe your command is correct but you see an error like: requires at least 1 argument.\n\ndocker container rm $(shell docker ps -aq) -f The reason why this happens is because the single $ is expanded as Makefile variable when the Makefile is parsed. It expands to blank. And the second $ sign causes make to expand $$ to $ which is then the correct usage.\n\nAnd the second usage is to prepend the command at stake with Make’s shell builtin"
+  },
+  {
     "objectID": "notes/linux/cheatsheet.html",
     "href": "notes/linux/cheatsheet.html",
     "title": "Cheatsheet",
@@ -203,34 +210,6 @@
     "text": "Test page"
   },
   {
-    "objectID": "notes/ssh/index.html",
-    "href": "notes/ssh/index.html",
-    "title": "SSH",
-    "section": "",
-    "text": "This is cheasheet/quicknote to connect and access remote servers through ssh."
-  },
-  {
-    "objectID": "notes/ssh/index.html#check-your-existing-key",
-    "href": "notes/ssh/index.html#check-your-existing-key",
-    "title": "SSH",
-    "section": "1 Check your existing key",
-    "text": "1 Check your existing key\nEnter this command in your temrinal:\nls -al ~/.ssh\nThis checks if you have any existing ssh key-pairs, with something like:\n\nid_rsa.pub\nid_ecdsa.pub\nid_ed25519.pub\n\nNote: If you receive an error that ~/.ssh doesn’t exist, you do not have an existing SSH key pair in the default location. You can create a new SSH key pair in the next step."
-  },
-  {
-    "objectID": "notes/ssh/index.html#add-your-key-to-other-hosts",
-    "href": "notes/ssh/index.html#add-your-key-to-other-hosts",
-    "title": "SSH",
-    "section": "2 Add your key to other hosts",
-    "text": "2 Add your key to other hosts\nTo authenticate with a remote-host using your public SSH key you will use the ssh-copy-id command. Use the -i flag to specify the public key to copy to the remote-host.\nEnter this command in you terminal, replacing &lt;username@host&gt;:\nssh-copy-id -i ~/.ssh/id_rsa.pub &lt;username@host&gt;\nThis command copies your public key from your local laptop/PC to the remote servers you want. After successfully copied, you will be asked for the following:\n$(username@host) Enter your password:\nAnd you only need to enter this for the “last” time, after that you could just do ssh username@host without typing password anymore. Moreover, you could also, use the shorthand by replacing to a host alias in a config file under ~/.ssh (See below section) Note: 2 Factor-Authentication (2FA) is not avoidable."
-  },
-  {
-    "objectID": "notes/ssh/index.html#making-alias-for-your-known-host-servers",
-    "href": "notes/ssh/index.html#making-alias-for-your-known-host-servers",
-    "title": "SSH",
-    "section": "3 Making alias for your known host servers",
-    "text": "3 Making alias for your known host servers\nIf you want to avoid typing out whole host and ip address of your servers, try the following:\n\ncreate a file (if not extists yet) with touch ~.ssh/config\nUse the template below to add the server you like to connect to:\n\n\n# Indentation is required\n\n# Host is the alias shorthand you want to be ugin later like:\n\n# ssc &lt;Host&gt; , i.e. ssh foo\nHost &lt;the-alias-you-want-to-use&gt;\n    # The HostName is some domain like abc.cd.ef.gh, usually like a email link?\n    HostName &lt;this.should.be.domain&gt;\n    # User is the allocated user with permission alonsgside with the HostName\n    User tliang19\n\n# ideally like ssh User@HostName to ssh Host"
-  },
-  {
     "objectID": "notes/docker/index.html",
     "href": "notes/docker/index.html",
     "title": "Docker",
@@ -245,17 +224,38 @@
     "text": "1 Push Local Build Image\nIf you want to push your locally built docker image, use the following steps:\n\nDocker build . -t &lt;name_local_image&gt;\nDocker login # This is required to authenticate first\nDocker tag &lt;name_local_image&gt; &lt;docker_username/repo_name&gt;\nDocker push &lt;docker_username/repo_name&gt;"
   },
   {
-    "objectID": "notes/markdown/index.html",
-    "href": "notes/markdown/index.html",
-    "title": "Markdown Syntax Guide",
+    "objectID": "notes/shell/index.html",
+    "href": "notes/shell/index.html",
+    "title": "Shell",
     "section": "",
-    "text": "This is a guide that’s also written in Markdown, a guide that has some important and useful syntax for markdown if you can’t remember it all:\nBefore starting, I will use md to denote markdown"
+    "text": "Shell is a program where users type commands, and directly interact with system. It is usually done through command line interface (CLI). And, it’s also scripting language just like Python or Java.\nTypically uses $ as prompt, followed by a text cursor, and some word to indicate an executable binary:\n$ ls # This is a built-in command/binary for Bash shells\nMost shells present in different OS are:\n\nPowershell in Windows\nZsh in MacOS\nBash in Linux"
   },
   {
-    "objectID": "notes/markdown/index.html#making-tables",
-    "href": "notes/markdown/index.html#making-tables",
-    "title": "Markdown Syntax Guide",
-    "section": "1 Making tables",
-    "text": "1 Making tables\nIf you need to code out tables in md, like to represent some csv like object or anything that needs table, try the following:\n\n\n\n\n\n\n\n\n\nHeader for column 1\nHeader for column 2\n….\nHeader for column n\n\n\n\n\nThis text is left-aligned\nThis text is center-aligned\nThis one nothing\nThis one is right-aligned\n\n\n1\n2\n3\n4\n\n\n\nNotice above, creating table is easy, simply use:\n\n### First row is always header or column name, and it should be spanned like\n\n| &lt;col_name here&gt; | , use two bars to separate\n\n### Then the next row is to determine how that column's content is to be aligned\n### By Default it is left-aligned\n\n| ----- | , the amount of - doesnt matter, markdown automatically fixes for you when rendered\n\nThis above is to do left aligned and equivalent to | :--- |, again amount of - DO NOT matter\n\nCenter-aligned:\n\n| :----: | , you need `-` wrap in two `:`. one left and one right just like `:-:`\n\nRight-aligned:\n\n| -----: |, you need `-` with `:` to the right of the `-`.\n\nThen you can just fill up the table as you like.\nIn summary, the “|-|” is used for indicate the table and “:” is used for indicate the text alignment. If |:-| entered that is a left aligned text column. If |-:| entered that is a right aligned text and if |:-:| entered that is a centre aligned."
+    "objectID": "notes/shell/index.html#basic-information",
+    "href": "notes/shell/index.html#basic-information",
+    "title": "Shell",
+    "section": "",
+    "text": "Shell is a program where users type commands, and directly interact with system. It is usually done through command line interface (CLI). And, it’s also scripting language just like Python or Java.\nTypically uses $ as prompt, followed by a text cursor, and some word to indicate an executable binary:\n$ ls # This is a built-in command/binary for Bash shells\nMost shells present in different OS are:\n\nPowershell in Windows\nZsh in MacOS\nBash in Linux"
+  },
+  {
+    "objectID": "notes/shell/index.html#frequently-used-commands",
+    "href": "notes/shell/index.html#frequently-used-commands",
+    "title": "Shell",
+    "section": "2 Frequently used commands",
+    "text": "2 Frequently used commands\n\n2.1 Navigating Files and Directories\n\npwd: prints current working directory\nls: list files in current directory (by default), accepts optional argument\ncd: change working directory\n\n\n\n2.2 Others:\n\ndu -sh &lt;path_of_dir&gt; : show size of a directory"
+  },
+  {
+    "objectID": "demos/R/fit_lr.html",
+    "href": "demos/R/fit_lr.html",
+    "title": "Fit a LR model",
+    "section": "",
+    "text": "R is good in the stat, bio side.\n\n\n\n\n\n\nNote\n\n\n\nNote that below is not fully developed.\n\n\nHere are some examples of R codes:\nHave all setups like loading library in one block of code\n\n\nCode\n# load library\nlibrary(tidyverse)\n\n\n\nCalculating mean of a vector of length n\n\n\nCode\nn &lt;- 10\nx &lt;- rnorm(n=n)\nprint(mean(x))\n\n\n[1] -0.3622742\n\n\n\nFitting a simple linear regression model\n\n\nCode\n# create dummy data\nn &lt;- 25\nx1 &lt;- rnorm(n=n, mean=2, sd=3)\nx2 &lt;- rnorm(n=n, mean=3, sd=2)\ny &lt;- 2*x1 + 3*x2\ndata &lt;- data.frame(x1 = x1, x2 = x2, y = y)\n\n#&gt; fit model and print fitted coefficients\nreg &lt;- lm(y ~ . , data=data)\nprint(reg$coefficients)\n\n\n  (Intercept)            x1            x2 \n-6.394885e-15  2.000000e+00  3.000000e+00 \n\n\n\nPlot the model\n\n\nCode\nfit &lt;- reg\np &lt;- ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + \n  geom_point() +\n  stat_smooth(method = \"lm\", col = \"red\") +\n  labs(title = paste(\"Adj R2 = \",signif(summary(fit)$adj.r.squared, 5),\n                     \"Intercept =\",signif(fit$coef[[1]],5 ),\n                     \" Slope =\",signif(fit$coef[[2]], 5),\n                     \" P =\",signif(summary(fit)$coef[2,4], 5)))\n\np\n\n\n\n\n\nFigure 1: Simple Linear Regression on dummy data\n\n\n\n\nThe Figure 1 shows the fitted regression line on the dummy data"
+  },
+  {
+    "objectID": "demos/python/python_demo.html",
+    "href": "demos/python/python_demo.html",
+    "title": "Python Code Demo",
+    "section": "",
+    "text": "Why everyone use Python?"
   }
 ]

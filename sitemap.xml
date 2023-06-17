@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/index.html</loc>
-    <lastmod>2023-06-14T23:12:22.305Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/R/fit_lr.html</loc>
-    <lastmod>2023-06-14T23:12:28.589Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/python/python_demo.html</loc>
-    <lastmod>2023-06-14T23:12:29.053Z</lastmod>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/index.html</loc>
+    <lastmod>2023-06-17T22:45:34.624Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/projects/index.html</loc>
-    <lastmod>2023-06-14T23:12:29.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/index.html</loc>
-    <lastmod>2023-06-14T23:12:31.037Z</lastmod>
+    <lastmod>2023-06-17T22:45:36.720Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/resume/index.html</loc>
-    <lastmod>2023-06-14T23:12:31.502Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/shell/index.html</loc>
-    <lastmod>2023-06-14T23:12:31.978Z</lastmod>
+    <lastmod>2023-06-17T22:45:37.089Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/bioinformatics/index.html</loc>
-    <lastmod>2023-06-14T23:12:32.438Z</lastmod>
+    <lastmod>2023-06-17T22:45:37.509Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/bioinformatics/mult-omics.html</loc>
-    <lastmod>2023-06-14T23:12:33.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/conda/index.html</loc>
-    <lastmod>2023-06-14T23:12:36.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/index.html</loc>
-    <lastmod>2023-06-14T23:12:38.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/make/index.html</loc>
-    <lastmod>2023-06-14T23:12:38.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/git/index.html</loc>
-    <lastmod>2023-06-14T23:12:39.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/cheatsheet.html</loc>
-    <lastmod>2023-06-14T23:12:39.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/index.html</loc>
-    <lastmod>2023-06-14T23:12:40.306Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/other.html</loc>
-    <lastmod>2023-06-14T23:12:40.722Z</lastmod>
+    <lastmod>2023-06-17T22:45:38.681Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/ssh/index.html</loc>
-    <lastmod>2023-06-14T23:12:41.202Z</lastmod>
+    <lastmod>2023-06-17T22:45:39.785Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/docker/index.html</loc>
-    <lastmod>2023-06-14T23:12:41.622Z</lastmod>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/index.html</loc>
+    <lastmod>2023-06-17T22:45:41.141Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/markdown/index.html</loc>
-    <lastmod>2023-06-14T23:12:42.134Z</lastmod>
+    <lastmod>2023-06-17T22:45:41.641Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/conda/index.html</loc>
+    <lastmod>2023-06-17T22:45:43.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/git/index.html</loc>
+    <lastmod>2023-06-17T22:45:43.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/make/index.html</loc>
+    <lastmod>2023-06-17T22:45:44.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/index.html</loc>
+    <lastmod>2023-06-17T22:45:44.621Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/cheatsheet.html</loc>
+    <lastmod>2023-06-17T22:45:45.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/linux/other.html</loc>
+    <lastmod>2023-06-17T22:45:45.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/docker/index.html</loc>
+    <lastmod>2023-06-17T22:45:45.833Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/notes/shell/index.html</loc>
+    <lastmod>2023-06-17T22:45:46.241Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/R/fit_lr.html</loc>
+    <lastmod>2023-06-17T22:45:50.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/index.html</loc>
+    <lastmod>2023-06-17T22:45:50.921Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/tonyliang19/tonyliang19.github.io/demos/python/python_demo.html</loc>
+    <lastmod>2023-06-17T22:45:51.329Z</lastmod>
   </url>
 </urlset>

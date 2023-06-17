@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/demos/index.html",
-    "items": [
-      "/demos/R/fit_lr.html",
-      "/demos/python/python_demo.html"
-    ]
-  },
-  {
     "listing": "/notes/bioinformatics/index.html",
     "items": [
       "/notes/bioinformatics/mult-omics.html"
@@ -31,6 +24,13 @@
     "items": [
       "/notes/linux/cheatsheet.html",
       "/notes/linux/other.html"
+    ]
+  },
+  {
+    "listing": "/demos/index.html",
+    "items": [
+      "/demos/R/fit_lr.html",
+      "/demos/python/python_demo.html"
     ]
   }
 ]
