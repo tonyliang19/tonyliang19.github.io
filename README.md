@@ -18,7 +18,7 @@ Possible updates for the website:
 - [ ] Add this to bash for auto expanding path and complete for ENV variables [here](https://askubuntu.com/questions/41891/bash-auto-complete-for-environment-variables)
 	- this is another link related to it, [here](https://askubuntu.com/questions/70750/how-to-get-bash-to-stop-escaping-during-tab-completion)
 - [ ] Add this to Git for cleaning up caches from repositorys with git, need to add explanation though. See [here](https://stackoverflow.com/questions/1183769/git-status-takes-a-long-time-to-complete)
-
+- [ ] Add this to Linux related for why removing traling spaces -r. see [here](https://stackoverflow.com/questions/11616835/r-command-not-found-bashrc-bash-profile)
 Possible syntax to use
 
 - [ ] Tips messages, warnings, footnotes, see [stat406](https://ubc-stat.github.io/stat-406/)
