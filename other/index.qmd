@@ -1,0 +1,50 @@
+---
+title: "Useful Links"
+format:
+  html:
+    code-fold: false
+    number-sections: false
+    fontsize: 1em
+---
+
+See below for previous [presentations](#presentations) done, or view interesting explanations of behaviors of some programming languages, and linux related stuff.
+
+### Code Information
+
+---
+
+::: {.panel-tabset}
+
+## Linux
+
+
+  - [Find newest file](https://stackoverflow.com/questions/5885934/bash-function-to-find-newest-file-matching-pattern)
+  - [Makefile assigning variable](https://stackoverflow.com/questions/2019989/how-to-assign-the-output-of-a-command-to-a-makefile-variable)
+  - [Auto completetion for make targets](https://stackoverflow.com/questions/4188324/bash-completion-of-makefile-target)
+  - [Package manger of linux env in Windows](https://stackoverflow.com/questions/32712133/package-management-in-git-for-windows-git-bash)
+  - [Check program exists in bash](https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script)
+  - [Bash auto expanding path and complete](https://askubuntu.com/questions/41891/bash-auto-complete-for-environment-variables)
+  - [Stop escaping $ in tab](https://askubuntu.com/questions/70750/how-to-get-bash-to-stop-escaping-during-tab-completion)
+  - [Trailing spaces between linux and win](https://stackoverflow.com/questions/11616835/r-command-not-found-bashrc-bash-profile)
+
+## R
+
+  - [Save plot on disk](https://stackoverflow.com/questions/7144118/how-to-save-a-plot-as-image-on-the-disk)
+  - [Scrape dependencies used in proj](https://tilburgsciencehub.com/building-blocks/automate-and-execute-your-work/automate-your-workflow/auto-install-r-packages/)
+
+##  Git
+  - [Clean cache for local repos](https://stackoverflow.com/questions/1183769/git-status-takes-a-long-time-to-complete)
+
+## Conda
+  - [Env prefix default setting](https://stackoverflow.com/questions/60122569/how-to-revert-back-to-default-behavior-of-env-prompt-parameter-in-condarc)
+  - [Conda activate in Make](https://stackoverflow.com/questions/53382383/makefile-cant-use-conda-activate)
+
+:::
+
+### Slide Presentations
+
+---
+
+- [Summer Student Research HLI](https://tonyliang19.github.io/ssrip_2023/#1)
+
+- [Intro to Sockeye (PBS)](https://tonyliang19.github.io/arc-sockeye/#1)

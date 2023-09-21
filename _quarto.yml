@@ -30,6 +30,8 @@ website:
         href: demos/index.qmd
       - text: Notes
         href: notes/index.qmd
+      - text: Others
+        href: other/index.qmd
       # - text: Presentation
       #   href: presentations/
     
