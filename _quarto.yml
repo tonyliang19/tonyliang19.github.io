@@ -63,7 +63,7 @@ website:
     contents: notes/**
   # footer in all pages
   page-footer:
-    border: true
+    border: false
     right: "© 2023, Tony Liang"
 
 

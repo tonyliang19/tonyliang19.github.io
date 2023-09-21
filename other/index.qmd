@@ -1,11 +1,28 @@
 ---
 title: "Useful Links"
+engine: knitr
 format:
   html:
     code-fold: false
     number-sections: false
     fontsize: 1em
 ---
+
+```{css, echo=FALSE,eval=TRUE}
+/* font-style: italic --->*/
+.panel-tabset  .nav-item { 
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: EB Garamond;
+  color: #39507d;
+}
+
+.nav-link:hover {
+  color: red;
+}
+```
 
 See below for previous [presentations](#presentations) done, or view interesting explanations of behaviors of some programming languages, and linux related stuff.
 
