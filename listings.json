@@ -6,10 +6,10 @@
     ]
   },
   {
-    "listing": "/notes/linux/index.html",
+    "listing": "/demos/index.html",
     "items": [
-      "/notes/linux/cheatsheet.html",
-      "/notes/linux/other.html"
+      "/demos/R/fit_lr.html",
+      "/demos/python/python_demo.html"
     ]
   },
   {
@@ -27,10 +27,10 @@
     ]
   },
   {
-    "listing": "/demos/index.html",
+    "listing": "/notes/linux/index.html",
     "items": [
-      "/demos/R/fit_lr.html",
-      "/demos/python/python_demo.html"
+      "/notes/linux/cheatsheet.html",
+      "/notes/linux/other.html"
     ]
   }
 ]
