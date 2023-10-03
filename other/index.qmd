@@ -24,15 +24,23 @@ format:
 }
 ```
 
-See below for previous [presentations](#presentations) done, or view interesting explanations of behaviors of some programming languages, and linux related stuff.
+See below for previous [presentations](#slide-presentations) done, or view interesting explanations of behaviors of some programming languages, and linux related stuff.
 
-### Code Information
+Moreover, here are also some generic resources on applying jobs, school, or posts that I founded useful to myself. Feel free to checkout those below.
+
+### Generic resources
+
+- [Advice on applying to graduate school (slides)](https://dajmcdon.github.io/grad-school-pointers)
+- [Work-school-life balance (pdf)](https://www.stat.cmu.edu/~aramdas/checklists/aadi-balance-checklist.pdf)
+
+
+### Code Resources
 
 ---
 
 ::: {.panel-tabset}
 
-## Linux
+#### Linux
 
 
   - [Find newest file](https://stackoverflow.com/questions/5885934/bash-function-to-find-newest-file-matching-pattern)
@@ -44,15 +52,15 @@ See below for previous [presentations](#presentations) done, or view interesting
   - [Stop escaping $ in tab](https://askubuntu.com/questions/70750/how-to-get-bash-to-stop-escaping-during-tab-completion)
   - [Trailing spaces between linux and win](https://stackoverflow.com/questions/11616835/r-command-not-found-bashrc-bash-profile)
 
-## R
+#### R
 
   - [Save plot on disk](https://stackoverflow.com/questions/7144118/how-to-save-a-plot-as-image-on-the-disk)
   - [Scrape dependencies used in proj](https://tilburgsciencehub.com/building-blocks/automate-and-execute-your-work/automate-your-workflow/auto-install-r-packages/)
 
-##  Git
+####  Git
   - [Clean cache for local repos](https://stackoverflow.com/questions/1183769/git-status-takes-a-long-time-to-complete)
 
-## Conda
+#### Conda
   - [Env prefix default setting](https://stackoverflow.com/questions/60122569/how-to-revert-back-to-default-behavior-of-env-prompt-parameter-in-condarc)
   - [Conda activate in Make](https://stackoverflow.com/questions/53382383/makefile-cant-use-conda-activate)
 
