@@ -1,0 +1,77 @@
+---
+title: Visualization in R
+---
+
+This page haves some note and trick on visualizing in R. Most of its content are adapted from following sources:
+
+- [Fundamentals of Data Visualization Claus o. Wilke](https://clauswilke.com/dataviz/visualizing-amounts.html)
+
+```{r}
+#| label: setup
+#| echo: false
+#| warning: false
+source("_common.R")
+library(tidyverse)
+# Set default theme of plot
+ggplot2::theme_set(ggplot2::theme_bw())
+```
+
+To demonstrate, I would use the `gapminder` data, where it requires to be installed
+
+```{r}
+#| warning: false
+# Uncomment this command and install
+# install.packages("gapminder")
+# Load data
+library(gapminder)
+df <- gapminder
+DT::datatable(df)
+```
+
+After loading it, we could start the visualization. There are various types of plots to do, the simplest ones are scatter plot and bar plots. With these two we could almost visualize anything else by adding more specifications and details into it.
+
+### Scatter Plots
+
+Scatter plots are good to visualize **numerical** variables. This is particularly useful if want to explore linear relationship between variables provide. Given there are two axes, hence you could visualize $X1$ and $X2$. To add groupings between these two variables, we could use color or shapes to distinguish.
+
+For example @fig-pop-lifeExp ilustrates relationship between population and life expectancy
+
+```{r}
+#| label: fig-pop-lifeExp
+#| fig-cap: "Population VS Life Expectancy"
+p_df <- df %>%
+  group_by(country, continent) %>%
+  summarize(total_pop = sum(pop),
+            avg_lifeExp = mean(lifeExp),
+            avg_gdpPerCap = mean(gdpPercap))
+
+p_df %>%
+  ggplot(aes(x=total_pop, y=avg_lifeExp, color=continent)) +
+  geom_point() +
+  scale_color_brewer(palette = "Set2") +
+  labs(color="Continent", y = "Life Expectancy", x = "Population")
+
+
+p_df %>%
+  filter(total_pop > 7e+09, continent == "Asia")
+  
+```
+Looks kinda ugly, edit later. Notice there are few outliers those all belongs to Asia, where population is at least > 5e+08.
+
+Let's dig in more for those countries
+
+
+```{r}
+head(df, 1)
+
+p_df <- df %>%
+  group_by(country, continent) %>%
+  summarize(total_pop = sum(pop),
+            avg_lifeExp = mean(lifeExp),
+            avg_gdpPerCap = mean(gdpPercap))
+
+
+
+```
+
+

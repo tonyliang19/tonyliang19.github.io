@@ -7,8 +7,8 @@ sidebar: demos
 sidebar_position: 1
 listing:
     contents:
-    - "/*.qmd"
-    - "/*/*.qmd"
+    - "*.qmd"
+    - "*/*.qmd"
 format:
     html:
         code-tools: false
