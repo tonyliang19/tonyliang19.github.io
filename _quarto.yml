@@ -8,7 +8,7 @@ website:
   #open-graph: true
   title: "Tony Liang"
   
-  search: false
+  search: true
   #site-url: https:/tonyliang19.com/  
   repo-url: https://github.com/tonyliang19/tonyliang19.github.io/
   repo-actions: [edit, issue] 
@@ -22,14 +22,20 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Projects" 
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Projects"
         href: projects/index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
       - text: Resume
         href: resume/index.qmd
       - text: Demos
         href: demos/index.qmd
       - text: Notes
         href: notes/index.qmd
+      - text: Resources
+        href: resources/index.qmd
       - text: Others
         href: other/index.qmd
       # - text: Presentation
@@ -91,5 +97,8 @@ format:
     number-sections: true
     theme:
       light: flatly
-      dark:  darkly #solar #darkly 
+      dark:  darkly #solar #darkly
     reference-location: document
+    # Global date formatting
+    date: last-modified
+    date-format: "MMMM D, YYYY at HH:mm"
