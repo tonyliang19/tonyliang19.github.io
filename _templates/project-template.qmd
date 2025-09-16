@@ -1,0 +1,64 @@
+---
+title: "{{< meta title >}}"
+description: "{{< meta description >}}"
+date: last-modified
+date-format: "MMMM D, YYYY"
+categories: [{{< meta categories >}}]
+image: "{{< meta image >}}"
+toc: true
+---
+
+## Overview
+
+Brief overview of the project and its objectives.
+
+## Technologies Used
+
+::: {.callout-note}
+## Tech Stack
+- **Language**: {{< meta language >}}
+- **Frameworks**: {{< meta frameworks >}}
+- **Tools**: {{< meta tools >}}
+:::
+
+## Key Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Implementation Details
+
+Describe the technical implementation, challenges faced, and solutions.
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Code snippets if relevant
+```
+
+## Results & Impact
+
+What was achieved, metrics, outcomes, etc.
+
+## Links & Resources
+
+::: {.grid}
+
+::: {.g-col-6}
+### Code & Demo
+- [{{< fa brands github >}} Source Code]({{< meta github_url >}})
+- [{{< fa globe >}} Live Demo]({{< meta demo_url >}})
+:::
+
+::: {.g-col-6}
+### Documentation
+- [{{< fa file-text >}} Documentation]({{< meta docs_url >}})
+- [{{< fa presentation-screen >}} Presentation]({{< meta presentation_url >}})
+:::
+
+:::
+
+---
+*Project last updated: `r format(Sys.time(), tz = "America/Los_Angeles")`*
