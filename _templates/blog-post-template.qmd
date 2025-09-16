@@ -1,0 +1,39 @@
+---
+title: "{{< meta title >}}"
+description: "{{< meta description >}}"
+author: "Tony Liang"
+date: last-modified
+date-format: "MMMM D, YYYY"
+categories: [{{< meta categories >}}]
+image: "{{< meta image >}}"
+draft: false
+toc: true
+---
+
+## Introduction
+
+Brief introduction to your blog post topic.
+
+## Main Content
+
+Your blog post content here...
+
+### Subsection
+
+More detailed content...
+
+## Code (if applicable)
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Code examples if relevant
+```
+
+## Conclusion
+
+Wrap up your thoughts and key takeaways.
+
+---
+*Posted: `r format(Sys.time(), tz = "America/Los_Angeles")`*

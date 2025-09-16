@@ -1,0 +1,40 @@
+---
+title: "{{< meta title >}}"
+date: last-modified
+date-format: "MMMM D, YYYY at HH:mm"
+categories: [{{< meta categories >}}]
+toc: true
+code-fold: true
+engine: knitr
+---
+
+::: {.callout-tip}
+## Quick Summary
+Brief overview of what this note covers
+:::
+
+## Main Content
+
+Add your content here...
+
+## Code Examples
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Your R code here
+```
+
+```{python}
+#| eval: false
+#| echo: true
+
+# Your Python code here
+```
+
+## Related Notes
+- [Link to related note](../path/to/note.qmd)
+
+---
+*Last updated: `r format(Sys.time(), tz = "America/Los_Angeles")`*

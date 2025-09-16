@@ -1,0 +1,68 @@
+---
+title: "{{< meta title >}}"
+date: last-modified
+date-format: "MMMM D, YYYY at HH:mm"
+engine: {{< meta engine >}}
+execute:
+  warning: false
+  message: false
+  echo: true
+format:
+  html:
+    code-fold: show
+    code-summary: "Show the code"
+---
+
+## Overview
+
+Brief description of what this demo covers and its purpose.
+
+## Setup
+
+```{r}
+#| label: setup
+#| include: false
+
+# Load required libraries
+library(tidyverse)
+# Add other libraries as needed
+```
+
+```{python}
+#| label: python-setup
+#| include: false
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+# Add other imports as needed
+```
+
+## Code
+
+### Data Analysis
+
+```{r}
+#| label: analysis
+
+# Your R analysis code here
+```
+
+```{python}
+#| label: python-analysis
+
+# Your Python analysis code here
+```
+
+## Results
+
+Present your findings, plots, and interpretations here.
+
+## Key Takeaways
+
+- Key point 1
+- Key point 2
+- Key point 3
+
+---
+*Demo last updated: `r format(Sys.time(), tz = "America/Los_Angeles")`*
