@@ -27,7 +27,7 @@ Have all setups like loading library in one block of code
 #| label: setup
 #| message: false
 # load library
-library(tidyverse)
+library(ggplot2)
 ```
 
 ---
@@ -35,7 +35,11 @@ library(tidyverse)
 Calculating mean of a vector of length `n`
 ```{r}
 #| label: calculating-mean
-n <- 10
+
+# Set a seed here to reproduce the result
+set.seed(1)
+# Then generate dummy data
+n <- 100
 x <- rnorm(n=n)
 print(mean(x))
 ```
