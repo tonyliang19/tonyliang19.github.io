@@ -1,0 +1,11 @@
+---
+title: "Blog"
+comments: false
+toc: true
+link-external-icon: false
+number-sections: false
+date: last-modified
+date-format: "MMMM D, YYYY"
+---
+
+Here's a collection of my blogs ...
