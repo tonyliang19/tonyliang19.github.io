@@ -12,3 +12,4 @@ publish:
 clean:
 	rm -f .Rhistory
 	rm -rf .Rproj.user
+
