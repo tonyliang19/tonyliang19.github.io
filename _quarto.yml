@@ -22,8 +22,8 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Research"
-        href: research/index.qmd
+      # - text: "Research"
+      #   href: research/index.qmd
       - text: "Projects"
         href: projects/index.qmd
       - text: "Blog"
@@ -35,7 +35,7 @@ website:
       - text: Notes
         href: notes/index.qmd
       - text: Resources
-        href: resources/index.qmd
+        href: links/index.qmd
       - text: Others
         href: other/index.qmd
       # - text: Presentation
