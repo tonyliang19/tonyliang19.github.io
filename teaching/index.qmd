@@ -1,0 +1,82 @@
+---
+title: "Teaching"
+comments: false
+toc: true
+link-external-icon: false
+number-sections: false
+date: last-modified
+date-format: "MMMM D, YYYY"
+---
+
+I am passionate about teaching and mentoring students in computer science, statistics, and data science. Below are my teaching experiences and activities.
+
+---
+
+## Current Teaching Roles
+
+::: {.project-card}
+### Graduate Teaching Assistant
+**CPSC 330: Applied Machine Learning** • *Sept 2024 - Present*
+
+Department of Computer Science, University of British Columbia
+
+- Supporting students in learning machine learning concepts and practical applications
+- Leading tutorial sessions and office hours
+- Developing course materials and assignments
+- Providing feedback on student projects and assignments
+:::
+
+---
+
+## Past Teaching Experience
+
+::: {.project-card}
+### Undergraduate Teaching Assistant
+**Department of Statistics** • *Sept 2022 - May 2023*
+
+University of British Columbia, Vancouver, CA
+
+**Courses Supported:**
+- Introduction to Statistical Inference
+- Probability and Statistics
+- Data Science Programming
+
+**Responsibilities:**
+- Conducted weekly tutorial sessions for 30+ students
+- Held regular office hours for student consultation
+- Graded assignments and provided detailed feedback
+- Assisted in developing course materials and problem sets
+:::
+
+---
+
+## Teaching Philosophy
+
+I believe in making complex concepts accessible through:
+
+- **Practical examples** that connect theory to real-world applications
+- **Interactive learning** that encourages student engagement and questions
+- **Reproducible workflows** that help students develop good coding practices
+- **Patient guidance** that meets students at their current level
+
+---
+
+## Resources for Students
+
+### Course Materials
+I maintain comprehensive notes and resources that may be helpful for students:
+
+- [Programming Notes](/notes/) - Collection of technical notes on various topics
+- [Code Resources](/links/) - Curated links for common programming challenges
+- [Demos](/demos/) - Interactive demonstrations and examples
+
+### Office Hours & Contact
+Feel free to reach out via email or during scheduled office hours for:
+- Course-related questions
+- Career advice in bioinformatics and data science
+- Research opportunities
+- General mentorship
+
+---
+
+*Last updated: `r format(Sys.time(), tz = "America/Vancouver")`*

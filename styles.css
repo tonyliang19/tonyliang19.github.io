@@ -1,21 +1,27 @@
 /* ==========================================================================
    Custom Styles for Tony Liang's Academic Website
+   Professional & Academic Design Theme
    ========================================================================== */
 
-/* Navigation & Header Improvements */
+/* Navigation & Header - Academic Professional Look */
 .navbar-brand {
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
 }
 
 .navbar-nav .nav-link {
   font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
   transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-nav .nav-link:hover {
   transform: translateY(-1px);
   color: var(--bs-primary) !important;
+  opacity: 0.8;
 }
 
 /* Bio Section Enhancements */
@@ -94,16 +100,49 @@
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-/* Typography Improvements */
+/* Typography - Academic Professional Style */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.025em;
+  color: var(--bs-dark);
+  margin-top: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--bs-primary);
+  padding-bottom: 0.75rem;
 }
 
 h2 {
+  font-size: 2rem;
   border-bottom: 2px solid var(--bs-primary);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--bs-primary);
+  margin-top: 1.5rem;
+}
+
+/* Improve readability */
+p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Academic list styling */
+ul, ol {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 /* Link Styling */
@@ -162,4 +201,90 @@ a:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Academic CV/Bio Section Enhancement */
+.about-entity {
+  padding: 2rem;
+  background: var(--bs-light);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+[data-bs-theme="dark"] .about-entity {
+  background: var(--bs-gray-800);
+}
+
+/* Research interests and skills styling */
+.grid {
+  gap: 1.5rem;
+}
+
+/* Professional section headers */
+.g-col-12 h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.g-col-12 h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--bs-primary);
+}
+
+/* Enhanced emphasis for important text */
+strong {
+  font-weight: 600;
+  color: var(--bs-emphasis-color);
+}
+
+/* Academic content cards */
+.content-card {
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.content-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Publication and presentation links */
+.publication-link {
+  color: var(--bs-link-color);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.publication-link:hover {
+  border-bottom-color: var(--bs-link-color);
+}
+
+/* Professional footer */
+.nav-footer {
+  font-size: 0.9rem;
+  color: var(--bs-secondary);
+  text-align: center;
+}
+
+/* Improve spacing for academic content */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Better blockquote styling for academic quotes */
+blockquote {
+  border-left: 4px solid var(--bs-primary);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--bs-secondary);
 }

@@ -1,0 +1,141 @@
+---
+title: "Research"
+comments: false
+toc: true
+link-external-icon: false
+number-sections: false
+date: last-modified
+date-format: "MMMM D, YYYY"
+---
+
+My research focuses on bioinformatics, multi-omics data integration, and machine learning applications in biological and medical contexts.
+
+---
+
+## Current Research
+
+::: {.project-card}
+### PhD Research in Bioinformatics
+**Jan 2024 - Present**
+
+*University of British Columbia, Vancouver, CA*
+
+**Supervisor:** Dr. Amrit Singh
+
+**Research Focus:**
+- Multi-omics data integration and analysis
+- Machine learning applications in bioinformatics
+- Reproducible computational workflows
+- Biomarker discovery and validation
+
+**Research Interests:**
+- Integration of genomics, transcriptomics, and proteomics data
+- Development of computational tools for biological data analysis
+- Statistical methods for high-dimensional data
+- Translational bioinformatics
+:::
+
+---
+
+## Research Experience
+
+::: {.project-card}
+### Machine Learning Developer
+**Sept 2022 - Present**
+
+*Centre of Heart Lung Innovation, St Paul's Hospital, Vancouver, CA*
+
+- Developing machine learning models for clinical and biological data
+- Building predictive models for disease outcomes
+- Implementing reproducible analysis pipelines
+- Collaborating with clinicians and researchers on translational projects
+
+**Key Projects:**
+- Clinical outcome prediction using multi-modal data
+- Biomarker identification for respiratory diseases
+- Automated data processing pipelines
+:::
+
+::: {.project-card}
+### Computational Entomology Research Assistant
+**May 2022 - Sept 2022**
+
+*Department of Land Food and Systems, University of British Columbia*
+
+- Applied computer vision and deep learning to pollen identification
+- Developed automated image analysis pipelines
+- Contributed to biodiversity monitoring research
+- Utilized detectron2 framework for species classification
+
+**Outcomes:**
+- Custom-trained CNN models for pollen species identification
+- High-throughput image processing workflow
+- Annotated dataset for future research
+:::
+
+---
+
+## Research Interests
+
+My research interests span multiple areas at the intersection of computer science, statistics, and biology:
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+### Computational Biology
+- Multi-omics data integration
+- Genomics and transcriptomics
+- Systems biology approaches
+- Pathway analysis
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Machine Learning
+- Supervised and unsupervised learning
+- Deep learning for biological data
+- Feature selection and dimensionality reduction
+- Model interpretability
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Bioinformatics Tools
+- Reproducible workflow development
+- Pipeline automation
+- High-performance computing
+- Data visualization
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Statistical Methods
+- High-dimensional statistics
+- Statistical inference
+- Experimental design
+- Data quality control
+:::
+:::
+
+---
+
+## Publications & Presentations
+
+### Presentations
+- [Summer Student Research at HLI](https://tonyliang19.github.io/ssrip_2023/#1) - Research presentation on computational biology project
+- [Introduction to Sockeye (PBS)](https://tonyliang19.github.io/arc-sockeye-quarto/) - Technical workshop on HPC systems
+
+### Publications
+*Publications in preparation*
+
+---
+
+## Collaborations
+
+I am interested in collaborating on projects involving:
+- Multi-omics data analysis
+- Machine learning for biological applications
+- Reproducible research workflows
+- Bioinformatics tool development
+
+Feel free to reach out if you're interested in potential collaborations or have questions about my research.
+
+---
+
+*Last updated: `r format(Sys.time(), tz = "America/Vancouver")`*

@@ -22,24 +22,24 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      # - text: "Research"
-      #   href: research/index.qmd
-      - text: "Projects"
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Teaching"
+        href: teaching/index.qmd
+      - text: "Side Projects"
         href: projects/index.qmd
-      - text: "Blog"
-        href: blog/index.qmd
       - text: Resume
         href: resume/index.qmd
-      - text: Demos
-        href: demos/index.qmd
       - text: Notes
         href: notes/index.qmd
       - text: Resources
         href: links/index.qmd
+      - text: Demos
+        href: demos/index.qmd
+      - text: Blog
+        href: blog/index.qmd
       - text: Others
         href: other/index.qmd
-      # - text: Presentation
-      #   href: presentations/
     
 
     right:
