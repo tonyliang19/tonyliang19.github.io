@@ -28,15 +28,25 @@ number-sections: false
 
 ::: [#bio]
 
-My name is Chunqing (Tony) Liang, currently PhD student in Bioinformatics at University of British Columbia under Dr.Amrit Singh's supervision.
+I am Chunqing (Tony) Liang, a PhD student in Bioinformatics at the University of British Columbia, working under the supervision of Dr. Amrit Singh. My research focuses on multi-omics data integration, machine learning applications in biology, and the development of reproducible computational workflows for biomedical research.
 
+Prior to my doctoral studies, I earned my B.Sc. in Mathematics with a Minor in Data Science from UBC, where I developed a strong foundation in statistical methods and computational approaches to data analysis.
 
-I am originally from Kaiping, China ([here](https://www.google.com/maps/place/Jinjizhen,+Kaiping,+Jiangmen,+Guangdong+Province,+China,+529386/@22.1581094,112.4805352,15z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3401fc24882c4c1b:0x6a1305be97b802a9!2sKaiping,+Jiangmen,+Guangdong+Province,+China!3b1!8m2!3d22.3770199!4d112.69828!16zL20vMDY3eWN5!3m5!1s0x36aa0cc1c74074ab:0xa667fe9eb814f477!8m2!3d22.15811!4d112.48929!16s%2Fg%2F1hb_fvwxk)).  But, I have spent most of the times living in Santo Domingo, Dominican Republic. So I know how to hablar en español, pero un poquito machucado. 
+## Research Interests
 
-当然中文也会一点点(这已经是我所有的水平了)。 
+My work sits at the intersection of computational biology, machine learning, and statistical inference. I am particularly interested in:
 
+- Multi-omics data integration and systems biology
+- Machine learning for biomarker discovery
+- Reproducible bioinformatics workflows
+- High-dimensional statistical methods
+- Translational research in precision medicine
 
-Please dont't hesitate to contact me or just to chat, you could open any of my links above.
+## Background
+
+I am originally from Kaiping, China, but spent most of my formative years in Santo Domingo, Dominican Republic. This multicultural background has given me a global perspective and the ability to communicate in English, Spanish (*hablo español*), and Mandarin Chinese (当然中文也会一点点).
+
+Feel free to reach out via the links above to discuss research collaborations, academic opportunities, or simply to connect!
 
 :::
 
@@ -44,25 +54,40 @@ Please dont't hesitate to contact me or just to chat, you could open any of my l
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-12 style="grid-row: 1 / 3; text-align: left; "}
-## Experience
+## Academic Experience
 
-- **Graduate Teaching Assistant, Aug 2024 - Present**
+### Research Positions
 
-  *Department of Computer Science, University of British Columbia, Vancouver, CA
+- **Machine Learning Developer**, *Sept 2022 - Present*
+  
+  Centre of Heart Lung Innovation, St Paul's Hospital, Vancouver, CA
+  
+  - Developing machine learning models for clinical outcome prediction
+  - Building reproducible bioinformatics pipelines
+  - Collaborating on translational research projects
 
+- **Computational Entomology Research Assistant**, *May 2022 - Sept 2022*
+  
+  Department of Land Food and Systems, University of British Columbia
+  
+  - Applied deep learning to pollen species identification
+  - Developed automated image analysis workflows using Detectron2
 
+### Teaching Experience
 
-- **Machine Learning Developer**,   **Sep 2022 - Present**
+- **Graduate Teaching Assistant**, *Aug 2024 - Present*
+  
+  CPSC 330: Applied Machine Learning, Department of Computer Science, UBC
+  
+  - Leading tutorial sessions and office hours
+  - Supporting students in machine learning concepts and applications
 
-  *Centre of Heart Lung Innovation, St Paul's Hospital, Vancouver, CA*
-
-- **Undergraduate Teaching Assistant**,   **Sep 2022 - May 2023**
-
-  *Department of Statistics, University of British Columbia, Vancouver, CA*
-
-- **Computational Entomology Research Assistant**, **May 2022 - Sep 2022**
-
-  *Department of Land Food and Systems, University of British Columbia, Vancouver, CA*
+- **Undergraduate Teaching Assistant**, *Sept 2022 - May 2023*
+  
+  Department of Statistics, University of British Columbia
+  
+  - Conducted tutorials for Introduction to Statistical Inference
+  - Provided mentorship and support to undergraduate students
 :::
 
 ::: {.g-col-12 .g-col-md-4 style="text-align: left; padding-bottom: 5px;"}
@@ -80,15 +105,19 @@ Please dont't hesitate to contact me or just to chat, you could open any of my l
 ::: {.g-col-12 .g-col-md-6 style="grid-row: 3 / 3; text-align: left;"}
 ## Education
 
-- - **PhD_ in Bioinformatics**, **Jan 2024 -  Present**
+- **PhD in Bioinformatics**, *Jan 2024 - Present*
 
-    Supervisor: **Amrit Singh** 
-
-    *University of British Columbia, Vancouver, CA*
-
-- **_B.Sc._ in Mathematics and Minor in Data Science**, **Sep 2020 - Nov 2023**
+    University of British Columbia, Vancouver, CA
     
-    *University of British Columbia, Vancouver, CA*
+    Supervisor: Dr. Amrit Singh
+    
+    Focus: Multi-omics integration, machine learning for biomarker discovery
+
+- **B.Sc. in Mathematics**, *Sept 2020 - Nov 2023*
+    
+    Minor in Data Science
+    
+    University of British Columbia, Vancouver, CA
 
 :::
 
